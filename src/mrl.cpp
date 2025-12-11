@@ -15,13 +15,13 @@ std::vector<Eigen::Vector3f> MRL::convert_cloud_to_vec(const pcl::PointCloud<pcl
   return vec;
 }
 
-std::pair<std::vector<Eigen::Vector3f>& , std::vector<Eigen::VectorXf>&> MRL::get_fpfh(const pcl::PointCloud<pcl::PointXYZ>& pcl){
+std::pair<std::vector<Eigen::Vector3f>& , std::vector<Eigen::VectorXf>&> MRL::get_fpfh(const pcl::PointCloud<pcl::PointXYZ>::Ptr pcl){
     std::vector<int> indices;
     pcl::removeNaNFromPointCloud(*pcl, *pcl, indices);  
-    const auto& vec = convertCloudToVec(*pcl);
-    return KISSMatcher::extract_feature(vec);
+    const auto& vec = convert_cloud_to_vec(*pcl);
+    return kiss_matcher::KISSMatcher::extract_feature(vec);
 }
 
 kiss_matcher::RegistrationSolution MRL::registrate(std::pair<std::vector<Eigen::Vector3f>& , std::vector<Eigen::VectorXf>&> src, std::pair<std::vector<Eigen::Vector3f>& , std::vector<Eigen::VectorXf>&> tgt){
-    return KISSMatcher::registrate(src, tgt);
+    return kiss_matcher::KISSMatcher::registrate(src, tgt);
 }
