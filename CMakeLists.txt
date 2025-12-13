@@ -22,20 +22,21 @@ find_package(PCL REQUIRED COMPONENTS
   kdtree
 )
 find_package(rosidl_typesupport_cpp REQUIRED)
+find_package(Eigen3 REQUIRED)
 
-include(FetchContent)
-FetchContent_Declare(
-  kiss_matcher
-  GIT_REPOSITORY https://github.com/aaronwickert/KISS-Matcher.git
-  GIT_TAG main  # or specific commit/tag
-)
-FetchContent_MakeAvailable(kiss_matcher)
+find_package(PCL REQUIRED)
+### To include ROBIN& KISS-Matcher ###
+find_package(robin REQUIRED)
+find_package(kiss_matcher REQUIRED)
+
+
+
 link_directories(${PCL_LIBRARY_DIRS})
 include_directories(include
   ${PCL_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIRS})
 
-set(DEPS rclcpp rosidl_typesupport_cpp)
+set(DEPS rclcpp rosidl_typesupport_cpp Eigen3 PCL robin kiss_matcher)
 
 add_executable(${PROJECT_NAME}_master src/mrl.cpp src/mrl_master.cpp)
 ament_target_dependencies(${PROJECT_NAME}_master ${DEPS})
