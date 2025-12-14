@@ -9,6 +9,8 @@ MRLMaster::MRLMaster() : Node("mrl_master"){
     init_subscribers();
     init_services();
     mrl_setup();
+
+    this->mrl = MRL::MRL();
 }
 
 MRLMaster::~MRLMaster(){
@@ -76,6 +78,10 @@ bool MRLMaster::mrl_check_ready(){
     bool ready = true;
     auto request = std::make_shared<mrl::srv::GetReady::Request>();
     RCLCPP_INFO(this->get_logger(), "%d", slave_clients_status.size());
+    if(slave_clients_status.size() == 0){
+        RCLCPP_ERROR(this->get_logger(), "No clients registered. Exit MRL.");
+        exit();
+    }
     for(auto& client : slave_clients_status){
         auto future = client->async_send_request(request);
 
@@ -94,13 +100,17 @@ bool MRLMaster::mrl_check_ready(){
     return ready;
 }
 
+void MRLMaster::mrl_reset(){
+
+}
+
 void MRLMaster::mrl_discover_and_create_clients(){
     auto node_names = this->get_node_names();
 
     std::vector<std::string> namespaces;
     for(const auto& node_name : node_names){
         if(node_name.find("mrl_slave") != std::string::npos) {
-            namespaces.push_back(extract_namespace(node_name));
+            namespaces.push_back(mrl::utils::extract_namespace(node_name));
         }
     }
 
@@ -126,25 +136,38 @@ void MRLMaster::handle_execute_mrl(const std::shared_ptr<mrl::srv::ExecuteMRL::R
     mrl_discover_and_create_clients();
     RCLCPP_INFO(this->get_logger(), "testse");
     if(mrl_check_ready()){
-      
+        // Retriving Features
+        auto request = std::make_shared<mrl::srv::GetFeatures::Request>();
+        for(auto& client : slave_clients_features){
+            // catch no success
+            auto future = client->async_send_request(request);
+            auto response = future.get();
+            if(!response->success){
+                RCLCPP_ERROR(this->get_logger(), "Error getting slave features. Terminate MRL.");
+                response->success = false;
+                return;
+            }
+            auto features = mrl::utils::convert_feature_response(response);
+            slave_features.push_back(features);
+        }
+
+        // Computing transforms
+        get_master_features();
+        for(auto& features : slave_features){
+            // I SHOULD INCLUDE BOOL TO CHECK IF REGISTRATION SUCCESSFULL
+            slave_transforms.push_back(this->mrl.estimate_transformation(master_features, features));
+        }
+
     }
     RCLCPP_INFO(this->get_logger(), "testse");
     response->success = true;
     
 }
 
+void MRLMaster::get_master_features(){
 
+}
 
-
-std::string MRLMaster::extract_namespace(const std::string& full_node_name)
-  {
-    size_t last_slash = full_node_name.find_last_of('/');
-    if (last_slash == 0) return "/";
-    if (last_slash != std::string::npos) {
-      return full_node_name.substr(0, last_slash);
-    }
-    return "/";
-  }
 
 int main(int argc, char **argv)
 {
