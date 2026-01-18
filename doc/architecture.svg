@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 800" width="950" height="800">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e"/>
+    </marker>
+    <linearGradient id="masterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="slaveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="robotGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="950" height="800" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="475" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">MRL Architecture</text>
+  <text x="475" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Multi-Robot Localization System - Pure Coordinator Model</text>
+
+  <!-- Legend -->
+  <g transform="translate(750, 80)">
+    <rect x="0" y="0" width="180" height="120" rx="5" fill="white" stroke="#e2e8f0" filter="url(#shadow)"/>
+    <text x="90" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569">Legend</text>
+    <line x1="10" y1="28" x2="170" y2="28" stroke="#e2e8f0"/>
+    <rect x="15" y="38" width="12" height="12" fill="#3b82f6" rx="2"/>
+    <text x="35" y="48" font-family="Arial, sans-serif" font-size="10" fill="#475569">ROS2 Service Call</text>
+    <rect x="15" y="56" width="12" height="12" fill="#22c55e" rx="2"/>
+    <text x="35" y="66" font-family="Arial, sans-serif" font-size="10" fill="#475569">Data/Topic Flow</text>
+    <rect x="15" y="74" width="12" height="12" fill="#555" rx="2"/>
+    <text x="35" y="84" font-family="Arial, sans-serif" font-size="10" fill="#475569">Composition</text>
+    <rect x="15" y="92" width="12" height="12" fill="#7c3aed" rx="2"/>
+    <text x="35" y="102" font-family="Arial, sans-serif" font-size="10" fill="#475569">Robot Boundary</text>
+  </g>
+
+  <!-- Deployment Model Box -->
+  <g transform="translate(20, 75)">
+    <rect width="280" height="130" rx="5" fill="white" stroke="#e2e8f0" filter="url(#shadow)"/>
+    <text x="140" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569">Deployment Model</text>
+    <line x1="10" y1="28" x2="270" y2="28" stroke="#e2e8f0"/>
+    <text x="15" y="48" font-family="monospace" font-size="10" fill="#1e293b">Robot 1: [Master] + [Slave]</text>
+    <text x="25" y="63" font-family="Arial, sans-serif" font-size="9" fill="#64748b">↳ coordinates + provides own features</text>
+    <text x="15" y="83" font-family="monospace" font-size="10" fill="#1e293b">Robot 2: [Slave]</text>
+    <text x="25" y="98" font-family="Arial, sans-serif" font-size="9" fill="#64748b">↳ provides features only</text>
+    <text x="15" y="118" font-family="monospace" font-size="10" fill="#1e293b">Robot N: [Slave]</text>
+  </g>
+
+  <!-- Robot 1 Container (Master + Slave) -->
+  <g transform="translate(20, 220)">
+    <rect width="440" height="280" rx="10" fill="none" stroke="#7c3aed" stroke-width="2" stroke-dasharray="8,4"/>
+    <rect x="10" y="-12" width="80" height="24" fill="#f8fafc"/>
+    <text x="50" y="3" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#7c3aed">Robot 1</text>
+
+    <!-- MRLMaster Node -->
+    <g transform="translate(15, 20)" filter="url(#shadow)">
+      <rect width="200" height="180" rx="8" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+      <rect width="200" height="30" rx="8" fill="url(#masterGrad)"/>
+      <rect x="0" y="22" width="200" height="8" fill="url(#masterGrad)"/>
+      <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">MRLMaster</text>
+      <text x="100" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Pure Coordinator</text>
+
+      <!-- Methods -->
+      <text x="10" y="68" font-family="monospace" font-size="8" fill="#1e40af">+ handle_execute_mrl()</text>
+      <text x="10" y="81" font-family="monospace" font-size="8" fill="#1e40af">+ mrl_discover_clients()</text>
+      <text x="10" y="94" font-family="monospace" font-size="8" fill="#1e40af">+ mrl_check_ready()</text>
+      <text x="10" y="107" font-family="monospace" font-size="8" fill="#1e40af">+ compute_transforms()</text>
+
+      <line x1="8" y1="115" x2="192" y2="115" stroke="#e2e8f0"/>
+
+      <!-- Members -->
+      <text x="10" y="130" font-family="monospace" font-size="8" fill="#7c3aed">- slave_clients: vector</text>
+      <text x="10" y="143" font-family="monospace" font-size="8" fill="#7c3aed">- slave_features: vector</text>
+      <text x="10" y="156" font-family="monospace" font-size="8" fill="#7c3aed">- pairwise_transforms</text>
+      <text x="10" y="169" font-family="monospace" font-size="8" fill="#991b1b">- mrl_: MRL (transforms)</text>
+    </g>
+
+    <!-- MRLSlave Node (on Robot 1) -->
+    <g transform="translate(225, 20)" filter="url(#shadow)">
+      <rect width="200" height="180" rx="8" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+      <rect width="200" height="30" rx="8" fill="url(#slaveGrad)"/>
+      <rect x="0" y="22" width="200" height="8" fill="url(#slaveGrad)"/>
+      <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">MRLSlave</text>
+      <text x="100" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Feature Extractor</text>
+
+      <!-- Methods -->
+      <text x="10" y="68" font-family="monospace" font-size="8" fill="#166534">+ handle_get_features()</text>
+      <text x="10" y="81" font-family="monospace" font-size="8" fill="#166534">+ handle_get_status()</text>
+      <text x="10" y="94" font-family="monospace" font-size="8" fill="#166534">+ pointcloud_callback()</text>
+
+      <line x1="8" y1="105" x2="192" y2="105" stroke="#e2e8f0"/>
+
+      <!-- Members -->
+      <text x="10" y="120" font-family="monospace" font-size="8" fill="#991b1b">- mrl_: MRL (features)</text>
+      <text x="10" y="133" font-family="monospace" font-size="8" fill="#7c3aed">- latest_cloud_: Ptr</text>
+      <text x="10" y="146" font-family="monospace" font-size="8" fill="#7c3aed">- sub_pointcloud</text>
+      <text x="10" y="159" font-family="monospace" font-size="8" fill="#7c3aed">- srv_get_features</text>
+      <text x="10" y="172" font-family="monospace" font-size="8" fill="#7c3aed">- srv_get_status</text>
+    </g>
+
+    <!-- Internal service call (Master to co-located Slave) -->
+    <path d="M 215 110 L 225 110" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrowhead-blue)"/>
+  </g>
+
+  <!-- Robot 2 Container (Slave only) -->
+  <g transform="translate(490, 220)">
+    <rect width="220" height="280" rx="10" fill="none" stroke="#7c3aed" stroke-width="2" stroke-dasharray="8,4"/>
+    <rect x="10" y="-12" width="80" height="24" fill="#f8fafc"/>
+    <text x="50" y="3" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#7c3aed">Robot 2</text>
+
+    <!-- MRLSlave Node -->
+    <g transform="translate(10, 20)" filter="url(#shadow)">
+      <rect width="200" height="180" rx="8" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+      <rect width="200" height="30" rx="8" fill="url(#slaveGrad)"/>
+      <rect x="0" y="22" width="200" height="8" fill="url(#slaveGrad)"/>
+      <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">MRLSlave</text>
+      <text x="100" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Feature Extractor</text>
+
+      <!-- Methods -->
+      <text x="10" y="68" font-family="monospace" font-size="8" fill="#166534">+ handle_get_features()</text>
+      <text x="10" y="81" font-family="monospace" font-size="8" fill="#166534">+ handle_get_status()</text>
+      <text x="10" y="94" font-family="monospace" font-size="8" fill="#166534">+ pointcloud_callback()</text>
+
+      <line x1="8" y1="105" x2="192" y2="105" stroke="#e2e8f0"/>
+
+      <!-- Members -->
+      <text x="10" y="120" font-family="monospace" font-size="8" fill="#991b1b">- mrl_: MRL (features)</text>
+      <text x="10" y="133" font-family="monospace" font-size="8" fill="#7c3aed">- latest_cloud_: Ptr</text>
+      <text x="10" y="146" font-family="monospace" font-size="8" fill="#7c3aed">- sub_pointcloud</text>
+      <text x="10" y="159" font-family="monospace" font-size="8" fill="#7c3aed">- srv_get_features</text>
+      <text x="10" y="172" font-family="monospace" font-size="8" fill="#7c3aed">- srv_get_status</text>
+    </g>
+  </g>
+
+  <!-- Robot N Container (Slave only) -->
+  <g transform="translate(730, 220)">
+    <rect width="200" height="280" rx="10" fill="none" stroke="#7c3aed" stroke-width="2" stroke-dasharray="8,4"/>
+    <rect x="10" y="-12" width="80" height="24" fill="#f8fafc"/>
+    <text x="50" y="3" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#7c3aed">Robot N</text>
+
+    <!-- MRLSlave Node (simplified) -->
+    <g transform="translate(10, 20)" filter="url(#shadow)">
+      <rect width="180" height="100" rx="8" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+      <rect width="180" height="30" rx="8" fill="url(#slaveGrad)"/>
+      <rect x="0" y="22" width="180" height="8" fill="url(#slaveGrad)"/>
+      <text x="90" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">MRLSlave</text>
+      <text x="90" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Feature Extractor</text>
+      <text x="90" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">...</text>
+    </g>
+  </g>
+
+  <!-- Cross-robot service calls (Master to remote Slaves) -->
+  <path d="M 460 330 L 490 330" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead-blue)"/>
+  <path d="M 460 350 L 530 350 L 530 280 L 730 280" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead-blue)"/>
+
+  <text x="500" y="320" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">GetFeatures</text>
+  <text x="500" y="375" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">GetReady</text>
+
+  <!-- MRL Core Class -->
+  <g transform="translate(170, 530)" filter="url(#shadow)">
+    <rect width="280" height="200" rx="8" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect width="280" height="35" rx="8" fill="url(#coreGrad)"/>
+    <rect x="0" y="27" width="280" height="8" fill="url(#coreGrad)"/>
+    <text x="140" y="23" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">MRL</text>
+    <text x="140" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Core Registration Engine</text>
+
+    <!-- Methods -->
+    <text x="15" y="80" font-family="monospace" font-size="9" fill="#991b1b">+ get_fpfh(cloud)</text>
+    <text x="15" y="95" font-family="monospace" font-size="9" fill="#991b1b">+ compute_feature_density(cloud)</text>
+    <text x="15" y="110" font-family="monospace" font-size="9" fill="#991b1b">+ estimate_transformation(src, tgt)</text>
+    <text x="15" y="125" font-family="monospace" font-size="9" fill="#991b1b">+ reset() / reset_solver()</text>
+
+    <line x1="10" y1="135" x2="270" y2="135" stroke="#e2e8f0"/>
+
+    <!-- Members -->
+    <text x="15" y="152" font-family="monospace" font-size="9" fill="#7c3aed">- config_: KISSMatcherConfig</text>
+    <text x="15" y="167" font-family="monospace" font-size="9" fill="#7c3aed">- matcher_: KISSMatcher</text>
+    <text x="15" y="182" font-family="monospace" font-size="9" fill="#7c3aed">- faster_pfh_: FasterPFH</text>
+  </g>
+
+  <!-- External Dependencies -->
+  <g transform="translate(500, 530)" filter="url(#shadow)">
+    <rect width="200" height="100" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="100" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">kiss_matcher</text>
+    <line x1="10" y1="35" x2="190" y2="35" stroke="#f59e0b"/>
+    <text x="15" y="55" font-family="monospace" font-size="9" fill="#78350f">KISSMatcher</text>
+    <text x="15" y="70" font-family="monospace" font-size="9" fill="#78350f">FasterPFH</text>
+    <text x="15" y="85" font-family="monospace" font-size="9" fill="#78350f">RegistrationSolution</text>
+  </g>
+
+  <g transform="translate(500, 650)" filter="url(#shadow)">
+    <rect width="200" height="80" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="100" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">PCL</text>
+    <line x1="10" y1="35" x2="190" y2="35" stroke="#3b82f6"/>
+    <text x="15" y="55" font-family="monospace" font-size="9" fill="#1e3a8a">PointCloud&lt;PointXYZ&gt;</text>
+    <text x="15" y="70" font-family="monospace" font-size="9" fill="#1e3a8a">pcl_conversions</text>
+  </g>
+
+  <!-- Connection Arrows -->
+  <!-- Master to MRL (for transforms only) -->
+  <path d="M 135 500 L 135 515 L 240 515 L 240 530" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="145" y="512" font-family="Arial, sans-serif" font-size="8" fill="#555">transforms</text>
+
+  <!-- Slave to MRL (for features) -->
+  <path d="M 350 500 L 350 515 L 380 515 L 380 530" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="355" y="512" font-family="Arial, sans-serif" font-size="8" fill="#555">features</text>
+
+  <!-- MRL to kiss_matcher -->
+  <path d="M 450 600 L 500 600" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="465" y="593" font-family="Arial, sans-serif" font-size="9" fill="#555">uses</text>
+
+  <!-- MRL to PCL -->
+  <path d="M 450 680 L 500 680" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Feature Density annotation -->
+  <g transform="translate(730, 530)">
+    <rect width="180" height="70" rx="5" fill="white" stroke="#e2e8f0" filter="url(#shadow)"/>
+    <text x="90" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569">Feature Density Metric</text>
+    <text x="90" y="42" text-anchor="middle" font-family="monospace" font-size="11" fill="#dc2626">φ = N_f / N_p</text>
+    <text x="90" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Environment characterization</text>
+  </g>
+
+  <!-- ROS2 Services Box -->
+  <g transform="translate(730, 620)">
+    <rect width="180" height="110" rx="5" fill="#f0fdf4" stroke="#22c55e" filter="url(#shadow)"/>
+    <text x="90" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#166534">ROS2 Services</text>
+    <line x1="10" y1="28" x2="170" y2="28" stroke="#22c55e"/>
+    <text x="15" y="48" font-family="monospace" font-size="9" fill="#14532d">srv/ExecuteMRL</text>
+    <text x="15" y="63" font-family="monospace" font-size="9" fill="#14532d">srv/GetFeatures</text>
+    <text x="15" y="78" font-family="monospace" font-size="9" fill="#14532d">srv/GetReady</text>
+    <text x="15" y="98" font-family="monospace" font-size="9" fill="#14532d">sensor_msgs/PointCloud2</text>
+  </g>
+
+  <!-- Workflow annotation -->
+  <g transform="translate(20, 750)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="10" fill="#64748b">
+      <tspan font-weight="bold">Workflow:</tspan>
+      <tspan dx="5">ExecuteMRL → Discover Slaves → Check Ready → Collect Features (all slaves) → Compute Pairwise Transforms</tspan>
+    </text>
+  </g>
+</svg>

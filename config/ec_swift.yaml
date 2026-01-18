@@ -1,0 +1,19 @@
+# MRL Configuration for EC Swift Robot
+# Topic mappings for multi-robot localization
+
+mrl_slave:
+  ros__parameters:
+    # Robot identification
+    robot_type: "ec_swift"
+
+    # Point cloud topic for feature extraction
+    # Using front LiDAR as primary sensor
+    pointcloud_topic: "/ec_swift/front_lidar/points_raw"
+
+    # Alternative point cloud sources (for reference)
+    # back_lidar_topic: "/ec_swift/back_lidar/points_raw"
+
+    # Sensor type: 0 = LiDAR, 1 = RGB-D, 2 = Stereo
+    is_repetitive: False
+    sensor_type: 0
+    acu_time: 2.0
