@@ -18,11 +18,17 @@ def generate_launch_description():
         description='ROS namespace for the slave node'
     )
 
-    # Build path to config file based on robot_type
-    config_file = PathJoinSubstitution([
+    # Config files
+    robot_config = PathJoinSubstitution([
         FindPackageShare('mrl'),
         'config',
         [LaunchConfiguration('robot_type'), '.yaml']
+    ])
+
+    mrl_config = PathJoinSubstitution([
+        FindPackageShare('mrl'),
+        'config',
+        'mrl_config.yaml'
     ])
 
     # MRL Slave node
@@ -31,7 +37,7 @@ def generate_launch_description():
         executable='mrl_slave',
         namespace=LaunchConfiguration('namespace'),
         name='mrl_slave',
-        parameters=[config_file],
+        parameters=[mrl_config, robot_config],
         output='screen'
     )
 

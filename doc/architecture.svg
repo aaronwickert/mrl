@@ -169,11 +169,17 @@
   </g>
 
   <!-- Cross-robot service calls (Master to remote Slaves) -->
-  <path d="M 460 330 L 490 330" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead-blue)"/>
-  <path d="M 460 350 L 530 350 L 530 280 L 730 280" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead-blue)"/>
+  <!-- Master to Robot 2 (GetFeatures) - straight horizontal -->
+  <path d="M 460 310 L 490 310" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead-blue)"/>
+  <text x="462" y="302" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">GetFeatures</text>
 
-  <text x="500" y="320" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">GetFeatures</text>
-  <text x="500" y="375" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">GetReady</text>
+  <!-- Master to Robot 2 (GetReady) - below GetFeatures -->
+  <path d="M 460 340 L 490 340" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead-blue)"/>
+  <text x="462" y="355" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">GetReady</text>
+
+  <!-- Master to Robot N (GetFeatures) - goes above boxes -->
+  <path d="M 235 240 L 235 215 L 830 215 L 830 240" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead-blue)"/>
+  <text x="520" y="210" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">GetFeatures / GetReady</text>
 
   <!-- MRL Core Class -->
   <g transform="translate(170, 530)" filter="url(#shadow)">
@@ -216,13 +222,13 @@
   </g>
 
   <!-- Connection Arrows -->
-  <!-- Master to MRL (for transforms only) -->
-  <path d="M 135 500 L 135 515 L 240 515 L 240 530" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="145" y="512" font-family="Arial, sans-serif" font-size="8" fill="#555">transforms</text>
+  <!-- Master to MRL (for transforms only) - left side path -->
+  <path d="M 135 500 L 135 520 L 170 520 L 170 530" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="100" y="517" font-family="Arial, sans-serif" font-size="8" fill="#555">transforms</text>
 
-  <!-- Slave to MRL (for features) -->
-  <path d="M 350 500 L 350 515 L 380 515 L 380 530" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="355" y="512" font-family="Arial, sans-serif" font-size="8" fill="#555">features</text>
+  <!-- Slave to MRL (for features) - right side path, different vertical level -->
+  <path d="M 350 500 L 350 508 L 430 508 L 430 530" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="360" y="505" font-family="Arial, sans-serif" font-size="8" fill="#555">features</text>
 
   <!-- MRL to kiss_matcher -->
   <path d="M 450 600 L 500 600" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)"/>

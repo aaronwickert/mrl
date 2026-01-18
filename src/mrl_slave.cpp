@@ -12,6 +12,7 @@
 
 MRLSlave::MRLSlave() : Node("mrl_slave") {
     latest_cloud_ = pcl::PointCloud<pcl::PointXYZ>::Ptr(new pcl::PointCloud<pcl::PointXYZ>());
+    accumulated_cloud_ = pcl::PointCloud<pcl::PointXYZ>::Ptr(new pcl::PointCloud<pcl::PointXYZ>());
 
     declare_parameters();
     get_parameters();
@@ -19,8 +20,17 @@ MRLSlave::MRLSlave() : Node("mrl_slave") {
     init_subscribers();
     init_services();
 
-    // Initialize MRL with default configuration
+    // Initialize MRL with KISSMatcher parameters (feature extraction)
     kiss_matcher::KISSMatcherConfig config;
+    config.use_voxel_sampling_ = this->get_parameter("kissmatcher.use_voxel_sampling").as_bool();
+    config.voxel_size_ = this->get_parameter("kissmatcher.voxel_size").as_double();
+    config.normal_radius_ = this->get_parameter("kissmatcher.normal_radius").as_double();
+    config.fpfh_radius_ = this->get_parameter("kissmatcher.fpfh_radius").as_double();
+    config.thr_linearity_ = this->get_parameter("kissmatcher.thr_linearity").as_double();
+
+    RCLCPP_INFO(this->get_logger(), "KISSMatcher config: voxel=%.2f, normal_r=%.2f, fpfh_r=%.2f",
+        config.voxel_size_, config.normal_radius_, config.fpfh_radius_);
+
     mrl_ = std::make_unique<MRL>(config);
 
     mrl_setup();
@@ -32,9 +42,19 @@ MRLSlave::~MRLSlave() {
 void MRLSlave::declare_parameters() {
     RCLCPP_INFO(this->get_logger(), "Declaring ros2 parameters.");
 
+    // Robot/sensor parameters
     this->declare_parameter("pointcloud_topic", "/pointcloud");
     this->declare_parameter("robot_type", "generic");
-    this->declare_parameter("sensor_type", 0);  // 0=LiDAR, 1=RGB-D, 2=Stereo
+    this->declare_parameter("sensor_type", 0);
+    this->declare_parameter("is_repetitive", true);
+    this->declare_parameter("acu_time", 2.0);
+
+    // KISSMatcher parameters (feature extraction)
+    this->declare_parameter("kissmatcher.use_voxel_sampling", true);
+    this->declare_parameter("kissmatcher.voxel_size", 0.3);
+    this->declare_parameter("kissmatcher.normal_radius", 0.9);
+    this->declare_parameter("kissmatcher.fpfh_radius", 1.5);
+    this->declare_parameter("kissmatcher.thr_linearity", 1.0);
 
     RCLCPP_INFO(this->get_logger(), "Finished declaring ros2 parameters.");
 }
@@ -45,10 +65,16 @@ void MRLSlave::get_parameters() {
     pointcloud_topic_ = this->get_parameter("pointcloud_topic").as_string();
     robot_type_ = this->get_parameter("robot_type").as_string();
     sensor_type_ = this->get_parameter("sensor_type").as_int();
+    is_repetitive_ = this->get_parameter("is_repetitive").as_bool();
+    acu_time_ = this->get_parameter("acu_time").as_double();
 
     RCLCPP_INFO(this->get_logger(), "Robot type: %s", robot_type_.c_str());
     RCLCPP_INFO(this->get_logger(), "Point cloud topic: %s", pointcloud_topic_.c_str());
     RCLCPP_INFO(this->get_logger(), "Sensor type: %d", sensor_type_);
+    RCLCPP_INFO(this->get_logger(), "Is repetitive: %s", is_repetitive_ ? "true" : "false");
+    if (!is_repetitive_) {
+        RCLCPP_INFO(this->get_logger(), "Accumulation time: %.2f s", acu_time_);
+    }
     RCLCPP_INFO(this->get_logger(), "Finished getting ros2 parameters.");
 }
 
@@ -95,7 +121,30 @@ void MRLSlave::pointcloud_callback(const sensor_msgs::msg::PointCloud2::SharedPt
 
     // Convert ROS2 PointCloud2 message to PCL PointCloud format
     pcl::fromROSMsg(*msg, *latest_cloud_);
-    has_cloud_ = true;
+
+    if (is_repetitive_) {
+        // Repetitive mode: just use latest cloud
+        has_cloud_ = true;
+    } else {
+        // Accumulation mode: accumulate clouds over acu_time_ seconds
+        if (!is_accumulating_) {
+            // Start new accumulation
+            accumulated_cloud_->clear();
+            accumulation_start_time_ = this->now();
+            is_accumulating_ = true;
+        }
+
+        // Add current cloud to accumulated
+        *accumulated_cloud_ += *latest_cloud_;
+
+        // Check if accumulation time has passed
+        double elapsed = (this->now() - accumulation_start_time_).seconds();
+        if (elapsed >= acu_time_) {
+            has_cloud_ = true;
+            RCLCPP_INFO(this->get_logger(), "Accumulated %zu points over %.2f s",
+                accumulated_cloud_->size(), elapsed);
+        }
+    }
 
     RCLCPP_DEBUG(this->get_logger(), "Received pointcloud with %zu points", latest_cloud_->size());
 }
@@ -107,8 +156,16 @@ void MRLSlave::handle_get_features(const std::shared_ptr<mrl::srv::GetFeatures::
 
     std::lock_guard<std::mutex> lock(cloud_mutex_);
 
+    // Select which cloud to use based on mode
+    pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_to_use;
+    if (is_repetitive_) {
+        cloud_to_use = latest_cloud_;
+    } else {
+        cloud_to_use = accumulated_cloud_;
+    }
+
     // Check if point cloud data is available
-    if (!has_cloud_ || latest_cloud_->empty()) {
+    if (!has_cloud_ || cloud_to_use->empty()) {
         RCLCPP_WARN(this->get_logger(), "No point cloud available for feature extraction.");
         response->success = false;
         return;
@@ -116,8 +173,10 @@ void MRLSlave::handle_get_features(const std::shared_ptr<mrl::srv::GetFeatures::
 
     state_ = MRLSlaveState::PROCESSING;
 
+    RCLCPP_INFO(this->get_logger(), "Processing cloud with %zu points", cloud_to_use->size());
+
     // Extract FPFH features using MRL
-    auto [keypoints, descriptors] = mrl_->get_fpfh(latest_cloud_);
+    auto [keypoints, descriptors] = mrl_->get_fpfh(cloud_to_use);
 
     if (keypoints.empty()) {
         RCLCPP_WARN(this->get_logger(), "Feature extraction returned no keypoints.");
@@ -149,9 +208,16 @@ void MRLSlave::handle_get_features(const std::shared_ptr<mrl::srv::GetFeatures::
         response->points_xf.push_back(feature_array);
     }
 
-    response->sensor_type = 0;  // LiDAR sensor type
+    response->sensor_type = sensor_type_;
     response->success = true;
     state_ = MRLSlaveState::READY;
+
+    // Reset accumulation for next request
+    if (!is_repetitive_) {
+        accumulated_cloud_->clear();
+        is_accumulating_ = false;
+        has_cloud_ = false;
+    }
 
     RCLCPP_INFO(this->get_logger(), "GetFeatures request completed successfully.");
 }

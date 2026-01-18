@@ -31,8 +31,21 @@ MRLMaster::MRLMaster() : Node("mrl_master") {
 
     mrl_setup();
 
-    // Initialize MRL only for transformation computation (not feature extraction)
+    // Initialize MRL with registration parameters
+    float voxel_size = this->get_parameter("kissmatcher.voxel_size").as_double();
+    float robin_gain = this->get_parameter("kissmatcher.robin_noise_bound_gain").as_double();
+    float solver_gain = this->get_parameter("kissmatcher.solver_noise_bound_gain").as_double();
+
     kiss_matcher::KISSMatcherConfig config;
+    config.voxel_size_ = voxel_size;
+    config.robin_noise_bound_gain_ = robin_gain;
+    config.robin_noise_bound_ = voxel_size * robin_gain;
+    config.solver_noise_bound_gain_ = solver_gain;
+    config.solver_noise_bound_ = voxel_size * solver_gain;
+
+    RCLCPP_INFO(this->get_logger(), "Registration config: voxel=%.2f, robin_bound=%.2f, solver_bound=%.2f",
+        config.voxel_size_, config.robin_noise_bound_, config.solver_noise_bound_);
+
     mrl_ = std::make_unique<MRL>(config);
 
     state_ = MRLMasterState::READY;
@@ -44,6 +57,12 @@ MRLMaster::~MRLMaster() {
 
 void MRLMaster::declare_parameters() {
     RCLCPP_INFO(this->get_logger(), "Declaring ros2 parameters.");
+
+    // KISSMatcher registration parameters
+    this->declare_parameter("kissmatcher.voxel_size", 0.3);
+    this->declare_parameter("kissmatcher.robin_noise_bound_gain", 1.0);
+    this->declare_parameter("kissmatcher.solver_noise_bound_gain", 0.75);
+
     RCLCPP_INFO(this->get_logger(), "Finished declaring ros2 parameters.");
 }
 

@@ -258,5 +258,11 @@ private:
     /** @brief Sensor type: 0=LiDAR, 1=RGB-D, 2=Stereo */
     int sensor_type_;
 
+    /** @brief If true, use latest cloud; if false, accumulate over time */
+    bool is_repetitive_;
+
+    /** @brief Accumulation time in seconds (when is_repetitive=false) */
+    double acu_time_;
+
     /// @}
 };

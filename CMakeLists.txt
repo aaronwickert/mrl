@@ -19,6 +19,7 @@ find_package(std_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(hector_multi_robot_msgs REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(PCL REQUIRED COMPONENTS
   common
@@ -42,7 +43,7 @@ include_directories(include
   ${PCL_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIRS})
 
-set(DEPS rclcpp rosidl_typesupport_cpp Eigen3 PCL robin kiss_matcher sensor_msgs std_msgs pcl_conversions geometry_msgs tf2 tf2_ros tf2_geometry_msgs)
+set(DEPS rclcpp rosidl_typesupport_cpp Eigen3 PCL robin kiss_matcher sensor_msgs std_msgs pcl_conversions geometry_msgs tf2 tf2_ros tf2_geometry_msgs hector_multi_robot_msgs)
 
 add_executable(${PROJECT_NAME}_master src/mrl.cpp src/mrl_master.cpp)
 ament_target_dependencies(${PROJECT_NAME}_master ${DEPS})
@@ -53,7 +54,6 @@ ament_target_dependencies(${PROJECT_NAME}_slave ${DEPS})
 target_link_libraries(${PROJECT_NAME}_slave kiss_matcher::kiss_matcher_core)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/SlaveAnnouncement.msg"
   "srv/GetFeatures.srv"
   "srv/ExecuteMRL.srv"
   "srv/GetReady.srv"
