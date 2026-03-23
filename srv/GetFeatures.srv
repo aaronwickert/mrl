@@ -1,6 +1,0 @@
-builtin_interfaces/Time stamp
----
-bool success
-int8 sensor_type 
-geometry_msgs/Point[] points_3f
-std_msgs/Float64MultiArray[] points_xf
