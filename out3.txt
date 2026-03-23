@@ -1,0 +1,1295 @@
+[INFO] [launch]: All log files can be found below /home/hector/.ros/log/2026-02-12-23-30-14-915838-home-3888173
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gz-1]: process started with pid [3888176]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="wall_north"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L90]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="wall_south"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L108]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="wall_east"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L126]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="wall_west"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L144]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="partition_a"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L163]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="partition_b"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L181]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="pillar_1"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L200]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="pillar_2"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L218]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="pillar_3"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L236]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="pillar_4"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L254]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="large_table"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L273]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="bookshelf_1"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L291]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="bookshelf_2"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L309]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="barrel_1"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L328]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="barrel_2"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L346]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="crate_1"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L365]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="crate_2"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L383]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="crate_stack"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L401]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [Thu Feb 12 23:30:15 2026]: Logging configured: level=info, file=(disabled), stdout=true
+[gz-1] [23:30:15][    10 us][info]: RGL Version 0.20.0 branch=develop commitSHA1=d1ff3b6cf618518d60a4cc6acb9231e3aa9e9e28
+[gz-1] [23:30:15][ 28945 us][info]: Running on GPU: NVIDIA GeForce RTX 3070
+[gz-1] [23:30:15][     7 us][info]: Built against OptiX SDK version: 7.2.0
+[gz-1] [23:30:15][     0 us][info]: Built against OptiX ABI version: 41
+[gz-1] [23:30:15][     0 us][info]: Built against CUDA Toolkit version: 11.7
+[gz-1] [23:30:15][     3 us][info]: Installed CUDA runtime version: 11.7
+[gz-1] [23:30:15][     0 us][info]: Installed CUDA driver version: 12.2
+[gz-1] [23:30:15][  4276 us][info]: Installed NVidia kernel driver version: 535.230.02
+[INFO] [robot_state_publisher-2]: process started with pid [3888189]
+[INFO] [create-3]: process started with pid [3888190]
+[INFO] [static_transform_publisher-4]: process started with pid [3888191]
+[INFO] [static_transform_publisher-5]: process started with pid [3888192]
+[INFO] [static_transform_publisher-6]: process started with pid [3888193]
+[INFO] [prefix_tf_republisher-7]: process started with pid [3888194]
+[INFO] [prefix_tf_republisher-8]: process started with pid [3888195]
+[INFO] [parameter_bridge-9]: process started with pid [3888196]
+[prefix_tf_republisher-7] [0m[INFO] [1770939019.277613758] [robot_0.tf_republisher]: Republishing tf frame ids with prefix 'robot_0'[0m
+[static_transform_publisher-5] [0m[INFO] [1770939019.277810311] [robot_0.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-5] from 'world' to 'map'[0m
+[robot_state_publisher-2] [0m[INFO] [1770939019.279597799] [robot_0.robot_state_publisher]: Robot initialized[0m
+[static_transform_publisher-4] [0m[INFO] [1770939019.284559932] [robot_0.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('6.000000', '0.000000', '0.150000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '1.000000', '0.000001')
+[static_transform_publisher-4] from 'odom' to 'base_link'[0m
+[static_transform_publisher-6] [0m[INFO] [1770939019.284922609] [robot_0.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-6] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-6] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-6] from 'map' to 'odom'[0m
+[prefix_tf_republisher-8] [0m[INFO] [1770939019.290398761] [robot_0.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_0'[0m
+[create-3] [0m[INFO] [1770939019.290556583] [robot_0.spawn_robot]: Requesting list of world names.[0m
+[create-3] [0m[INFO] [1770939019.493891999] [robot_0.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-3] [0m[INFO] [1770939019.497705220] [robot_0.spawn_robot]: Entity creation successful.[0m
+[INFO] [create-3]: process has finished cleanly [pid 3888190]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-9] [0m[INFO] [1770939020.303355894] [robot_0.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_0/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-9] [0m[INFO] [1770939020.309248282] [robot_0.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_0/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-10]: process started with pid [3888371]
+[INFO] [create-11]: process started with pid [3888372]
+[INFO] [static_transform_publisher-12]: process started with pid [3888373]
+[INFO] [static_transform_publisher-13]: process started with pid [3888374]
+[INFO] [static_transform_publisher-14]: process started with pid [3888375]
+[INFO] [prefix_tf_republisher-15]: process started with pid [3888376]
+[INFO] [prefix_tf_republisher-16]: process started with pid [3888377]
+[INFO] [parameter_bridge-17]: process started with pid [3888378]
+[prefix_tf_republisher-15] [0m[INFO] [1770939020.795481278] [robot_1.tf_republisher]: Republishing tf frame ids with prefix 'robot_1'[0m
+[static_transform_publisher-13] [0m[INFO] [1770939020.798567049] [robot_1.world_static_tf]: Spinning until stopped - publishing transform
+[prefix_tf_republisher-16] [0m[INFO] [1770939020.798748920] [robot_1.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_1'[0m
+[static_transform_publisher-14] [0m[INFO] [1770939020.798919421] [robot_1.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-14] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-14] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-14] from 'map' to 'odom'[0m
+[static_transform_publisher-13] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-13] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-13] from 'world' to 'map'[0m
+[static_transform_publisher-12] [0m[INFO] [1770939020.801230195] [robot_1.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-12] translation: ('4.854000', '3.527000', '0.150000')
+[static_transform_publisher-12] rotation: ('0.000000', '0.000000', '-0.951014', '0.309147')
+[static_transform_publisher-12] from 'odom' to 'base_link'[0m
+[create-11] [0m[INFO] [1770939020.816624758] [robot_1.spawn_robot]: Requesting list of world names.[0m
+[robot_state_publisher-10] [0m[INFO] [1770939020.820156833] [robot_1.robot_state_publisher]: Robot initialized[0m
+[create-11] [0m[INFO] [1770939021.020691876] [robot_1.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-11] [0m[INFO] [1770939021.024005966] [robot_1.spawn_robot]: Entity creation successful.[0m
+[INFO] [create-11]: process has finished cleanly [pid 3888372]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-17] [0m[INFO] [1770939021.832467959] [robot_1.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_1/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-17] [0m[INFO] [1770939021.833941242] [robot_1.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_1/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-18]: process started with pid [3888609]
+[INFO] [create-19]: process started with pid [3888610]
+[INFO] [static_transform_publisher-20]: process started with pid [3888611]
+[INFO] [static_transform_publisher-21]: process started with pid [3888612]
+[INFO] [static_transform_publisher-22]: process started with pid [3888613]
+[INFO] [prefix_tf_republisher-23]: process started with pid [3888614]
+[INFO] [prefix_tf_republisher-24]: process started with pid [3888615]
+[INFO] [parameter_bridge-25]: process started with pid [3888616]
+[static_transform_publisher-22] [0m[INFO] [1770939022.276491439] [robot_2.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-22] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-22] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-22] from 'map' to 'odom'[0m
+[static_transform_publisher-20] [0m[INFO] [1770939022.280241429] [robot_2.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-20] translation: ('1.854000', '5.706000', '0.150000')
+[static_transform_publisher-20] rotation: ('0.000000', '0.000000', '-0.809030', '0.587767')
+[static_transform_publisher-20] from 'odom' to 'base_link'[0m
+[prefix_tf_republisher-23] [0m[INFO] [1770939022.282508292] [robot_2.tf_republisher]: Republishing tf frame ids with prefix 'robot_2'[0m
+[prefix_tf_republisher-24] [0m[INFO] [1770939022.308253143] [robot_2.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_2'[0m
+[create-19] [0m[INFO] [1770939022.315506789] [robot_2.spawn_robot]: Requesting list of world names.[0m
+[robot_state_publisher-18] [0m[INFO] [1770939022.315669611] [robot_2.robot_state_publisher]: Robot initialized[0m
+[static_transform_publisher-21] [0m[INFO] [1770939022.323951636] [robot_2.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-21] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-21] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-21] from 'world' to 'map'[0m
+[create-19] [0m[INFO] [1770939022.517778466] [robot_2.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-19] [0m[INFO] [1770939022.519456485] [robot_2.spawn_robot]: Entity creation successful.[0m
+[INFO] [create-19]: process has finished cleanly [pid 3888610]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-25] [0m[INFO] [1770939023.371431743] [robot_2.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_2/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-25] [0m[INFO] [1770939023.373074695] [robot_2.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_2/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-26]: process started with pid [3888871]
+[INFO] [create-27]: process started with pid [3888872]
+[INFO] [static_transform_publisher-28]: process started with pid [3888873]
+[INFO] [static_transform_publisher-29]: process started with pid [3888874]
+[INFO] [static_transform_publisher-30]: process started with pid [3888875]
+[INFO] [prefix_tf_republisher-31]: process started with pid [3888876]
+[INFO] [prefix_tf_republisher-32]: process started with pid [3888877]
+[INFO] [parameter_bridge-33]: process started with pid [3888878]
+[robot_state_publisher-26] [0m[INFO] [1770939023.821037578] [robot_3.robot_state_publisher]: Robot initialized[0m
+[static_transform_publisher-30] [0m[INFO] [1770939023.834761078] [robot_3.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-30] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-30] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-30] from 'map' to 'odom'[0m
+[prefix_tf_republisher-31] [0m[INFO] [1770939023.835974827] [robot_3.tf_republisher]: Republishing tf frame ids with prefix 'robot_3'[0m
+[static_transform_publisher-29] [0m[INFO] [1770939023.849918080] [robot_3.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-29] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-29] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-29] from 'world' to 'map'[0m
+[static_transform_publisher-28] [0m[INFO] [1770939023.870672262] [robot_3.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-28] translation: ('-1.854000', '5.706000', '0.150000')
+[static_transform_publisher-28] rotation: ('0.000000', '0.000000', '-0.587932', '0.808910')
+[static_transform_publisher-28] from 'odom' to 'base_link'[0m
+[prefix_tf_republisher-32] [0m[INFO] [1770939023.874561438] [robot_3.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_3'[0m
+[create-27] [0m[INFO] [1770939023.908157890] [robot_3.spawn_robot]: Requesting list of world names.[0m
+[create-27] [0m[INFO] [1770939024.113845063] [robot_3.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-27] [0m[INFO] [1770939024.117942166] [robot_3.spawn_robot]: Entity creation successful.[0m
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[INFO] [create-27]: process has finished cleanly [pid 3888872]
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-33] [0m[INFO] [1770939024.914952244] [robot_3.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_3/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-33] [0m[INFO] [1770939024.920701635] [robot_3.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_3/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-34]: process started with pid [3889162]
+[INFO] [create-35]: process started with pid [3889163]
+[INFO] [static_transform_publisher-36]: process started with pid [3889164]
+[INFO] [static_transform_publisher-37]: process started with pid [3889165]
+[INFO] [static_transform_publisher-38]: process started with pid [3889166]
+[INFO] [prefix_tf_republisher-39]: process started with pid [3889167]
+[INFO] [prefix_tf_republisher-40]: process started with pid [3889168]
+[INFO] [parameter_bridge-41]: process started with pid [3889169]
+[prefix_tf_republisher-40] [0m[INFO] [1770939025.414267301] [robot_4.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_4'[0m
+[parameter_bridge-41] [2m2026-02-12T23:30:25.445874Z[0m [31mERROR[0m rx-2 ThreadId(09) [2mzenoh::net::routing::dispatcher::queries[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4} Undeclare unknown queryable 817 (@/4bd1f76f4ac2131c1c2059fde054f1a9/peer/**)
+[create-35] [0m[INFO] [1770939025.446253357] [robot_4.spawn_robot]: Requesting list of world names.[0m
+[parameter_bridge-41] [2m2026-02-12T23:30:25.446453Z[0m [31mERROR[0m rx-2 ThreadId(09) [2mzenoh::net::routing::dispatcher::queries[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4} Undeclare unknown queryable 768 (@/1b8ef25a9da3e1ef3034a350c45c4d8d/peer/**)
+[parameter_bridge-41] [2m2026-02-12T23:30:25.446493Z[0m [31mERROR[0m rx-2 ThreadId(09) [2mzenoh::net::routing::dispatcher::queries[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4} Undeclare unknown queryable 820 (@/ad5062dac318aeeed9963c99166d54a6/peer/**)
+[static_transform_publisher-37] [0m[INFO] [1770939025.455501394] [robot_4.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-37] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-37] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-37] from 'world' to 'map'[0m
+[robot_state_publisher-34] [0m[INFO] [1770939025.469823384] [robot_4.robot_state_publisher]: Robot initialized[0m
+[static_transform_publisher-38] [0m[INFO] [1770939025.514799494] [robot_4.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-38] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-38] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-38] from 'map' to 'odom'[0m
+[static_transform_publisher-36] [0m[INFO] [1770939025.520333635] [robot_4.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-36] translation: ('-4.854000', '3.527000', '0.150000')
+[static_transform_publisher-36] rotation: ('0.000000', '0.000000', '-0.308866', '0.951106')
+[static_transform_publisher-36] from 'odom' to 'base_link'[0m
+[prefix_tf_republisher-39] [0m[INFO] [1770939025.547031632] [robot_4.tf_republisher]: Republishing tf frame ids with prefix 'robot_4'[0m
+[create-35] [0m[INFO] [1770939025.653827408] [robot_4.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-35] [0m[INFO] [1770939025.660017639] [robot_4.spawn_robot]: Entity creation successful.[0m
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[INFO] [create-35]: process has finished cleanly [pid 3889163]
+[parameter_bridge-41] [0m[INFO] [1770939026.475897382] [robot_4.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_4/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-41] [0m[INFO] [1770939026.483046897] [robot_4.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_4/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-42]: process started with pid [3889473]
+[INFO] [create-43]: process started with pid [3889474]
+[INFO] [static_transform_publisher-44]: process started with pid [3889475]
+[INFO] [static_transform_publisher-45]: process started with pid [3889476]
+[INFO] [static_transform_publisher-46]: process started with pid [3889477]
+[INFO] [prefix_tf_republisher-47]: process started with pid [3889478]
+[INFO] [prefix_tf_republisher-48]: process started with pid [3889479]
+[INFO] [parameter_bridge-49]: process started with pid [3889480]
+[static_transform_publisher-45] [0m[INFO] [1770939026.983264913] [robot_5.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-45] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-45] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-45] from 'world' to 'map'[0m
+[robot_state_publisher-42] [0m[INFO] [1770939026.992850482] [robot_5.robot_state_publisher]: Robot initialized[0m
+[prefix_tf_republisher-47] [0m[INFO] [1770939027.125146948] [robot_5.tf_republisher]: Republishing tf frame ids with prefix 'robot_5'[0m
+[prefix_tf_republisher-48] [0m[INFO] [1770939027.132142280] [robot_5.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_5'[0m
+[static_transform_publisher-46] [0m[INFO] [1770939027.195551416] [robot_5.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-46] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-46] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-46] from 'map' to 'odom'[0m
+[create-43] [0m[INFO] [1770939027.336708325] [robot_5.spawn_robot]: Requesting list of world names.[0m
+[static_transform_publisher-44] [0m[INFO] [1770939027.409118916] [robot_5.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-44] translation: ('-6.000000', '0.000000', '0.150000')
+[static_transform_publisher-44] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-44] from 'odom' to 'base_link'[0m
+[create-43] [0m[INFO] [1770939027.543230563] [robot_5.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-43] [0m[INFO] [1770939027.548098031] [robot_5.spawn_robot]: Entity creation successful.[0m
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[INFO] [create-43]: process has finished cleanly [pid 3889474]
+[parameter_bridge-49] [0m[INFO] [1770939028.130733793] [robot_5.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_5/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-49] [0m[INFO] [1770939028.138056290] [robot_5.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_5/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-50]: process started with pid [3889825]
+[INFO] [create-51]: process started with pid [3889826]
+[INFO] [static_transform_publisher-52]: process started with pid [3889827]
+[INFO] [static_transform_publisher-53]: process started with pid [3889828]
+[INFO] [static_transform_publisher-54]: process started with pid [3889829]
+[INFO] [prefix_tf_republisher-55]: process started with pid [3889830]
+[INFO] [prefix_tf_republisher-56]: process started with pid [3889831]
+[INFO] [parameter_bridge-57]: process started with pid [3889832]
+[parameter_bridge-57] [2m2026-02-12T23:30:28.824506Z[0m [33m WARN[0m ThreadId(23) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[static_transform_publisher-53] [0m[INFO] [1770939028.961799180] [robot_6.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-53] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-53] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-53] from 'world' to 'map'[0m
+[static_transform_publisher-52] [0m[INFO] [1770939028.978411157] [robot_6.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-52] translation: ('-4.854000', '-3.527000', '0.150000')
+[static_transform_publisher-52] rotation: ('0.000000', '0.000000', '0.308866', '0.951106')
+[static_transform_publisher-52] from 'odom' to 'base_link'[0m
+[prefix_tf_republisher-55] [0m[INFO] [1770939029.002345863] [robot_6.tf_republisher]: Republishing tf frame ids with prefix 'robot_6'[0m
+[create-51] [0m[INFO] [1770939029.027547550] [robot_6.spawn_robot]: Requesting list of world names.[0m
+[static_transform_publisher-54] [0m[INFO] [1770939029.104512117] [robot_6.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-54] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-54] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-54] from 'map' to 'odom'[0m
+[prefix_tf_republisher-56] [0m[INFO] [1770939029.145193714] [robot_6.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_6'[0m
+[create-51] [0m[INFO] [1770939029.233879339] [robot_6.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[robot_state_publisher-50] [0m[INFO] [1770939029.237470377] [robot_6.robot_state_publisher]: Robot initialized[0m
+[create-51] [0m[INFO] [1770939029.240536858] [robot_6.spawn_robot]: Entity creation successful.[0m
+[INFO] [create-51]: process has finished cleanly [pid 3889826]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[INFO] [robot_state_publisher-58]: process started with pid [3890252]
+[INFO] [create-59]: process started with pid [3890253]
+[INFO] [static_transform_publisher-60]: process started with pid [3890254]
+[INFO] [static_transform_publisher-61]: process started with pid [3890255]
+[INFO] [static_transform_publisher-62]: process started with pid [3890256]
+[INFO] [prefix_tf_republisher-63]: process started with pid [3890257]
+[INFO] [prefix_tf_republisher-64]: process started with pid [3890258]
+[INFO] [parameter_bridge-65]: process started with pid [3890259]
+[create-59] [2m2026-02-12T23:30:29.912966Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer 8b593ce48eee07a889fbe23ea8793723: [tcp/127.0.0.1:43279]
+[parameter_bridge-57] [0m[INFO] [1770939029.990800916] [robot_6.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_6/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-65] [2m2026-02-12T23:30:30.140751Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer 8b593ce48eee07a889fbe23ea8793723: [tcp/127.0.0.1:43279]
+[parameter_bridge-57] [0m[INFO] [1770939030.191367403] [robot_6.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_6/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[robot_state_publisher-58] [2m2026-02-12T23:30:30.376152Z[0m [33m WARN[0m ThreadId(12) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[create-59] [2m2026-02-12T23:30:30.382472Z[0m [33m WARN[0m ThreadId(16) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[parameter_bridge-65] [2m2026-02-12T23:30:30.455219Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[static_transform_publisher-62] [0m[INFO] [1770939030.609939609] [robot_7.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-62] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-62] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-62] from 'map' to 'odom'[0m
+[robot_state_publisher-58] [0m[INFO] [1770939031.045719447] [robot_7.robot_state_publisher]: Robot initialized[0m
+[static_transform_publisher-61] [0m[INFO] [1770939031.223607490] [robot_7.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-61] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-61] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-61] from 'world' to 'map'[0m
+[create-59] [0m[INFO] [1770939031.365640371] [robot_7.spawn_robot]: Requesting list of world names.[0m
+[INFO] [robot_state_publisher-66]: process started with pid [3890626]
+[INFO] [create-67]: process started with pid [3890627]
+[INFO] [static_transform_publisher-68]: process started with pid [3890628]
+[INFO] [static_transform_publisher-69]: process started with pid [3890652]
+[INFO] [static_transform_publisher-70]: process started with pid [3890654]
+[INFO] [prefix_tf_republisher-71]: process started with pid [3890655]
+[INFO] [prefix_tf_republisher-72]: process started with pid [3890656]
+[INFO] [parameter_bridge-73]: process started with pid [3890657]
+[prefix_tf_republisher-63] [0m[INFO] [1770939031.530954866] [robot_7.tf_republisher]: Republishing tf frame ids with prefix 'robot_7'[0m
+[create-59] [0m[INFO] [1770939031.601416064] [robot_7.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-59] [0m[INFO] [1770939031.620603304] [robot_7.spawn_robot]: Entity creation successful.[0m
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[INFO] [create-59]: process has finished cleanly [pid 3890253]
+[create-67] [2m2026-02-12T23:30:31.928377Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[robot_state_publisher-66] [2m2026-02-12T23:30:31.930535Z[0m [33m WARN[0m ThreadId(16) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[parameter_bridge-65] [0m[INFO] [1770939031.966017666] [robot_7.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_7/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-73] [2m2026-02-12T23:30:31.980955Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-65] [0m[INFO] [1770939032.042091175] [robot_7.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_7/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[static_transform_publisher-68] [0m[INFO] [1770939032.608817109] [robot_8.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-68] translation: ('1.854000', '-5.706000', '0.150000')
+[static_transform_publisher-68] rotation: ('0.000000', '0.000000', '0.809030', '0.587767')
+[static_transform_publisher-68] from 'odom' to 'base_link'[0m
+[prefix_tf_republisher-64] [0m[INFO] [1770939032.923281337] [robot_7.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_7'[0m
+[INFO] [robot_state_publisher-74]: process started with pid [3891058]
+[INFO] [create-75]: process started with pid [3891067]
+[INFO] [static_transform_publisher-76]: process started with pid [3891069]
+[INFO] [static_transform_publisher-77]: process started with pid [3891073]
+[INFO] [static_transform_publisher-78]: process started with pid [3891076]
+[INFO] [prefix_tf_republisher-79]: process started with pid [3891077]
+[INFO] [prefix_tf_republisher-80]: process started with pid [3891085]
+[INFO] [parameter_bridge-81]: process started with pid [3891086]
+[create-67] [0m[INFO] [1770939033.385062432] [robot_8.spawn_robot]: Requesting list of world names.[0m
+[create-67] [0m[INFO] [1770939033.657026297] [robot_8.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[robot_state_publisher-74] [2m2026-02-12T23:30:33.838801Z[0m [33m WARN[0m ThreadId(40) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[create-75] [2m2026-02-12T23:30:33.863254Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[parameter_bridge-81] [2m2026-02-12T23:30:33.962943Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[static_transform_publisher-60] [0m[INFO] [1770939033.998339541] [robot_7.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-60] translation: ('-1.854000', '-5.706000', '0.150000')
+[static_transform_publisher-60] rotation: ('0.000000', '0.000000', '0.587932', '0.808910')
+[static_transform_publisher-60] from 'odom' to 'base_link'[0m
+[robot_state_publisher-66] [0m[INFO] [1770939034.370489437] [robot_8.robot_state_publisher]: Robot initialized[0m
+[create-67] [0m[INFO] [1770939034.451488405] [robot_8.spawn_robot]: Entity creation successful.[0m
+[create-75] [2m2026-02-12T23:30:34.602009Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer dd5aacaeceff01aec8da2749f5996fa0: [tcp/127.0.0.1:43765]
+[parameter_bridge-25] [2m2026-02-12T23:30:34.602337Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer dd5aacaeceff01aec8da2749f5996fa0: [tcp/127.0.0.1:43765]
+[INFO] [create-67]: process has finished cleanly [pid 3890627]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[prefix_tf_republisher-72] [0m[INFO] [1770939035.098117323] [robot_8.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_8'[0m
+[static_transform_publisher-70] [0m[INFO] [1770939035.290394545] [robot_8.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-70] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-70] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-70] from 'map' to 'odom'[0m
+[static_transform_publisher-69] [0m[INFO] [1770939035.600611757] [robot_8.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-69] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-69] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-69] from 'world' to 'map'[0m
+[prefix_tf_republisher-71] [0m[INFO] [1770939035.869664101] [robot_8.tf_republisher]: Republishing tf frame ids with prefix 'robot_8'[0m
+[parameter_bridge-73] [0m[INFO] [1770939037.839913676] [robot_8.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_8/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-73] [0m[INFO] [1770939037.844220244] [robot_8.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_8/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[static_transform_publisher-78] [0m[INFO] [1770939038.576864076] [robot_9.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-78] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-78] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-78] from 'map' to 'odom'[0m
+[robot_state_publisher-74] [0m[INFO] [1770939038.815847632] [robot_9.robot_state_publisher]: Robot initialized[0m
+[static_transform_publisher-76] [0m[INFO] [1770939039.117852894] [robot_9.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-76] translation: ('4.854000', '-3.527000', '0.150000')
+[static_transform_publisher-76] rotation: ('0.000000', '0.000000', '0.951014', '0.309147')
+[static_transform_publisher-76] from 'odom' to 'base_link'[0m
+[prefix_tf_republisher-80] [0m[INFO] [1770939039.589725454] [robot_9.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_9'[0m
+[static_transform_publisher-77] [0m[INFO] [1770939040.121551369] [robot_9.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-77] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-77] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-77] from 'world' to 'map'[0m
+[parameter_bridge-81] [0m[INFO] [1770939040.369375792] [robot_9.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_9/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-81] [0m[INFO] [1770939040.374170204] [robot_9.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_9/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[prefix_tf_republisher-79] [0m[INFO] [1770939040.520537586] [robot_9.tf_republisher]: Republishing tf frame ids with prefix 'robot_9'[0m
+[INFO] [mrc_slave-82]: process started with pid [3892136]
+[INFO] [mrc_slave-83]: process started with pid [3892137]
+[INFO] [mrc_slave-84]: process started with pid [3892138]
+[INFO] [mrc_slave-85]: process started with pid [3892139]
+[INFO] [mrc_slave-86]: process started with pid [3892141]
+[INFO] [mrc_slave-87]: process started with pid [3892152]
+[INFO] [mrc_slave-88]: process started with pid [3892153]
+[INFO] [mrc_slave-89]: process started with pid [3892158]
+[INFO] [mrc_slave-90]: process started with pid [3892159]
+[INFO] [mrc_slave-91]: process started with pid [3892160]
+[create-75] [0m[INFO] [1770939041.261872480] [robot_9.spawn_robot]: Requesting list of world names.[0m
+[mrc_slave-83] [2m2026-02-12T23:30:41.328653Z[0m [33m WARN[0m ThreadId(22) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[mrc_slave-86] [2m2026-02-12T23:30:41.342396Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[mrc_slave-87] [2m2026-02-12T23:30:41.345715Z[0m [33m WARN[0m ThreadId(25) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[mrc_slave-84] [2m2026-02-12T23:30:41.349979Z[0m [33m WARN[0m ThreadId(37) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[mrc_slave-89] [2m2026-02-12T23:30:41.351780Z[0m [33m WARN[0m ThreadId(13) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[mrc_slave-90] [2m2026-02-12T23:30:41.359794Z[0m [33m WARN[0m ThreadId(24) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[mrc_slave-91] [2m2026-02-12T23:30:41.369334Z[0m [33m WARN[0m ThreadId(14) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[mrc_slave-88] [2m2026-02-12T23:30:41.369586Z[0m [33m WARN[0m ThreadId(12) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[mrc_slave-82] [2m2026-02-12T23:30:41.408320Z[0m [33m WARN[0m ThreadId(14) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[mrc_slave-85] [2m2026-02-12T23:30:41.408732Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[create-75] [0m[INFO] [1770939041.499960545] [robot_9.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-75] [0m[INFO] [1770939041.566605289] [robot_9.spawn_robot]: Entity creation successful.[0m
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[INFO] [create-75]: process has finished cleanly [pid 3891067]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-65] [2m2026-02-12T23:30:42.623303Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:482 Didn't receive DeclareFinal for interest Face{1, d9c5e11dd70d12abe8158f946f089382}:33: Timeout(10s)!
+[parameter_bridge-65] [2m2026-02-12T23:30:42.623442Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:484 Didn't receive DeclareFinal for interest Face{1, d9c5e11dd70d12abe8158f946f089382}:35: Timeout(10s)!
+[mrc_slave-87] [0m[INFO] [1770939044.289128814] [robot_5.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_5/front_lidar/points_raw[0m
+[mrc_slave-87] [0m[INFO] [1770939044.289819596] [robot_5.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_5/back_lidar/points_raw[0m
+[mrc_slave-87] [0m[INFO] [1770939044.289866321] [robot_5.mrc_slave]: MRC Slave initialized: robot_id='robot_5', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_slave-83] [0m[INFO] [1770939044.360869544] [robot_1.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_1/front_lidar/points_raw[0m
+[mrc_slave-83] [0m[INFO] [1770939044.364333339] [robot_1.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_1/back_lidar/points_raw[0m
+[mrc_slave-83] [0m[INFO] [1770939044.364406918] [robot_1.mrc_slave]: MRC Slave initialized: robot_id='robot_1', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_slave-83] [0m[INFO] [1770939044.423167360] [robot_1.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[mrc_slave-83] [33m[WARN] [1770939044.524669337] [robot_1.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-87] [0m[INFO] [1770939044.713471061] [robot_5.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[mrc_slave-87] [33m[WARN] [1770939044.822898391] [robot_5.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-86] [0m[INFO] [1770939044.875673467] [robot_4.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_4/front_lidar/points_raw[0m
+[mrc_slave-86] [0m[INFO] [1770939044.876609633] [robot_4.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_4/back_lidar/points_raw[0m
+[mrc_slave-86] [0m[INFO] [1770939044.876669108] [robot_4.mrc_slave]: MRC Slave initialized: robot_id='robot_4', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_slave-86] [0m[INFO] [1770939044.913183926] [robot_4.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[mrc_slave-86] [33m[WARN] [1770939045.015168285] [robot_4.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-84] [0m[INFO] [1770939045.161845414] [robot_2.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_2/front_lidar/points_raw[0m
+[mrc_slave-84] [0m[INFO] [1770939045.162603802] [robot_2.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_2/back_lidar/points_raw[0m
+[mrc_slave-84] [0m[INFO] [1770939045.162657604] [robot_2.mrc_slave]: MRC Slave initialized: robot_id='robot_2', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_slave-84] [0m[INFO] [1770939045.425335025] [robot_2.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[mrc_slave-84] [33m[WARN] [1770939045.529417971] [robot_2.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[INFO] [mrc_master-92]: process started with pid [3892724]
+[mrc_slave-89] [0m[INFO] [1770939045.777604069] [robot_7.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_7/front_lidar/points_raw[0m
+[mrc_slave-89] [0m[INFO] [1770939045.780455241] [robot_7.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_7/back_lidar/points_raw[0m
+[mrc_slave-89] [0m[INFO] [1770939045.787347239] [robot_7.mrc_slave]: MRC Slave initialized: robot_id='robot_7', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_master-92] [2m2026-02-12T23:30:46.218457Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[mrc_slave-89] [0m[INFO] [1770939046.263099278] [robot_7.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[mrc_slave-90] [0m[INFO] [1770939046.352038510] [robot_8.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_8/front_lidar/points_raw[0m
+[mrc_slave-90] [0m[INFO] [1770939046.355265288] [robot_8.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_8/back_lidar/points_raw[0m
+[mrc_slave-90] [0m[INFO] [1770939046.359997713] [robot_8.mrc_slave]: MRC Slave initialized: robot_id='robot_8', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_slave-89] [33m[WARN] [1770939046.368090717] [robot_7.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-90] [0m[INFO] [1770939046.422793240] [robot_8.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[mrc_slave-90] [33m[WARN] [1770939046.523887981] [robot_8.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-88] [0m[INFO] [1770939046.741929667] [robot_6.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_6/front_lidar/points_raw[0m
+[mrc_slave-88] [0m[INFO] [1770939046.742525471] [robot_6.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_6/back_lidar/points_raw[0m
+[mrc_slave-88] [0m[INFO] [1770939046.742555809] [robot_6.mrc_slave]: MRC Slave initialized: robot_id='robot_6', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_slave-88] [0m[INFO] [1770939046.959723326] [robot_6.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[mrc_slave-91] [0m[INFO] [1770939047.026795635] [robot_9.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_9/front_lidar/points_raw[0m
+[mrc_slave-91] [0m[INFO] [1770939047.043680953] [robot_9.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_9/back_lidar/points_raw[0m
+[mrc_slave-91] [0m[INFO] [1770939047.043765924] [robot_9.mrc_slave]: MRC Slave initialized: robot_id='robot_9', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_slave-88] [33m[WARN] [1770939047.064589587] [robot_6.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-91] [0m[INFO] [1770939047.223804092] [robot_9.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[mrc_slave-82] [0m[INFO] [1770939047.321650666] [robot_0.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_0/front_lidar/points_raw[0m
+[mrc_slave-82] [0m[INFO] [1770939047.324741761] [robot_0.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_0/back_lidar/points_raw[0m
+[mrc_slave-82] [0m[INFO] [1770939047.325876996] [robot_0.mrc_slave]: MRC Slave initialized: robot_id='robot_0', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_slave-91] [33m[WARN] [1770939047.333999578] [robot_9.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-82] [0m[INFO] [1770939047.413772618] [robot_0.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[mrc_slave-82] [33m[WARN] [1770939047.515172575] [robot_0.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-85] [0m[INFO] [1770939047.742830062] [robot_3.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_3/front_lidar/points_raw[0m
+[mrc_slave-85] [0m[INFO] [1770939047.746259833] [robot_3.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_3/back_lidar/points_raw[0m
+[mrc_slave-85] [0m[INFO] [1770939047.747839409] [robot_3.mrc_slave]: MRC Slave initialized: robot_id='robot_3', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_slave-85] [0m[INFO] [1770939048.062544600] [robot_3.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[mrc_slave-85] [33m[WARN] [1770939048.168931933] [robot_3.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[INFO] [mrc_evaluator-93]: process started with pid [3893130]
+[robot_state_publisher-74] [2m2026-02-12T23:30:48.781704Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:28 Didn't receive DeclareFinal for interest Face{1, 2f7408e00730bc729516a960be66e4d5}:11: Timeout(10s)!
+[mrc_master-92] [0m[INFO] [1770939048.787787578] [robot_0.mrc_master]: Registration backend set to 'kiss_matcher'[0m
+[mrc_master-92] [0m[INFO] [1770939048.788630846] [robot_0.mrc_master]: Static robot: id='robot_1', ns='/robot_1'[0m
+[mrc_master-92] [0m[INFO] [1770939048.788693924] [robot_0.mrc_master]: Static robot: id='robot_2', ns='/robot_2'[0m
+[mrc_master-92] [0m[INFO] [1770939048.788721347] [robot_0.mrc_master]: Static robot: id='robot_3', ns='/robot_3'[0m
+[mrc_master-92] [0m[INFO] [1770939048.788739630] [robot_0.mrc_master]: Static robot: id='robot_4', ns='/robot_4'[0m
+[mrc_master-92] [0m[INFO] [1770939048.788759278] [robot_0.mrc_master]: Static robot: id='robot_5', ns='/robot_5'[0m
+[mrc_master-92] [0m[INFO] [1770939048.788774519] [robot_0.mrc_master]: Static robot: id='robot_6', ns='/robot_6'[0m
+[mrc_master-92] [0m[INFO] [1770939048.788789567] [robot_0.mrc_master]: Static robot: id='robot_7', ns='/robot_7'[0m
+[mrc_master-92] [0m[INFO] [1770939048.788881274] [robot_0.mrc_master]: Static robot: id='robot_8', ns='/robot_8'[0m
+[mrc_master-92] [0m[INFO] [1770939048.789035856] [robot_0.mrc_master]: Static robot: id='robot_9', ns='/robot_9'[0m
+[robot_state_publisher-74] [2m2026-02-12T23:30:48.789792Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:42 Didn't receive DeclareFinal for interest Face{1, 2f7408e00730bc729516a960be66e4d5}:25: Timeout(10s)!
+[robot_state_publisher-74] [2m2026-02-12T23:30:48.813314Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:60 Didn't receive DeclareFinal for interest Face{1, 2f7408e00730bc729516a960be66e4d5}:43: Timeout(10s)!
+[robot_state_publisher-74] [2m2026-02-12T23:30:48.814299Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:50 Didn't receive DeclareFinal for interest Face{1, 2f7408e00730bc729516a960be66e4d5}:33: Timeout(10s)!
+[robot_state_publisher-74] [2m2026-02-12T23:30:48.814320Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:52 Didn't receive DeclareFinal for interest Face{1, 2f7408e00730bc729516a960be66e4d5}:35: Timeout(10s)!
+[robot_state_publisher-74] [2m2026-02-12T23:30:48.814327Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:55 Didn't receive DeclareFinal for interest Face{1, 2f7408e00730bc729516a960be66e4d5}:38: Timeout(10s)!
+[robot_state_publisher-74] [2m2026-02-12T23:30:48.814334Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:57 Didn't receive DeclareFinal for interest Face{1, 2f7408e00730bc729516a960be66e4d5}:40: Timeout(10s)!
+[mrc_master-92] [0m[INFO] [1770939048.824184950] [robot_0.mrc_master]: MRC Master initialized (action server enabled)[0m
+[mrc_evaluator-93] [2m2026-02-12T23:30:49.186770Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[parameter_bridge-81] [2m2026-02-12T23:30:49.287850Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:21 Didn't receive DeclareFinal for interest Face{1, 3fef2dda819c6bcfe8401573387878bd}:11: Timeout(10s)!
+[parameter_bridge-81] [2m2026-02-12T23:30:49.287884Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:16 Didn't receive DeclareFinal for interest Face{1, 3fef2dda819c6bcfe8401573387878bd}:6: Timeout(10s)!
+[parameter_bridge-81] [2m2026-02-12T23:30:49.287889Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:18 Didn't receive DeclareFinal for interest Face{1, 3fef2dda819c6bcfe8401573387878bd}:8: Timeout(10s)!
+[parameter_bridge-81] [2m2026-02-12T23:30:49.316188Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:35 Didn't receive DeclareFinal for interest Face{1, 3fef2dda819c6bcfe8401573387878bd}:25: Timeout(10s)!
+[mrc_slave-83] [33m[WARN] [1770939049.574600520] [robot_1.mrc_slave]: Could not transform cloud from 'front_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-87] [33m[WARN] [1770939049.826149469] [robot_5.mrc_slave]: Could not transform cloud from 'front_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-86] [33m[WARN] [1770939050.062315795] [robot_4.mrc_slave]: Could not transform cloud from 'front_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_evaluator-93] [0m[INFO] [1770939050.182927115] [robot_0.mrc_evaluator]: Robot robot_0: frame=base_link, GT=(0.000, 0.000, 0.000, 0.000)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939050.183258779] [robot_0.mrc_evaluator]: Robot robot_1: frame=robot_1/base_link, GT=(1.146, -3.527, 0.000, -5.655)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939050.183402787] [robot_0.mrc_evaluator]: Robot robot_2: frame=robot_2/base_link, GT=(4.146, -5.706, 0.000, -5.027)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939050.183547301] [robot_0.mrc_evaluator]: Robot robot_3: frame=robot_3/base_link, GT=(7.854, -5.706, 0.000, -4.399)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939050.183667794] [robot_0.mrc_evaluator]: Robot robot_4: frame=robot_4/base_link, GT=(10.854, -3.527, 0.000, -3.770)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939050.183802668] [robot_0.mrc_evaluator]: Robot robot_5: frame=robot_5/base_link, GT=(12.000, 0.000, 0.000, -3.142)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939050.183912116] [robot_0.mrc_evaluator]: Robot robot_6: frame=robot_6/base_link, GT=(10.854, 3.527, 0.000, -2.514)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939050.184057331] [robot_0.mrc_evaluator]: Robot robot_7: frame=robot_7/base_link, GT=(7.854, 5.706, 0.000, -1.885)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939050.184180547] [robot_0.mrc_evaluator]: Robot robot_8: frame=robot_8/base_link, GT=(4.146, 5.706, 0.000, -1.257)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939050.191367240] [robot_0.mrc_evaluator]: Robot robot_9: frame=robot_9/base_link, GT=(1.146, 3.527, 0.000, -0.629)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939050.329481029] [robot_0.mrc_evaluator]: MRC Evaluator initialized with 10 robots[0m
+[parameter_bridge-81] [2m2026-02-12T23:30:50.373146Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:75 Didn't receive DeclareFinal for interest Face{1, 3fef2dda819c6bcfe8401573387878bd}:33: Timeout(10s)!
+[parameter_bridge-81] [2m2026-02-12T23:30:50.381237Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:77 Didn't receive DeclareFinal for interest Face{1, 3fef2dda819c6bcfe8401573387878bd}:35: Timeout(10s)!
+[mrc_slave-84] [33m[WARN] [1770939050.634777911] [robot_2.mrc_slave]: Could not transform cloud from 'front_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-89] [33m[WARN] [1770939051.442773924] [robot_7.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-90] [33m[WARN] [1770939051.618455326] [robot_8.mrc_slave]: Could not transform cloud from 'front_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-88] [33m[WARN] [1770939052.106959125] [robot_6.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-91] [33m[WARN] [1770939052.401201189] [robot_9.mrc_slave]: Could not transform cloud from 'front_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-82] [33m[WARN] [1770939052.522132584] [robot_0.mrc_slave]: Could not transform cloud from 'front_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-85] [33m[WARN] [1770939053.219486090] [robot_3.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-87] [2m2026-02-12T23:30:54.243917Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:36 Didn't receive DeclareFinal for interest Face{1, 72cc78ec6f35c0efa1e49b06f2040756}:25: Timeout(10s)!
+[mrc_slave-87] [2m2026-02-12T23:30:54.278130Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:45 Didn't receive DeclareFinal for interest Face{1, 72cc78ec6f35c0efa1e49b06f2040756}:35: Timeout(10s)!
+[mrc_slave-87] [2m2026-02-12T23:30:54.286793Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, f9af0912702d60365c4bcf8fa21d9e4}:53 Didn't receive DeclareFinal for interest Face{1, 72cc78ec6f35c0efa1e49b06f2040756}:44: Timeout(10s)!
+[mrc_slave-87] [33m[WARN] [1770939054.863473625] [robot_5.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-86] [33m[WARN] [1770939055.111038186] [robot_4.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-84] [33m[WARN] [1770939055.728228050] [robot_2.mrc_slave]: Could not transform cloud from 'front_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-89] [33m[WARN] [1770939056.454915429] [robot_7.mrc_slave]: Could not transform cloud from 'front_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-88] [33m[WARN] [1770939057.107890667] [robot_6.mrc_slave]: Could not transform cloud from 'front_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-91] [33m[WARN] [1770939057.480473614] [robot_9.mrc_slave]: Could not transform cloud from 'front_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-82] [33m[WARN] [1770939057.614733661] [robot_0.mrc_slave]: Could not transform cloud from 'front_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[mrc_slave-85] [33m[WARN] [1770939058.309225165] [robot_3.mrc_slave]: Could not transform cloud from 'back_lidar_laser_frame' to 'base_link': "base_link" passed to lookupTransform argument target_frame does not exist. [0m
+[INFO] [ros2-94]: process started with pid [3896599]
+[ros2-94] [2m2026-02-12T23:31:09.418281Z[0m [33m WARN[0m ThreadId(18) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[ros2-94] requester: making request: std_srvs.srv.Trigger_Request()
+[ros2-94] 
+[mrc_evaluator-93] [0m[INFO] [1770939072.236309235] [robot_0.mrc_evaluator]: === Starting COMPREHENSIVE MRC Comparison ===[0m
+[mrc_evaluator-93] [0m[INFO] [1770939072.236364990] [robot_0.mrc_evaluator]: Testing 2 algorithms x 3 PG modes x 2 ICP modes = 12 configurations[0m
+[mrc_evaluator-93] [0m[INFO] [1770939072.236369968] [robot_0.mrc_evaluator]: Running 5 trials per configuration...
+[mrc_evaluator-93] [0m
+[mrc_evaluator-93] [0m[INFO] [1770939072.236374442] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-93] --- Configuration 1/12: kiss_matcher_no_pg ---[0m
+[mrc_evaluator-93] [0m[INFO] [1770939072.236377923] [robot_0.mrc_evaluator]:   Trial 1/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939072.238352203] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939074.683892911] [robot_0.mrc_evaluator]:   Trial 1: trans min=2.1644 avg=8.6041 max=15.1816m, rot min=29.13 avg=104.84 max=177.42deg, time=0.45s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939076.684022019] [robot_0.mrc_evaluator]:   Trial 2/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939076.686216343] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939079.076419638] [robot_0.mrc_evaluator]:   Trial 2: trans min=0.0695 avg=8.7576 max=15.3011m, rot min=1.32 avg=102.10 max=177.89deg, time=0.39s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939081.076534820] [robot_0.mrc_evaluator]:   Trial 3/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939081.078525037] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939083.445686146] [robot_0.mrc_evaluator]:   Trial 3: trans min=0.0290 avg=8.4457 max=18.4072m, rot min=0.37 avg=97.83 max=179.35deg, time=0.37s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939085.445819053] [robot_0.mrc_evaluator]:   Trial 4/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939085.450239046] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939087.809492393] [robot_0.mrc_evaluator]:   Trial 4: trans min=0.1153 avg=8.3052 max=14.6587m, rot min=0.12 avg=91.13 max=177.27deg, time=0.36s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939089.809623297] [robot_0.mrc_evaluator]:   Trial 5/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939089.811289208] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939092.165611042] [robot_0.mrc_evaluator]:   Trial 5: trans min=2.0366 avg=9.4151 max=16.7920m, rot min=1.63 avg=97.66 max=179.58deg, time=0.35s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939094.165766834] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939097.165946884] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-93] --- Configuration 2/12: kiss_matcher_star ---[0m
+[mrc_evaluator-93] [0m[INFO] [1770939097.166013729] [robot_0.mrc_evaluator]:   Trial 1/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939097.168345483] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-93] [33m[WARN] [1770939098.551332322] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=7 fail=2 (pose_graph=star)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939099.551712003] [robot_0.mrc_evaluator]:   Trial 1: trans min=0.2493 avg=8.5801 max=16.7920m, rot min=0.09 avg=96.99 max=179.58deg, time=0.38s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939101.551923941] [robot_0.mrc_evaluator]:   Trial 2/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939101.555896258] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-93] [33m[WARN] [1770939102.926469872] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=6 fail=3 (pose_graph=star)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939103.926777119] [robot_0.mrc_evaluator]:   Trial 2: trans min=0.2340 avg=8.8528 max=16.7920m, rot min=2.56 avg=100.40 max=179.58deg, time=0.37s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939105.926952519] [robot_0.mrc_evaluator]:   Trial 3/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939105.930490135] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-93] [33m[WARN] [1770939107.284738921] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=8 fail=1 (pose_graph=star)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939108.284944565] [robot_0.mrc_evaluator]:   Trial 3: trans min=0.2676 avg=8.0364 max=16.5032m, rot min=0.64 avg=88.83 max=177.61deg, time=0.35s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939110.285075879] [robot_0.mrc_evaluator]:   Trial 4/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939110.289121346] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-93] [33m[WARN] [1770939111.659753502] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=8 fail=1 (pose_graph=star)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939112.659979381] [robot_0.mrc_evaluator]:   Trial 4: trans min=0.1636 avg=7.8286 max=15.9087m, rot min=0.29 avg=88.92 max=179.94deg, time=0.37s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939114.660085177] [robot_0.mrc_evaluator]:   Trial 5/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939114.663162468] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-93] [33m[WARN] [1770939116.011958235] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=7 fail=2 (pose_graph=star)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939117.012171684] [robot_0.mrc_evaluator]:   Trial 5: trans min=0.1952 avg=7.7463 max=15.9087m, rot min=0.25 avg=89.90 max=176.04deg, time=0.35s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939119.012309076] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939122.012457707] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-93] --- Configuration 3/12: kiss_matcher_mesh ---[0m
+[mrc_evaluator-93] [0m[INFO] [1770939122.012533117] [robot_0.mrc_evaluator]:   Trial 1/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939122.014932353] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_evaluator-93] [33m[WARN] [1770939123.629494095] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=8 fail=1 (pose_graph=mesh)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939124.629714668] [robot_0.mrc_evaluator]:   Trial 1: trans min=2.2458 avg=8.5874 max=12.2371m, rot min=19.84 avg=104.98 max=179.76deg, time=0.61s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939126.629862500] [robot_0.mrc_evaluator]:   Trial 2/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939126.632180365] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_evaluator-93] [33m[WARN] [1770939128.197612115] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=8 fail=1 (pose_graph=mesh)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939129.197844810] [robot_0.mrc_evaluator]:   Trial 2: trans min=0.8485 avg=8.5093 max=13.9055m, rot min=12.90 avg=98.18 max=167.86deg, time=0.57s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939131.197980043] [robot_0.mrc_evaluator]:   Trial 3/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939131.203184790] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_evaluator-93] [33m[WARN] [1770939132.794969665] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=8 fail=1 (pose_graph=mesh)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939133.795305453] [robot_0.mrc_evaluator]:   Trial 3: trans min=1.9374 avg=9.0117 max=15.3516m, rot min=37.45 avg=109.69 max=174.01deg, time=0.59s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939135.795482045] [robot_0.mrc_evaluator]:   Trial 4/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939135.798342354] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_evaluator-93] [33m[WARN] [1770939137.395082215] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=8 fail=1 (pose_graph=mesh)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939138.395445933] [robot_0.mrc_evaluator]:   Trial 4: trans min=1.8051 avg=9.2428 max=14.8309m, rot min=11.74 avg=104.41 max=178.45deg, time=0.60s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939140.395639661] [robot_0.mrc_evaluator]:   Trial 5/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939140.397634718] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_evaluator-93] [33m[WARN] [1770939142.000340646] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=8 fail=1 (pose_graph=mesh)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939143.000561230] [robot_0.mrc_evaluator]:   Trial 5: trans min=3.4108 avg=8.5332 max=15.7762m, rot min=4.14 avg=91.36 max=176.25deg, time=0.60s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939145.000700670] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939148.000851419] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-93] --- Configuration 4/12: kiss_matcher_no_pg_icp ---[0m
+[mrc_evaluator-93] [0m[INFO] [1770939148.000954510] [robot_0.mrc_evaluator]:   Trial 1/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939148.006398590] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939149.269308413] [robot_0.mrc_master]: ICP: coarse_rmse=0.5301, icp_rmse=0.3286 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939149.674582583] [robot_0.mrc_master]: ICP: coarse_rmse=0.6484, icp_rmse=1.1321 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939150.133704409] [robot_0.mrc_master]: ICP: coarse_rmse=0.6410, icp_rmse=1.0964 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939150.456246321] [robot_0.mrc_master]: ICP: coarse_rmse=0.7280, icp_rmse=0.7940 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939150.860115850] [robot_0.mrc_master]: ICP: coarse_rmse=0.5198, icp_rmse=0.5346 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939151.288505457] [robot_0.mrc_master]: ICP: coarse_rmse=0.7307, icp_rmse=1.8451 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939151.530360163] [robot_0.mrc_master]: ICP: coarse_rmse=0.5452, icp_rmse=0.7579 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939151.776829250] [robot_0.mrc_master]: ICP: coarse_rmse=0.6860, icp_rmse=0.8153 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939152.166899111] [robot_0.mrc_master]: ICP: coarse_rmse=0.8235, icp_rmse=0.5473 -> accepted[0m
+[mrc_evaluator-93] [0m[INFO] [1770939153.167303285] [robot_0.mrc_evaluator]:   Trial 1: trans min=0.0137 avg=7.7181 max=17.8635m, rot min=0.02 avg=91.61 max=178.83deg, time=3.16s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939155.167405396] [robot_0.mrc_evaluator]:   Trial 2/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939155.170316500] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939156.428319597] [robot_0.mrc_master]: ICP: coarse_rmse=0.5863, icp_rmse=0.4054 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939156.772176931] [robot_0.mrc_master]: ICP: coarse_rmse=0.8353, icp_rmse=0.6805 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939157.127572020] [robot_0.mrc_master]: ICP: coarse_rmse=0.7864, icp_rmse=1.5591 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939157.436178777] [robot_0.mrc_master]: ICP: coarse_rmse=0.5006, icp_rmse=0.7827 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939157.677050874] [robot_0.mrc_master]: ICP: coarse_rmse=0.6374, icp_rmse=0.5207 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939158.036119400] [robot_0.mrc_master]: ICP: coarse_rmse=0.7676, icp_rmse=1.5021 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939158.405441318] [robot_0.mrc_master]: ICP: coarse_rmse=0.6403, icp_rmse=0.8025 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939158.648109958] [robot_0.mrc_master]: ICP: coarse_rmse=0.6559, icp_rmse=2.3832 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939158.845977925] [robot_0.mrc_master]: ICP: coarse_rmse=0.5319, icp_rmse=0.5294 -> accepted[0m
+[mrc_evaluator-93] [0m[INFO] [1770939159.846531885] [robot_0.mrc_evaluator]:   Trial 2: trans min=0.0251 avg=8.2152 max=18.7438m, rot min=0.05 avg=81.96 max=177.64deg, time=2.68s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939161.846694171] [robot_0.mrc_evaluator]:   Trial 3/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939161.850867990] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939163.202282297] [robot_0.mrc_master]: ICP: coarse_rmse=0.8189, icp_rmse=1.7972 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939163.581961030] [robot_0.mrc_master]: ICP: coarse_rmse=0.7772, icp_rmse=0.6542 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939164.055838063] [robot_0.mrc_master]: ICP: coarse_rmse=0.7900, icp_rmse=1.1107 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939164.344598254] [robot_0.mrc_master]: ICP: coarse_rmse=0.5669, icp_rmse=0.7977 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939164.748309579] [robot_0.mrc_master]: ICP: coarse_rmse=0.7715, icp_rmse=0.5218 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939165.155045707] [robot_0.mrc_master]: ICP: coarse_rmse=0.8000, icp_rmse=1.8457 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939165.516430899] [robot_0.mrc_master]: ICP: coarse_rmse=0.6940, icp_rmse=1.6665 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939165.710399760] [robot_0.mrc_master]: ICP: coarse_rmse=0.8597, icp_rmse=1.6274 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939166.041316703] [robot_0.mrc_master]: ICP: coarse_rmse=0.7081, icp_rmse=1.5710 -> rejected (worse)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939167.041745420] [robot_0.mrc_evaluator]:   Trial 3: trans min=5.2529 avg=9.8864 max=19.3780m, rot min=52.62 avg=112.00 max=178.97deg, time=3.19s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939169.041892380] [robot_0.mrc_evaluator]:   Trial 4/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939169.045758145] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939170.298241580] [robot_0.mrc_master]: ICP: coarse_rmse=0.4559, icp_rmse=0.3658 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939170.657744824] [robot_0.mrc_master]: ICP: coarse_rmse=0.8430, icp_rmse=0.6605 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939171.148276775] [robot_0.mrc_master]: ICP: coarse_rmse=0.7001, icp_rmse=1.2844 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939171.464180578] [robot_0.mrc_master]: ICP: coarse_rmse=0.5675, icp_rmse=0.7735 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939171.726417884] [robot_0.mrc_master]: ICP: coarse_rmse=0.3730, icp_rmse=0.5317 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939172.371910479] [robot_0.mrc_master]: ICP: coarse_rmse=0.7541, icp_rmse=1.2603 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939172.716967789] [robot_0.mrc_master]: ICP: coarse_rmse=0.8869, icp_rmse=1.5298 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939173.044572948] [robot_0.mrc_master]: ICP: coarse_rmse=1.0086, icp_rmse=1.1742 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939173.235448853] [robot_0.mrc_master]: ICP: coarse_rmse=0.5666, icp_rmse=0.5045 -> accepted[0m
+[mrc_evaluator-93] [0m[INFO] [1770939174.235927304] [robot_0.mrc_evaluator]:   Trial 4: trans min=0.0281 avg=8.2791 max=16.5644m, rot min=0.00 avg=91.16 max=178.32deg, time=3.19s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939176.236091243] [robot_0.mrc_evaluator]:   Trial 5/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939176.240706072] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939177.784608440] [robot_0.mrc_master]: ICP: coarse_rmse=0.8057, icp_rmse=2.0764 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939178.136372001] [robot_0.mrc_master]: ICP: coarse_rmse=0.7458, icp_rmse=0.6380 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939178.503560953] [robot_0.mrc_master]: ICP: coarse_rmse=0.7731, icp_rmse=1.7175 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939178.868249274] [robot_0.mrc_master]: ICP: coarse_rmse=0.6947, icp_rmse=1.3869 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939179.240931724] [robot_0.mrc_master]: ICP: coarse_rmse=0.5495, icp_rmse=0.5237 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939179.886453906] [robot_0.mrc_master]: ICP: coarse_rmse=0.6530, icp_rmse=1.2404 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939180.180991423] [robot_0.mrc_master]: ICP: coarse_rmse=0.8185, icp_rmse=1.4099 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939180.425248684] [robot_0.mrc_master]: ICP: coarse_rmse=0.6236, icp_rmse=0.9159 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939180.588329014] [robot_0.mrc_master]: ICP: coarse_rmse=0.5541, icp_rmse=0.4830 -> accepted[0m
+[mrc_evaluator-93] [0m[INFO] [1770939181.588797635] [robot_0.mrc_evaluator]:   Trial 5: trans min=0.0234 avg=8.4739 max=15.4332m, rot min=0.04 avg=102.62 max=170.60deg, time=3.35s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939183.588950697] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939186.589081835] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-93] --- Configuration 5/12: kiss_matcher_star_icp ---[0m
+[mrc_evaluator-93] [0m[INFO] [1770939186.589176318] [robot_0.mrc_evaluator]:   Trial 1/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939186.593500251] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939187.928269063] [robot_0.mrc_master]: ICP: coarse_rmse=0.5771, icp_rmse=0.3233 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939188.268974619] [robot_0.mrc_master]: ICP: coarse_rmse=0.7530, icp_rmse=1.5057 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939188.729199640] [robot_0.mrc_master]: ICP: coarse_rmse=0.8597, icp_rmse=1.1427 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939188.983526272] [robot_0.mrc_master]: ICP: coarse_rmse=0.4601, icp_rmse=0.8051 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939189.397826461] [robot_0.mrc_master]: ICP: coarse_rmse=0.9661, icp_rmse=1.1204 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939189.606882216] [robot_0.mrc_master]: ICP: coarse_rmse=0.6070, icp_rmse=0.7630 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939189.910346899] [robot_0.mrc_master]: ICP: coarse_rmse=0.7032, icp_rmse=0.7835 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939190.200422156] [robot_0.mrc_master]: ICP: coarse_rmse=0.7070, icp_rmse=0.9126 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939190.464019950] [robot_0.mrc_master]: ICP: coarse_rmse=0.7431, icp_rmse=0.5250 -> accepted[0m
+[mrc_evaluator-93] [33m[WARN] [1770939190.464633469] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=7 fail=2 (pose_graph=star)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939191.464919176] [robot_0.mrc_evaluator]:   Trial 1: trans min=0.0120 avg=7.9375 max=16.1631m, rot min=0.06 avg=93.10 max=179.66deg, time=2.87s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939193.465090095] [robot_0.mrc_evaluator]:   Trial 2/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939193.466870549] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939194.974100066] [robot_0.mrc_master]: ICP: coarse_rmse=0.7236, icp_rmse=1.2417 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939195.333559302] [robot_0.mrc_master]: ICP: coarse_rmse=0.8711, icp_rmse=0.6357 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939195.774223882] [robot_0.mrc_master]: ICP: coarse_rmse=0.7914, icp_rmse=0.7826 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939195.999276933] [robot_0.mrc_master]: ICP: coarse_rmse=0.4022, icp_rmse=0.7861 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939196.383236437] [robot_0.mrc_master]: ICP: coarse_rmse=0.9157, icp_rmse=1.0760 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939196.600856390] [robot_0.mrc_master]: ICP: coarse_rmse=0.5459, icp_rmse=0.7244 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939197.196288481] [robot_0.mrc_master]: ICP: coarse_rmse=0.6475, icp_rmse=1.2344 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939197.520201423] [robot_0.mrc_master]: ICP: coarse_rmse=0.6029, icp_rmse=0.5064 -> accepted[0m
+[mrc_evaluator-93] [33m[WARN] [1770939197.520817899] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=7 fail=2 (pose_graph=star)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939198.521207530] [robot_0.mrc_evaluator]:   Trial 2: trans min=0.0372 avg=8.8812 max=16.1631m, rot min=0.09 avg=103.21 max=179.52deg, time=3.05s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939200.521412498] [robot_0.mrc_evaluator]:   Trial 3/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939200.524940087] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939201.794599643] [robot_0.mrc_master]: ICP: coarse_rmse=0.4499, icp_rmse=0.3204 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939202.117499742] [robot_0.mrc_master]: ICP: coarse_rmse=0.7431, icp_rmse=0.6330 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939202.615997729] [robot_0.mrc_master]: ICP: coarse_rmse=0.9562, icp_rmse=0.9051 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939202.961979107] [robot_0.mrc_master]: ICP: coarse_rmse=0.5714, icp_rmse=0.8055 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939203.347208200] [robot_0.mrc_master]: ICP: coarse_rmse=0.5724, icp_rmse=0.5291 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939203.549609954] [robot_0.mrc_master]: ICP: coarse_rmse=0.5991, icp_rmse=0.7608 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939203.927758427] [robot_0.mrc_master]: ICP: coarse_rmse=0.5441, icp_rmse=0.8214 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939204.142236349] [robot_0.mrc_master]: ICP: coarse_rmse=0.5820, icp_rmse=0.6576 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939204.341213965] [robot_0.mrc_master]: ICP: coarse_rmse=0.6408, icp_rmse=0.5194 -> accepted[0m
+[mrc_evaluator-93] [0m[INFO] [1770939205.342120783] [robot_0.mrc_evaluator]:   Trial 3: trans min=0.0152 avg=8.2328 max=14.9086m, rot min=0.01 avg=89.56 max=176.36deg, time=2.82s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939207.342272575] [robot_0.mrc_evaluator]:   Trial 4/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939207.346703565] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939208.740308970] [robot_0.mrc_master]: ICP: coarse_rmse=0.8449, icp_rmse=0.3165 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939209.101187816] [robot_0.mrc_master]: ICP: coarse_rmse=0.7193, icp_rmse=0.6761 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939209.454370281] [robot_0.mrc_master]: ICP: coarse_rmse=0.6534, icp_rmse=1.5854 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939209.930225338] [robot_0.mrc_master]: ICP: coarse_rmse=0.8660, icp_rmse=0.8147 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939210.491915231] [robot_0.mrc_master]: ICP: coarse_rmse=0.7493, icp_rmse=0.9980 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939210.895990520] [robot_0.mrc_master]: ICP: coarse_rmse=0.5620, icp_rmse=0.7564 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939211.153982194] [robot_0.mrc_master]: ICP: coarse_rmse=0.8086, icp_rmse=0.7745 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939211.358343043] [robot_0.mrc_master]: ICP: coarse_rmse=0.6225, icp_rmse=0.6727 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939211.584085715] [robot_0.mrc_master]: ICP: coarse_rmse=0.5852, icp_rmse=0.5299 -> accepted[0m
+[mrc_evaluator-93] [33m[WARN] [1770939211.584708487] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=7 fail=2 (pose_graph=star)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939212.584949223] [robot_0.mrc_evaluator]:   Trial 4: trans min=0.0152 avg=8.3847 max=15.4381m, rot min=0.01 avg=92.81 max=179.94deg, time=3.24s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939214.585177598] [robot_0.mrc_evaluator]:   Trial 5/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939214.589649894] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939215.838825710] [robot_0.mrc_master]: ICP: coarse_rmse=0.5857, icp_rmse=0.3608 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939216.170429865] [robot_0.mrc_master]: ICP: coarse_rmse=0.6736, icp_rmse=2.0282 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939216.705875662] [robot_0.mrc_master]: ICP: coarse_rmse=0.8359, icp_rmse=1.1607 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939217.007165960] [robot_0.mrc_master]: ICP: coarse_rmse=0.6436, icp_rmse=0.8106 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939217.397275673] [robot_0.mrc_master]: ICP: coarse_rmse=0.6108, icp_rmse=1.2127 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939217.878393332] [robot_0.mrc_master]: ICP: coarse_rmse=0.5522, icp_rmse=1.2532 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939218.233772705] [robot_0.mrc_master]: ICP: coarse_rmse=0.4829, icp_rmse=0.7663 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939218.496702806] [robot_0.mrc_master]: ICP: coarse_rmse=0.7313, icp_rmse=0.9509 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939218.716875274] [robot_0.mrc_master]: ICP: coarse_rmse=0.5186, icp_rmse=0.5483 -> rejected (worse)[0m
+[mrc_evaluator-93] [33m[WARN] [1770939218.717574629] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=8 fail=1 (pose_graph=star)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939219.717845012] [robot_0.mrc_evaluator]:   Trial 5: trans min=0.0295 avg=7.8646 max=15.4330m, rot min=0.10 avg=92.10 max=177.44deg, time=3.13s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939221.718023754] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939224.718143635] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-93] --- Configuration 6/12: kiss_matcher_mesh_icp ---[0m
+[mrc_evaluator-93] [0m[INFO] [1770939224.718221424] [robot_0.mrc_evaluator]:   Trial 1/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939224.721912862] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939225.996824649] [robot_0.mrc_master]: ICP: coarse_rmse=0.5339, icp_rmse=0.3381 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939226.269726970] [robot_0.mrc_master]: ICP: coarse_rmse=0.6271, icp_rmse=0.6658 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939226.613769065] [robot_0.mrc_master]: ICP: coarse_rmse=0.6194, icp_rmse=0.8151 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939227.022202597] [robot_0.mrc_master]: ICP: coarse_rmse=0.4822, icp_rmse=0.8079 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939227.249547544] [robot_0.mrc_master]: ICP: coarse_rmse=0.4091, icp_rmse=0.5079 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939227.614889746] [robot_0.mrc_master]: ICP: coarse_rmse=0.9066, icp_rmse=1.5561 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939228.034824701] [robot_0.mrc_master]: ICP: coarse_rmse=0.7795, icp_rmse=0.7609 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939228.346675958] [robot_0.mrc_master]: ICP: coarse_rmse=-1.0000, icp_rmse=3.6502 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939228.552114792] [robot_0.mrc_master]: ICP: coarse_rmse=0.5358, icp_rmse=0.5365 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939228.718729458] [robot_0.mrc_master]: ICP: coarse_rmse=0.4844, icp_rmse=0.3579 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939229.097075174] [robot_0.mrc_master]: ICP: coarse_rmse=0.6583, icp_rmse=0.9076 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939229.507706940] [robot_0.mrc_master]: ICP: coarse_rmse=0.9320, icp_rmse=1.6304 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939229.834066735] [robot_0.mrc_master]: ICP: coarse_rmse=0.8329, icp_rmse=1.5672 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939230.132896663] [robot_0.mrc_master]: ICP: coarse_rmse=0.5707, icp_rmse=1.1900 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939230.433162573] [robot_0.mrc_master]: ICP: coarse_rmse=0.8356, icp_rmse=0.9007 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939230.779567648] [robot_0.mrc_master]: ICP: coarse_rmse=0.5391, icp_rmse=1.2440 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939231.308773765] [robot_0.mrc_master]: ICP: coarse_rmse=0.9692, icp_rmse=2.4395 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939231.675583952] [robot_0.mrc_master]: ICP: coarse_rmse=0.7827, icp_rmse=1.8213 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939231.974472752] [robot_0.mrc_master]: ICP: coarse_rmse=0.8416, icp_rmse=0.5730 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939232.606918490] [robot_0.mrc_master]: ICP: coarse_rmse=0.5345, icp_rmse=1.4226 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939232.752810790] [robot_0.mrc_master]: ICP: coarse_rmse=0.6342, icp_rmse=0.4306 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939233.215614104] [robot_0.mrc_master]: ICP: coarse_rmse=0.7152, icp_rmse=1.6881 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939233.580286871] [robot_0.mrc_master]: ICP: coarse_rmse=0.6465, icp_rmse=0.9088 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939233.875152026] [robot_0.mrc_master]: ICP: coarse_rmse=0.6561, icp_rmse=0.6787 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939234.324350913] [robot_0.mrc_master]: ICP: coarse_rmse=0.6535, icp_rmse=1.3133 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939234.675253263] [robot_0.mrc_master]: ICP: coarse_rmse=0.7414, icp_rmse=1.7499 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939235.158162068] [robot_0.mrc_master]: ICP: coarse_rmse=0.7316, icp_rmse=1.1236 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939235.292617705] [robot_0.mrc_master]: ICP: coarse_rmse=0.2956, icp_rmse=0.4708 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939235.606900894] [robot_0.mrc_master]: ICP: coarse_rmse=0.7030, icp_rmse=1.5931 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939235.966981476] [robot_0.mrc_master]: ICP: coarse_rmse=0.9292, icp_rmse=1.6642 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939236.427941700] [robot_0.mrc_master]: ICP: coarse_rmse=0.9634, icp_rmse=3.5818 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939236.830916054] [robot_0.mrc_master]: ICP: coarse_rmse=-1.0000, icp_rmse=1.7773 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939237.059176149] [robot_0.mrc_master]: ICP: coarse_rmse=0.7721, icp_rmse=0.6431 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939237.356740035] [robot_0.mrc_master]: ICP: coarse_rmse=0.7915, icp_rmse=1.4420 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939237.568382605] [robot_0.mrc_master]: ICP: coarse_rmse=0.4538, icp_rmse=2.4874 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939237.841325267] [robot_0.mrc_master]: ICP: coarse_rmse=0.5839, icp_rmse=2.5380 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939238.056559960] [robot_0.mrc_master]: ICP: coarse_rmse=0.3829, icp_rmse=2.1254 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939238.528211661] [robot_0.mrc_master]: ICP: coarse_rmse=0.6484, icp_rmse=2.9695 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939238.695030947] [robot_0.mrc_master]: ICP: coarse_rmse=0.5671, icp_rmse=0.6479 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939239.028813941] [robot_0.mrc_master]: ICP: coarse_rmse=0.6204, icp_rmse=1.1669 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939239.197130252] [robot_0.mrc_master]: ICP: coarse_rmse=0.4754, icp_rmse=0.4511 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939239.449929165] [robot_0.mrc_master]: ICP: coarse_rmse=0.8545, icp_rmse=1.4027 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939239.645992258] [robot_0.mrc_master]: ICP: coarse_rmse=0.5523, icp_rmse=0.8854 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939240.158309391] [robot_0.mrc_master]: ICP: coarse_rmse=0.5799, icp_rmse=2.1770 -> rejected (worse)[0m
+[mrc_evaluator-93] [33m[WARN] [1770939240.161578276] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=7 fail=2 (pose_graph=mesh)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939241.161789542] [robot_0.mrc_evaluator]:   Trial 1: trans min=1.5595 avg=8.6959 max=15.4663m, rot min=12.49 avg=104.62 max=178.31deg, time=14.44s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939243.161904160] [robot_0.mrc_evaluator]:   Trial 2/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939243.164825609] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939244.443927797] [robot_0.mrc_master]: ICP: coarse_rmse=0.5742, icp_rmse=0.3968 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939244.669606358] [robot_0.mrc_master]: ICP: coarse_rmse=0.5991, icp_rmse=0.6954 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939245.143015710] [robot_0.mrc_master]: ICP: coarse_rmse=0.7821, icp_rmse=1.1689 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939245.392977389] [robot_0.mrc_master]: ICP: coarse_rmse=0.6325, icp_rmse=0.8494 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939245.657439462] [robot_0.mrc_master]: ICP: coarse_rmse=0.6157, icp_rmse=0.5089 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939246.071573248] [robot_0.mrc_master]: ICP: coarse_rmse=1.1586, icp_rmse=0.7633 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939246.343696875] [robot_0.mrc_master]: ICP: coarse_rmse=0.6587, icp_rmse=0.7951 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939246.666672164] [robot_0.mrc_master]: ICP: coarse_rmse=0.8753, icp_rmse=1.1214 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939246.864045905] [robot_0.mrc_master]: ICP: coarse_rmse=0.5057, icp_rmse=0.3351 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939247.417926797] [robot_0.mrc_master]: ICP: coarse_rmse=0.6755, icp_rmse=1.1929 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939247.793964338] [robot_0.mrc_master]: ICP: coarse_rmse=0.8572, icp_rmse=1.7619 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939248.257681911] [robot_0.mrc_master]: ICP: coarse_rmse=0.6498, icp_rmse=0.9219 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939248.771220199] [robot_0.mrc_master]: ICP: coarse_rmse=0.6263, icp_rmse=1.1050 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939248.941992038] [robot_0.mrc_master]: ICP: coarse_rmse=-1.0000, icp_rmse=1.2665 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939249.304030010] [robot_0.mrc_master]: ICP: coarse_rmse=0.5046, icp_rmse=1.9446 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939249.723717849] [robot_0.mrc_master]: ICP: coarse_rmse=0.4472, icp_rmse=1.2664 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939250.194061988] [robot_0.mrc_master]: ICP: coarse_rmse=0.8030, icp_rmse=1.1875 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939250.413119814] [robot_0.mrc_master]: ICP: coarse_rmse=0.4977, icp_rmse=0.5577 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939251.119473744] [robot_0.mrc_master]: ICP: coarse_rmse=0.5748, icp_rmse=1.4283 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939251.441096708] [robot_0.mrc_master]: ICP: coarse_rmse=0.7535, icp_rmse=1.7343 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939251.704903156] [robot_0.mrc_master]: ICP: coarse_rmse=-1.0000, icp_rmse=1.4980 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939252.139142600] [robot_0.mrc_master]: ICP: coarse_rmse=0.9041, icp_rmse=2.3869 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939252.652968696] [robot_0.mrc_master]: ICP: coarse_rmse=0.6450, icp_rmse=1.1039 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939253.148008648] [robot_0.mrc_master]: ICP: coarse_rmse=0.7653, icp_rmse=1.2552 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939253.484822959] [robot_0.mrc_master]: ICP: coarse_rmse=0.8698, icp_rmse=1.7033 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939254.273149957] [robot_0.mrc_master]: ICP: coarse_rmse=0.7058, icp_rmse=1.5753 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939254.464498292] [robot_0.mrc_master]: ICP: coarse_rmse=0.4976, icp_rmse=1.2714 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939255.206555496] [robot_0.mrc_master]: ICP: coarse_rmse=0.7903, icp_rmse=1.9767 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939255.685196657] [robot_0.mrc_master]: ICP: coarse_rmse=0.7554, icp_rmse=2.7462 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939256.099350656] [robot_0.mrc_master]: ICP: coarse_rmse=0.8114, icp_rmse=1.5959 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939256.515479143] [robot_0.mrc_master]: ICP: coarse_rmse=0.7687, icp_rmse=1.8710 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939256.911363550] [robot_0.mrc_master]: ICP: coarse_rmse=0.7345, icp_rmse=0.8665 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939257.154382631] [robot_0.mrc_master]: ICP: coarse_rmse=0.5136, icp_rmse=2.4957 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939257.732074897] [robot_0.mrc_master]: ICP: coarse_rmse=0.6874, icp_rmse=2.9082 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939258.044425554] [robot_0.mrc_master]: ICP: coarse_rmse=0.6102, icp_rmse=3.6937 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939258.835480349] [robot_0.mrc_master]: ICP: coarse_rmse=0.8418, icp_rmse=3.2872 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939258.996820796] [robot_0.mrc_master]: ICP: coarse_rmse=0.4927, icp_rmse=0.6297 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939259.426430203] [robot_0.mrc_master]: ICP: coarse_rmse=0.9126, icp_rmse=1.4356 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939259.587081337] [robot_0.mrc_master]: ICP: coarse_rmse=0.4003, icp_rmse=0.4510 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939259.796723360] [robot_0.mrc_master]: ICP: coarse_rmse=0.8699, icp_rmse=2.8924 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939260.093141878] [robot_0.mrc_master]: ICP: coarse_rmse=0.7213, icp_rmse=1.6726 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939260.424660177] [robot_0.mrc_master]: ICP: coarse_rmse=0.4354, icp_rmse=1.7042 -> rejected (worse)[0m
+[mrc_evaluator-93] [33m[WARN] [1770939260.428633228] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=7 fail=2 (pose_graph=mesh)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939261.428924938] [robot_0.mrc_evaluator]:   Trial 2: trans min=3.8668 avg=8.7112 max=14.3702m, rot min=28.64 avg=105.42 max=177.96deg, time=16.26s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939263.429073834] [robot_0.mrc_evaluator]:   Trial 3/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939263.433528937] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939264.896917192] [robot_0.mrc_master]: ICP: coarse_rmse=0.7102, icp_rmse=1.8265 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939265.230334973] [robot_0.mrc_master]: ICP: coarse_rmse=1.0363, icp_rmse=1.5904 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939265.770275317] [robot_0.mrc_master]: ICP: coarse_rmse=0.7545, icp_rmse=1.4627 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939266.167092137] [robot_0.mrc_master]: ICP: coarse_rmse=0.6068, icp_rmse=0.8273 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939266.538616411] [robot_0.mrc_master]: ICP: coarse_rmse=0.7583, icp_rmse=0.5304 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939266.819988936] [robot_0.mrc_master]: ICP: coarse_rmse=0.7749, icp_rmse=0.7603 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939267.289769726] [robot_0.mrc_master]: ICP: coarse_rmse=0.5822, icp_rmse=3.1131 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939267.587822077] [robot_0.mrc_master]: ICP: coarse_rmse=1.0073, icp_rmse=0.7921 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939267.767770480] [robot_0.mrc_master]: ICP: coarse_rmse=0.5726, icp_rmse=0.4829 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939267.990473985] [robot_0.mrc_master]: ICP: coarse_rmse=0.5625, icp_rmse=0.3940 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939268.334642661] [robot_0.mrc_master]: ICP: coarse_rmse=0.6925, icp_rmse=0.9737 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939268.629744365] [robot_0.mrc_master]: ICP: coarse_rmse=0.7338, icp_rmse=1.4811 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939269.199004259] [robot_0.mrc_master]: ICP: coarse_rmse=0.7812, icp_rmse=1.0596 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939269.581761940] [robot_0.mrc_master]: ICP: coarse_rmse=1.0469, icp_rmse=1.8246 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939269.757605831] [robot_0.mrc_master]: ICP: coarse_rmse=0.6616, icp_rmse=0.8435 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939269.963818431] [robot_0.mrc_master]: ICP: coarse_rmse=0.5410, icp_rmse=1.8588 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939270.528242618] [robot_0.mrc_master]: ICP: coarse_rmse=0.5175, icp_rmse=1.2728 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939270.869136112] [robot_0.mrc_master]: ICP: coarse_rmse=0.7162, icp_rmse=1.8118 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939271.267199837] [robot_0.mrc_master]: ICP: coarse_rmse=0.5620, icp_rmse=1.0019 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939271.481011845] [robot_0.mrc_master]: ICP: coarse_rmse=0.3613, icp_rmse=0.5604 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939271.837122157] [robot_0.mrc_master]: ICP: coarse_rmse=0.7802, icp_rmse=1.6399 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939272.012592971] [robot_0.mrc_master]: ICP: coarse_rmse=0.5350, icp_rmse=0.4280 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939272.210554696] [robot_0.mrc_master]: ICP: coarse_rmse=0.8143, icp_rmse=1.5653 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939272.575796960] [robot_0.mrc_master]: ICP: coarse_rmse=0.7559, icp_rmse=0.9248 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939272.936703300] [robot_0.mrc_master]: ICP: coarse_rmse=0.7235, icp_rmse=0.6656 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939273.521546360] [robot_0.mrc_master]: ICP: coarse_rmse=0.5591, icp_rmse=2.0406 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939273.885044251] [robot_0.mrc_master]: ICP: coarse_rmse=0.8367, icp_rmse=1.8548 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939274.642880894] [robot_0.mrc_master]: ICP: coarse_rmse=0.8169, icp_rmse=3.5755 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939274.718104222] [robot_0.mrc_master]: ICP: coarse_rmse=0.3924, icp_rmse=0.4729 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939275.091274495] [robot_0.mrc_master]: ICP: coarse_rmse=0.7275, icp_rmse=1.9989 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939275.336064434] [robot_0.mrc_master]: ICP: coarse_rmse=0.5523, icp_rmse=0.8481 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939275.787287253] [robot_0.mrc_master]: ICP: coarse_rmse=0.7177, icp_rmse=1.4300 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939276.115795139] [robot_0.mrc_master]: ICP: coarse_rmse=0.8226, icp_rmse=1.7973 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939276.241292655] [robot_0.mrc_master]: ICP: coarse_rmse=0.5350, icp_rmse=0.2792 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939276.719574074] [robot_0.mrc_master]: ICP: coarse_rmse=-1.0000, icp_rmse=1.7684 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939277.290393978] [robot_0.mrc_master]: ICP: coarse_rmse=0.6995, icp_rmse=3.0463 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939277.858042666] [robot_0.mrc_master]: ICP: coarse_rmse=0.5472, icp_rmse=2.9200 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939278.536960665] [robot_0.mrc_master]: ICP: coarse_rmse=0.7804, icp_rmse=4.1335 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939278.965052051] [robot_0.mrc_master]: ICP: coarse_rmse=0.7883, icp_rmse=2.8799 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939279.050115025] [robot_0.mrc_master]: ICP: coarse_rmse=0.4177, icp_rmse=0.6241 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939279.357783577] [robot_0.mrc_master]: ICP: coarse_rmse=0.6429, icp_rmse=1.0703 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939279.532912134] [robot_0.mrc_master]: ICP: coarse_rmse=0.4799, icp_rmse=0.4543 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939279.801603448] [robot_0.mrc_master]: ICP: coarse_rmse=0.4688, icp_rmse=0.8841 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939280.041952455] [robot_0.mrc_master]: ICP: coarse_rmse=0.7402, icp_rmse=0.9380 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939280.927427540] [robot_0.mrc_master]: ICP: coarse_rmse=0.6358, icp_rmse=2.7833 -> rejected (worse)[0m
+[mrc_evaluator-93] [33m[WARN] [1770939280.931010622] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=6 fail=3 (pose_graph=mesh)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939281.931262269] [robot_0.mrc_evaluator]:   Trial 3: trans min=1.9441 avg=8.6649 max=12.6347m, rot min=15.66 avg=109.34 max=179.34deg, time=16.50s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939283.931430493] [robot_0.mrc_evaluator]:   Trial 4/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939283.934267629] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939285.372295372] [robot_0.mrc_master]: ICP: coarse_rmse=0.7982, icp_rmse=1.0611 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939285.716060113] [robot_0.mrc_master]: ICP: coarse_rmse=0.9403, icp_rmse=1.3532 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939286.166286626] [robot_0.mrc_master]: ICP: coarse_rmse=0.7428, icp_rmse=1.1280 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939286.429410570] [robot_0.mrc_master]: ICP: coarse_rmse=0.4356, icp_rmse=0.8040 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939286.752650957] [robot_0.mrc_master]: ICP: coarse_rmse=0.5823, icp_rmse=1.3166 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939287.010448540] [robot_0.mrc_master]: ICP: coarse_rmse=0.3512, icp_rmse=0.7350 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939287.325393547] [robot_0.mrc_master]: ICP: coarse_rmse=0.9057, icp_rmse=0.7517 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939287.574010919] [robot_0.mrc_master]: ICP: coarse_rmse=0.6768, icp_rmse=1.3898 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939287.889862861] [robot_0.mrc_master]: ICP: coarse_rmse=1.0563, icp_rmse=1.4884 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939288.081929414] [robot_0.mrc_master]: ICP: coarse_rmse=0.4891, icp_rmse=0.3432 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939288.526354296] [robot_0.mrc_master]: ICP: coarse_rmse=0.5988, icp_rmse=0.9149 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939288.887912733] [robot_0.mrc_master]: ICP: coarse_rmse=0.9727, icp_rmse=1.7074 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939289.334176792] [robot_0.mrc_master]: ICP: coarse_rmse=0.5735, icp_rmse=1.1016 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939289.950875130] [robot_0.mrc_master]: ICP: coarse_rmse=0.8329, icp_rmse=1.4065 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939290.511632789] [robot_0.mrc_master]: ICP: coarse_rmse=0.8258, icp_rmse=1.5145 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939291.058312882] [robot_0.mrc_master]: ICP: coarse_rmse=0.5716, icp_rmse=1.2400 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939291.439024866] [robot_0.mrc_master]: ICP: coarse_rmse=0.7739, icp_rmse=0.9879 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939291.618581071] [robot_0.mrc_master]: ICP: coarse_rmse=0.4115, icp_rmse=0.5578 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939291.983538278] [robot_0.mrc_master]: ICP: coarse_rmse=0.7992, icp_rmse=1.8445 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939292.203407042] [robot_0.mrc_master]: ICP: coarse_rmse=0.7389, icp_rmse=0.4387 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939292.449424982] [robot_0.mrc_master]: ICP: coarse_rmse=0.7337, icp_rmse=0.8393 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939292.843817642] [robot_0.mrc_master]: ICP: coarse_rmse=0.6844, icp_rmse=0.9307 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939293.373045463] [robot_0.mrc_master]: ICP: coarse_rmse=0.8380, icp_rmse=1.0562 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939293.751390283] [robot_0.mrc_master]: ICP: coarse_rmse=0.6880, icp_rmse=1.2899 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939294.104290285] [robot_0.mrc_master]: ICP: coarse_rmse=0.8754, icp_rmse=1.6323 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939294.672652907] [robot_0.mrc_master]: ICP: coarse_rmse=0.7459, icp_rmse=2.2077 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939294.843926140] [robot_0.mrc_master]: ICP: coarse_rmse=0.4401, icp_rmse=0.4107 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939295.200285680] [robot_0.mrc_master]: ICP: coarse_rmse=0.6479, icp_rmse=1.0474 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939295.683004510] [robot_0.mrc_master]: ICP: coarse_rmse=0.8165, icp_rmse=1.6690 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939296.177187377] [robot_0.mrc_master]: ICP: coarse_rmse=0.7399, icp_rmse=1.7815 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939296.595294024] [robot_0.mrc_master]: ICP: coarse_rmse=0.7821, icp_rmse=2.2058 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939296.812972912] [robot_0.mrc_master]: ICP: coarse_rmse=0.5733, icp_rmse=0.2714 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939297.271808665] [robot_0.mrc_master]: ICP: coarse_rmse=0.8174, icp_rmse=1.4122 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939297.608212440] [robot_0.mrc_master]: ICP: coarse_rmse=0.4434, icp_rmse=2.6288 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939298.439718056] [robot_0.mrc_master]: ICP: coarse_rmse=0.6157, icp_rmse=2.5703 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939298.750036862] [robot_0.mrc_master]: ICP: coarse_rmse=0.4651, icp_rmse=2.0038 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939299.143895443] [robot_0.mrc_master]: ICP: coarse_rmse=0.6168, icp_rmse=2.9536 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939299.238887612] [robot_0.mrc_master]: ICP: coarse_rmse=0.4102, icp_rmse=0.6013 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939299.584567613] [robot_0.mrc_master]: ICP: coarse_rmse=0.6904, icp_rmse=1.1238 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939299.771254508] [robot_0.mrc_master]: ICP: coarse_rmse=0.4833, icp_rmse=0.4284 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939299.974257833] [robot_0.mrc_master]: ICP: coarse_rmse=0.8807, icp_rmse=1.3239 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939300.297397096] [robot_0.mrc_master]: ICP: coarse_rmse=0.8720, icp_rmse=1.7157 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939300.521598660] [robot_0.mrc_master]: ICP: coarse_rmse=0.4745, icp_rmse=1.6162 -> rejected (worse)[0m
+[mrc_evaluator-93] [33m[WARN] [1770939300.526457780] [robot_0.mrc_evaluator]: Calibration partial/failure: Calibration complete (algorithm=kiss_matcher). ok=7 fail=2 (pose_graph=mesh)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939301.526673453] [robot_0.mrc_evaluator]:   Trial 4: trans min=3.5055 avg=8.8355 max=13.6596m, rot min=39.77 avg=105.73 max=179.16deg, time=15.59s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939303.526811048] [robot_0.mrc_evaluator]:   Trial 5/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939303.528858375] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=true[0m
+[mrc_master-92] [0m[INFO] [1770939304.770302148] [robot_0.mrc_master]: ICP: coarse_rmse=0.7068, icp_rmse=0.3184 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939305.167175187] [robot_0.mrc_master]: ICP: coarse_rmse=0.9252, icp_rmse=1.1607 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939305.523879151] [robot_0.mrc_master]: ICP: coarse_rmse=0.8489, icp_rmse=1.5419 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939305.788907391] [robot_0.mrc_master]: ICP: coarse_rmse=0.5494, icp_rmse=0.8266 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939306.192188909] [robot_0.mrc_master]: ICP: coarse_rmse=0.6776, icp_rmse=1.1111 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939306.528119763] [robot_0.mrc_master]: ICP: coarse_rmse=0.8766, icp_rmse=0.7857 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939306.825491879] [robot_0.mrc_master]: ICP: coarse_rmse=0.7858, icp_rmse=0.7491 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939307.111841280] [robot_0.mrc_master]: ICP: coarse_rmse=0.5556, icp_rmse=0.9974 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939307.439539804] [robot_0.mrc_master]: ICP: coarse_rmse=0.5267, icp_rmse=0.5505 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939307.616281801] [robot_0.mrc_master]: ICP: coarse_rmse=0.4361, icp_rmse=0.3467 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939307.950235643] [robot_0.mrc_master]: ICP: coarse_rmse=0.8938, icp_rmse=1.4860 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939308.252708482] [robot_0.mrc_master]: ICP: coarse_rmse=0.8815, icp_rmse=1.8821 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939308.633960883] [robot_0.mrc_master]: ICP: coarse_rmse=-1.0000, icp_rmse=0.9324 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939309.180084526] [robot_0.mrc_master]: ICP: coarse_rmse=0.7021, icp_rmse=0.9705 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939309.602846682] [robot_0.mrc_master]: ICP: coarse_rmse=0.8579, icp_rmse=1.2549 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939309.872366501] [robot_0.mrc_master]: ICP: coarse_rmse=0.5619, icp_rmse=0.8526 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939310.376091472] [robot_0.mrc_master]: ICP: coarse_rmse=0.5815, icp_rmse=1.2872 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939310.757162134] [robot_0.mrc_master]: ICP: coarse_rmse=0.7255, icp_rmse=2.0725 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939311.123131721] [robot_0.mrc_master]: ICP: coarse_rmse=0.9558, icp_rmse=1.5840 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939311.376164907] [robot_0.mrc_master]: ICP: coarse_rmse=0.7145, icp_rmse=0.5682 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939312.147222047] [robot_0.mrc_master]: ICP: coarse_rmse=0.6118, icp_rmse=1.4053 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939312.325648793] [robot_0.mrc_master]: ICP: coarse_rmse=0.6674, icp_rmse=0.4412 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939312.672541554] [robot_0.mrc_master]: ICP: coarse_rmse=0.7311, icp_rmse=1.1517 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939312.986658611] [robot_0.mrc_master]: ICP: coarse_rmse=0.6966, icp_rmse=0.9781 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939313.171045279] [robot_0.mrc_master]: ICP: coarse_rmse=0.7326, icp_rmse=0.6642 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939313.938580467] [robot_0.mrc_master]: ICP: coarse_rmse=0.7257, icp_rmse=2.2698 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939314.258343187] [robot_0.mrc_master]: ICP: coarse_rmse=-1.0000, icp_rmse=1.7240 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939314.342498594] [robot_0.mrc_master]: ICP: coarse_rmse=0.4793, icp_rmse=0.4332 -> accepted[0m
+[mrc_master-92] [0m[INFO] [1770939314.645400254] [robot_0.mrc_master]: ICP: coarse_rmse=0.5531, icp_rmse=1.0360 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939315.110447645] [robot_0.mrc_master]: ICP: coarse_rmse=0.9254, icp_rmse=1.0438 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939315.502598012] [robot_0.mrc_master]: ICP: coarse_rmse=0.7476, icp_rmse=1.4162 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939315.947087198] [robot_0.mrc_master]: ICP: coarse_rmse=0.6427, icp_rmse=1.9408 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939316.183430178] [robot_0.mrc_master]: ICP: coarse_rmse=0.5311, icp_rmse=1.0716 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939316.694204050] [robot_0.mrc_master]: ICP: coarse_rmse=0.8286, icp_rmse=1.5052 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939317.326283580] [robot_0.mrc_master]: ICP: coarse_rmse=0.5318, icp_rmse=2.8497 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939317.889583137] [robot_0.mrc_master]: ICP: coarse_rmse=0.5586, icp_rmse=2.8317 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939318.134122691] [robot_0.mrc_master]: ICP: coarse_rmse=0.9249, icp_rmse=3.9963 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939318.625560019] [robot_0.mrc_master]: ICP: coarse_rmse=0.5422, icp_rmse=3.0672 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939318.797347261] [robot_0.mrc_master]: ICP: coarse_rmse=0.3683, icp_rmse=0.6350 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939319.080445373] [robot_0.mrc_master]: ICP: coarse_rmse=0.5460, icp_rmse=0.8656 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939319.315364019] [robot_0.mrc_master]: ICP: coarse_rmse=0.3889, icp_rmse=0.4358 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939319.622174652] [robot_0.mrc_master]: ICP: coarse_rmse=0.7536, icp_rmse=1.0768 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939319.854803366] [robot_0.mrc_master]: ICP: coarse_rmse=0.5999, icp_rmse=0.9780 -> rejected (worse)[0m
+[mrc_master-92] [0m[INFO] [1770939320.644290245] [robot_0.mrc_master]: ICP: coarse_rmse=1.0072, icp_rmse=4.0634 -> rejected (worse)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939321.650547472] [robot_0.mrc_evaluator]:   Trial 5: trans min=2.8476 avg=8.9068 max=15.8746m, rot min=18.36 avg=102.76 max=176.10deg, time=16.12s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939323.650704983] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939326.650818840] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-93] --- Configuration 7/12: fricp_no_pg ---[0m
+[mrc_evaluator-93] [0m[INFO] [1770939326.650874941] [robot_0.mrc_evaluator]:   Trial 1/5...[0m
+[mrc_master-92] [0m[INFO] [1770939326.651712593] [robot_0.mrc_master]: Registration backend set to 'fricp'[0m
+[mrc_evaluator-93] [0m[INFO] [1770939326.653276188] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939338.735176130] [robot_0.mrc_evaluator]:   Trial 1: trans min=2.2245 avg=8.4055 max=12.8623m, rot min=19.33 avg=100.66 max=179.92deg, time=10.08s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939340.735329462] [robot_0.mrc_evaluator]:   Trial 2/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939340.739792227] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939352.795920448] [robot_0.mrc_evaluator]:   Trial 2: trans min=3.4805 avg=8.7637 max=12.8624m, rot min=33.46 avg=103.11 max=179.56deg, time=10.06s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939354.796311000] [robot_0.mrc_evaluator]:   Trial 3/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939354.800681803] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939366.833790729] [robot_0.mrc_evaluator]:   Trial 3: trans min=1.9278 avg=8.3685 max=12.8616m, rot min=15.85 avg=101.09 max=179.98deg, time=10.03s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939368.833927340] [robot_0.mrc_evaluator]:   Trial 4/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939368.835684411] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939381.512645467] [robot_0.mrc_evaluator]:   Trial 4: trans min=1.6311 avg=8.4093 max=12.8963m, rot min=11.71 avg=97.68 max=161.00deg, time=10.68s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939383.512744845] [robot_0.mrc_evaluator]:   Trial 5/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939383.514350324] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939395.798684577] [robot_0.mrc_evaluator]:   Trial 5: trans min=3.6573 avg=9.1667 max=12.8617m, rot min=34.36 avg=109.18 max=179.90deg, time=10.28s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939397.798788968] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939400.798907784] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-93] --- Configuration 8/12: fricp_star ---[0m
+[mrc_evaluator-93] [0m[INFO] [1770939400.799004318] [robot_0.mrc_evaluator]:   Trial 1/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939400.804468226] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939413.321799756] [robot_0.mrc_evaluator]:   Trial 1: trans min=1.6984 avg=8.4357 max=12.8611m, rot min=14.99 avg=99.35 max=179.98deg, time=10.52s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939415.321916655] [robot_0.mrc_evaluator]:   Trial 2/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939415.326301257] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939427.193775085] [robot_0.mrc_evaluator]:   Trial 2: trans min=3.4916 avg=9.0587 max=12.8613m, rot min=38.97 avg=112.19 max=179.98deg, time=9.87s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939429.193890200] [robot_0.mrc_evaluator]:   Trial 3/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939429.198078595] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939441.780306233] [robot_0.mrc_evaluator]:   Trial 3: trans min=2.1468 avg=8.4893 max=12.8610m, rot min=0.01 avg=101.14 max=179.99deg, time=10.58s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939443.780412160] [robot_0.mrc_evaluator]:   Trial 4/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939443.782233293] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939455.960158986] [robot_0.mrc_evaluator]:   Trial 4: trans min=3.3592 avg=8.6289 max=13.0114m, rot min=30.32 avg=105.32 max=179.98deg, time=10.18s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939457.960269997] [robot_0.mrc_evaluator]:   Trial 5/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939457.961589535] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939470.181323668] [robot_0.mrc_evaluator]:   Trial 5: trans min=3.1298 avg=8.7061 max=12.8618m, rot min=22.03 avg=100.06 max=179.81deg, time=10.22s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939472.181552671] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939475.181664286] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-93] --- Configuration 9/12: fricp_mesh ---[0m
+[mrc_evaluator-93] [0m[INFO] [1770939475.181709003] [robot_0.mrc_evaluator]:   Trial 1/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939475.183337469] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939535.924959745] [robot_0.mrc_evaluator]:   Trial 1: trans min=2.3210 avg=8.2787 max=12.1952m, rot min=24.25 avg=99.97 max=171.17deg, time=58.74s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939537.925077886] [robot_0.mrc_evaluator]:   Trial 2/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939537.929714715] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939597.030430364] [robot_0.mrc_evaluator]:   Trial 2: trans min=2.9866 avg=8.4546 max=12.1943m, rot min=24.46 avg=101.96 max=179.97deg, time=57.10s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939599.030562586] [robot_0.mrc_evaluator]:   Trial 3/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939599.034668228] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_evaluator-93] [0m[INFO] [1770939659.018705138] [robot_0.mrc_evaluator]:   Trial 3: trans min=3.3098 avg=8.6102 max=12.3961m, rot min=34.94 avg=100.56 max=169.30deg, time=57.98s[0m
+[mrc_evaluator-93] [0m[INFO] [1770939661.018803310] [robot_0.mrc_evaluator]:   Trial 4/5...[0m
+[mrc_evaluator-93] [0m[INFO] [1770939661.020386579] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_evaluator-93] [2m2026-02-12T23:41:11.601099Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::queries[0m[2m:[0m Face{1, d81180a42289887cbd8114a9f8180652}:1 Didn't receive final reply for query Face{84, 6b3d215b2a283bc095563f6157cd4e95}:1: Timeout(600s)!
+[ros2-94] [31m[ERROR] [1770939671.601149598] [rmw_zenoh_cpp]: z_reply_is_ok returned False Reason: Timeout for service '/robot_0/mrc_evaluator/trigger_comprehensive_comparison'[0m
+[ros2-94] [31m[ERROR] [1770939671.601149621] [rmw_zenoh_cpp]: z_reply_is_ok returned False Reason: Timeout for service '/robot_0/mrc_evaluator/trigger_comprehensive_comparison'[0m
+[mrc_evaluator-93] [0m[INFO] [1770939710.582567597] [rclcpp]: signal_handler(signum=2)[0m
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[mrc_slave-90] [0m[INFO] [1770939710.582566693] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_master-92] [0m[INFO] [1770939710.582574195] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-89] [0m[INFO] [1770939710.582580937] [rclcpp]: signal_handler(signum=2)[0m
+[INFO] [parameter_bridge-41]: process has finished cleanly [pid 3889169]
+[INFO] [parameter_bridge-33]: process has finished cleanly [pid 3888878]
+[INFO] [parameter_bridge-57]: process has finished cleanly [pid 3889832]
+[mrc_slave-87] [0m[INFO] [1770939710.582578127] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-86] [0m[INFO] [1770939710.582585910] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-85] [0m[INFO] [1770939710.582587130] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-82] [0m[INFO] [1770939710.582598148] [rclcpp]: signal_handler(signum=2)[0m
+[INFO] [parameter_bridge-25]: process has finished cleanly [pid 3888616]
+[INFO] [parameter_bridge-9]: process has finished cleanly [pid 3888196]
+[INFO] [parameter_bridge-17]: process has finished cleanly [pid 3888378]
+[INFO] [parameter_bridge-49]: process has finished cleanly [pid 3889480]
+[INFO] [parameter_bridge-81]: process has finished cleanly [pid 3891086]
+[INFO] [parameter_bridge-73]: process has finished cleanly [pid 3890657]
+[INFO] [parameter_bridge-65]: process has finished cleanly [pid 3890259]
+[mrc_slave-84] [0m[INFO] [1770939710.582598346] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-83] [0m[INFO] [1770939710.582599667] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-81] [0m[INFO] [1770939710.582616569] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-79] [0m[INFO] [1770939710.582619812] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-72] [0m[INFO] [1770939710.582667994] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-63] [0m[INFO] [1770939710.582688235] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-74] [0m[INFO] [1770939710.582697038] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-80] [0m[INFO] [1770939710.582700960] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-78] [0m[INFO] [1770939710.582708622] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-91] [0m[INFO] [1770939710.582719804] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-88] [0m[INFO] [1770939710.582725091] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-62] [0m[INFO] [1770939710.582725424] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-58] [0m[INFO] [1770939710.582725608] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-55] [0m[INFO] [1770939710.582736534] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-53] [0m[INFO] [1770939710.582738123] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-52] [0m[INFO] [1770939710.582740340] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-70] [0m[INFO] [1770939710.582752315] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-50] [0m[INFO] [1770939710.582771863] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-71] [0m[INFO] [1770939710.582775579] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-60] [0m[INFO] [1770939710.582785142] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-40] [0m[INFO] [1770939710.582787958] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-38] [0m[INFO] [1770939710.582791787] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-32] [0m[INFO] [1770939710.582802591] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-56] [0m[INFO] [1770939710.582811942] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-54] [0m[INFO] [1770939710.582820641] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-31] [0m[INFO] [1770939710.582819044] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-64] [0m[INFO] [1770939710.582825098] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-33] [0m[INFO] [1770939710.582825180] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-47] [0m[INFO] [1770939710.582831779] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-49] [0m[INFO] [1770939710.582847756] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-29] [0m[INFO] [1770939710.582852207] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-21] [0m[INFO] [1770939710.582859129] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-36] [0m[INFO] [1770939710.582865057] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-39] [0m[INFO] [1770939710.582872139] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-13] [0m[INFO] [1770939710.582878708] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-44] [0m[INFO] [1770939710.582883748] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-46] [0m[INFO] [1770939710.582897449] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-25] [0m[INFO] [1770939710.582902806] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-30] [0m[INFO] [1770939710.582903166] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-7] [0m[INFO] [1770939710.582918236] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-5] [0m[INFO] [1770939710.582919988] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-4] [0m[INFO] [1770939710.582923992] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-12] [0m[INFO] [1770939710.582930750] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-10] [0m[INFO] [1770939710.582957757] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-28] [0m[INFO] [1770939710.582966364] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-14] [0m[INFO] [1770939710.582981830] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-77] [0m[INFO] [1770939710.582982118] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-2] [0m[INFO] [1770939710.583013717] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-23] [0m[INFO] [1770939710.583051588] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-76] [0m[INFO] [1770939710.583066199] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-22] [0m[INFO] [1770939710.583122499] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-73] [0m[INFO] [1770939710.583135485] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-20] [0m[INFO] [1770939710.583191006] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-69] [0m[INFO] [1770939710.583199811] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-68] [0m[INFO] [1770939710.583264081] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-18] [0m[INFO] [1770939710.583263894] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-66] [0m[INFO] [1770939710.583331245] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-17] [0m[INFO] [1770939710.583334121] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-65] [0m[INFO] [1770939710.583390954] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-6] [0m[INFO] [1770939710.583399565] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-61] [0m[INFO] [1770939710.583451978] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-8] [0m[INFO] [1770939710.583526258] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-9] [0m[INFO] [1770939710.583602348] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-15] [0m[INFO] [1770939710.583677502] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-16] [0m[INFO] [1770939710.583746810] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-24] [0m[INFO] [1770939710.583813585] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-26] [0m[INFO] [1770939710.583886349] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-34] [0m[INFO] [1770939710.583959972] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-37] [0m[INFO] [1770939710.584027255] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-41] [0m[INFO] [1770939710.584097925] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-42] [0m[INFO] [1770939710.584168937] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-45] [0m[INFO] [1770939710.584238143] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-48] [0m[INFO] [1770939710.584308876] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-57] [0m[INFO] [1770939710.584771909] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-85] [0m[INFO] [1770939712.555889147] [rclcpp]: signal_handler(signum=2)[0m
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[mrc_slave-82] [0m[INFO] [1770939712.555896196] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-91] [0m[INFO] [1770939712.555914314] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-84] [0m[INFO] [1770939712.555932624] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-83] [0m[INFO] [1770939712.555956466] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-87] [0m[INFO] [1770939712.556023238] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-89] [0m[INFO] [1770939712.556216759] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-66] [0m[INFO] [1770939712.556610430] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_master-92] [0m[INFO] [1770939712.556632191] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-88] [0m[INFO] [1770939712.556646951] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-86] [0m[INFO] [1770939712.556672658] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-42] [0m[INFO] [1770939712.556712812] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-34] [0m[INFO] [1770939712.556733181] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-50] [0m[INFO] [1770939712.556785219] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-90] [0m[INFO] [1770939712.556801167] [rclcpp]: signal_handler(signum=2)[0m
+[ERROR] [static_transform_publisher-68]: process has died [pid 3890628, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --x 1.854 --y -5.706 --z 0.15 --yaw 1.885 --pitch 0 --roll 0 --frame-id odom --child-frame-id base_link --ros-args -r __node:=odom_base_link_tf -r __ns:=/robot_8 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [prefix_tf_republisher-39]: process has died [pid 3889167, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_republisher -r __ns:=/robot_4 -p use_sim_time:=True --params-file /tmp/launch_params_knh8tqdm -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf -r output_tf_topic:=/tf'].
+[ERROR] [static_transform_publisher-78]: process has died [pid 3891076, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id map --child-frame-id odom --ros-args -r __node:=map_static_tf -r __ns:=/robot_9 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-70]: process has died [pid 3890654, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id map --child-frame-id odom --ros-args -r __node:=map_static_tf -r __ns:=/robot_8 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [prefix_tf_republisher-15]: process has died [pid 3888376, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_republisher -r __ns:=/robot_1 -p use_sim_time:=True --params-file /tmp/launch_params_8bug5mu9 -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf -r output_tf_topic:=/tf'].
+[ERROR] [prefix_tf_republisher-55]: process has died [pid 3889830, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_republisher -r __ns:=/robot_6 -p use_sim_time:=True --params-file /tmp/launch_params_gmuo8e1j -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf -r output_tf_topic:=/tf'].
+[ERROR] [static_transform_publisher-53]: process has died [pid 3889828, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id world --child-frame-id map --ros-args -r __node:=world_static_tf -r __ns:=/robot_6 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-61]: process has died [pid 3890255, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id world --child-frame-id map --ros-args -r __node:=world_static_tf -r __ns:=/robot_7 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-45]: process has died [pid 3889476, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id world --child-frame-id map --ros-args -r __node:=world_static_tf -r __ns:=/robot_5 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [prefix_tf_republisher-47]: process has died [pid 3889478, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_republisher -r __ns:=/robot_5 -p use_sim_time:=True --params-file /tmp/launch_params_0h3j2xvt -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf -r output_tf_topic:=/tf'].
+[ERROR] [prefix_tf_republisher-71]: process has died [pid 3890655, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_republisher -r __ns:=/robot_8 -p use_sim_time:=True --params-file /tmp/launch_params_lw7bac56 -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf -r output_tf_topic:=/tf'].
+[ERROR] [prefix_tf_republisher-72]: process has died [pid 3890656, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_static_republisher -r __ns:=/robot_8 -p use_sim_time:=True --params-file /tmp/launch_params_2x45fs3j -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf_static -r output_tf_topic:=/tf_static'].
+[ERROR] [static_transform_publisher-69]: process has died [pid 3890652, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id world --child-frame-id map --ros-args -r __node:=world_static_tf -r __ns:=/robot_8 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [prefix_tf_republisher-80]: process has died [pid 3891085, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_static_republisher -r __ns:=/robot_9 -p use_sim_time:=True --params-file /tmp/launch_params_3embv6mt -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf_static -r output_tf_topic:=/tf_static'].
+[ERROR] [prefix_tf_republisher-8]: process has died [pid 3888195, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_static_republisher -r __ns:=/robot_0 -p use_sim_time:=True --params-file /tmp/launch_params_0atlcb0l -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf_static -r output_tf_topic:=/tf_static'].
+[ERROR] [static_transform_publisher-22]: process has died [pid 3888613, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id map --child-frame-id odom --ros-args -r __node:=map_static_tf -r __ns:=/robot_2 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-12]: process has died [pid 3888373, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --x 4.854 --y 3.527 --z 0.15 --yaw -2.513 --pitch 0 --roll 0 --frame-id odom --child-frame-id base_link --ros-args -r __node:=odom_base_link_tf -r __ns:=/robot_1 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-37]: process has died [pid 3889165, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id world --child-frame-id map --ros-args -r __node:=world_static_tf -r __ns:=/robot_4 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-14]: process has died [pid 3888375, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id map --child-frame-id odom --ros-args -r __node:=map_static_tf -r __ns:=/robot_1 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-5]: process has died [pid 3888192, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id world --child-frame-id map --ros-args -r __node:=world_static_tf -r __ns:=/robot_0 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [prefix_tf_republisher-64]: process has died [pid 3890258, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_static_republisher -r __ns:=/robot_7 -p use_sim_time:=True --params-file /tmp/launch_params_ja7q78r0 -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf_static -r output_tf_topic:=/tf_static'].
+[ERROR] [static_transform_publisher-52]: process has died [pid 3889827, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --x -4.854 --y -3.527 --z 0.15 --yaw 0.628 --pitch 0 --roll 0 --frame-id odom --child-frame-id base_link --ros-args -r __node:=odom_base_link_tf -r __ns:=/robot_6 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-29]: process has died [pid 3888874, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id world --child-frame-id map --ros-args -r __node:=world_static_tf -r __ns:=/robot_3 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [prefix_tf_republisher-40]: process has died [pid 3889168, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_static_republisher -r __ns:=/robot_4 -p use_sim_time:=True --params-file /tmp/launch_params_turpkz_6 -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf_static -r output_tf_topic:=/tf_static'].
+[ERROR] [static_transform_publisher-28]: process has died [pid 3888873, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --x -1.854 --y 5.706 --z 0.15 --yaw -1.257 --pitch 0 --roll 0 --frame-id odom --child-frame-id base_link --ros-args -r __node:=odom_base_link_tf -r __ns:=/robot_3 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [prefix_tf_republisher-16]: process has died [pid 3888377, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_static_republisher -r __ns:=/robot_1 -p use_sim_time:=True --params-file /tmp/launch_params_e0vf9jyy -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf_static -r output_tf_topic:=/tf_static'].
+[ERROR] [static_transform_publisher-36]: process has died [pid 3889164, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --x -4.854 --y 3.527 --z 0.15 --yaw -0.628 --pitch 0 --roll 0 --frame-id odom --child-frame-id base_link --ros-args -r __node:=odom_base_link_tf -r __ns:=/robot_4 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-46]: process has died [pid 3889477, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id map --child-frame-id odom --ros-args -r __node:=map_static_tf -r __ns:=/robot_5 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-4]: process has died [pid 3888191, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --x 6.0 --y 0.0 --z 0.15 --yaw 3.14159 --pitch 0 --roll 0 --frame-id odom --child-frame-id base_link --ros-args -r __node:=odom_base_link_tf -r __ns:=/robot_0 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-60]: process has died [pid 3890254, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --x -1.854 --y -5.706 --z 0.15 --yaw 1.257 --pitch 0 --roll 0 --frame-id odom --child-frame-id base_link --ros-args -r __node:=odom_base_link_tf -r __ns:=/robot_7 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-38]: process has died [pid 3889166, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id map --child-frame-id odom --ros-args -r __node:=map_static_tf -r __ns:=/robot_4 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [prefix_tf_republisher-31]: process has died [pid 3888876, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_republisher -r __ns:=/robot_3 -p use_sim_time:=True --params-file /tmp/launch_params_tas7_gzg -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf -r output_tf_topic:=/tf'].
+[robot_state_publisher-74] [0m[INFO] [1770939712.556809615] [rclcpp]: signal_handler(signum=2)[0m
+[ERROR] [prefix_tf_republisher-56]: process has died [pid 3889831, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_static_republisher -r __ns:=/robot_6 -p use_sim_time:=True --params-file /tmp/launch_params_ouvrnakr -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf_static -r output_tf_topic:=/tf_static'].
+[ERROR] [static_transform_publisher-54]: process has died [pid 3889829, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id map --child-frame-id odom --ros-args -r __node:=map_static_tf -r __ns:=/robot_6 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-62]: process has died [pid 3890256, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id map --child-frame-id odom --ros-args -r __node:=map_static_tf -r __ns:=/robot_7 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[robot_state_publisher-58] [0m[INFO] [1770939712.556874340] [rclcpp]: signal_handler(signum=2)[0m
+[ERROR] [static_transform_publisher-20]: process has died [pid 3888611, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --x 1.854 --y 5.706 --z 0.15 --yaw -1.885 --pitch 0 --roll 0 --frame-id odom --child-frame-id base_link --ros-args -r __node:=odom_base_link_tf -r __ns:=/robot_2 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [prefix_tf_republisher-48]: process has died [pid 3889479, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_static_republisher -r __ns:=/robot_5 -p use_sim_time:=True --params-file /tmp/launch_params_vx5nnf62 -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf_static -r output_tf_topic:=/tf_static'].
+[ERROR] [static_transform_publisher-6]: process has died [pid 3888193, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id map --child-frame-id odom --ros-args -r __node:=map_static_tf -r __ns:=/robot_0 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[robot_state_publisher-26] [0m[INFO] [1770939712.557168825] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-2] [0m[INFO] [1770939712.557445688] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-10] [0m[INFO] [1770939712.557804015] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939712.559759756] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-18] [0m[INFO] [1770939712.601085625] [rclcpp]: signal_handler(signum=2)[0m
+[ERROR] [prefix_tf_republisher-24]: process has died [pid 3888615, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_static_republisher -r __ns:=/robot_2 -p use_sim_time:=True --params-file /tmp/launch_params_6a0ras5e -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf_static -r output_tf_topic:=/tf_static'].
+[ERROR] [static_transform_publisher-76]: process has died [pid 3891069, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --x 4.854 --y -3.527 --z 0.15 --yaw 2.513 --pitch 0 --roll 0 --frame-id odom --child-frame-id base_link --ros-args -r __node:=odom_base_link_tf -r __ns:=/robot_9 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-77]: process has died [pid 3891073, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id world --child-frame-id map --ros-args -r __node:=world_static_tf -r __ns:=/robot_9 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [prefix_tf_republisher-7]: process has died [pid 3888194, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_republisher -r __ns:=/robot_0 -p use_sim_time:=True --params-file /tmp/launch_params_pvk8ls1y -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf -r output_tf_topic:=/tf'].
+[ERROR] [prefix_tf_republisher-63]: process has died [pid 3890257, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_republisher -r __ns:=/robot_7 -p use_sim_time:=True --params-file /tmp/launch_params_6wgrf7rb -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf -r output_tf_topic:=/tf'].
+[ERROR] [static_transform_publisher-21]: process has died [pid 3888612, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id world --child-frame-id map --ros-args -r __node:=world_static_tf -r __ns:=/robot_2 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-44]: process has died [pid 3889475, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --x -6.0 --y 0.0 --z 0.15 --yaw 0.0 --pitch 0 --roll 0 --frame-id odom --child-frame-id base_link --ros-args -r __node:=odom_base_link_tf -r __ns:=/robot_5 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [prefix_tf_republisher-32]: process has died [pid 3888877, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_static_republisher -r __ns:=/robot_3 -p use_sim_time:=True --params-file /tmp/launch_params_nvoptnmu -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf_static -r output_tf_topic:=/tf_static'].
+[ERROR] [static_transform_publisher-13]: process has died [pid 3888374, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id world --child-frame-id map --ros-args -r __node:=world_static_tf -r __ns:=/robot_1 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [static_transform_publisher-30]: process has died [pid 3888875, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id map --child-frame-id odom --ros-args -r __node:=map_static_tf -r __ns:=/robot_3 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [ros2-94]: process has died [pid 3896599, exit code -2, cmd 'ros2 service call /robot_0/mrc_evaluator/trigger_comprehensive_comparison std_srvs/srv/Trigger'].
+[ERROR] [prefix_tf_republisher-79]: process has died [pid 3891077, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_republisher -r __ns:=/robot_9 -p use_sim_time:=True --params-file /tmp/launch_params_gm4olox8 -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf -r output_tf_topic:=/tf'].
+[ERROR] [prefix_tf_republisher-23]: process has died [pid 3888614, exit code -2, cmd '/opt/hector/jazzy/lib/hector_multi_robot_tools/prefix_tf_republisher --ros-args -r __node:=tf_republisher -r __ns:=/robot_2 -p use_sim_time:=True --params-file /tmp/launch_params_qssdldz_ -r /tf:=tf -r /tf_static:=tf_static -r input_tf_topic:=tf -r output_tf_topic:=/tf'].
+[INFO] [gz-1]: process has finished cleanly [pid 3888176]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[mrc_slave-86] [0m[INFO] [1770939715.078299080] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-91] [0m[INFO] [1770939715.078314507] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-42] [0m[INFO] [1770939715.078313278] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-18] [0m[INFO] [1770939715.078316924] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-89] [0m[INFO] [1770939715.078318354] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-58] [0m[INFO] [1770939715.078343289] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-90] [0m[INFO] [1770939715.078350647] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-34] [0m[INFO] [1770939715.078367995] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939715.078457009] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_master-92] [0m[INFO] [1770939715.078569740] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-50] [0m[INFO] [1770939715.078866614] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-82] [0m[INFO] [1770939715.080225923] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-74] [0m[INFO] [1770939715.080721803] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-10] [0m[INFO] [1770939715.081415507] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-26] [0m[INFO] [1770939715.082299784] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-2] [0m[INFO] [1770939715.082331721] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-88] [0m[INFO] [1770939715.082373793] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-84] [0m[INFO] [1770939715.083905821] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-85] [0m[INFO] [1770939715.084657623] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-66] [0m[INFO] [1770939715.087761543] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-87] [0m[INFO] [1770939715.094310285] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-83] [0m[INFO] [1770939715.104094967] [rclcpp]: signal_handler(signum=2)[0m
+[INFO] [mrc_slave-82]: process has finished cleanly [pid 3892136]
+[INFO] [mrc_slave-85]: process has finished cleanly [pid 3892139]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[mrc_slave-89] [0m[INFO] [1770939715.288473089] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-84] [0m[INFO] [1770939715.288546076] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-74] [0m[INFO] [1770939715.288560692] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-86] [0m[INFO] [1770939715.288590409] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_evaluator-93] [0m[INFO] [1770939715.288667251] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-58] [0m[INFO] [1770939715.288671307] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-50] [0m[INFO] [1770939715.288677549] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_master-92] [0m[INFO] [1770939715.288699220] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-34] [0m[INFO] [1770939715.288701733] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-2] [0m[INFO] [1770939715.288733706] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-26] [0m[INFO] [1770939715.288758138] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-83] [0m[INFO] [1770939715.289942153] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-87] [0m[INFO] [1770939715.290020442] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-42] [0m[INFO] [1770939715.290351441] [rclcpp]: signal_handler(signum=2)[0m
+[mrc_slave-91] [0m[INFO] [1770939715.290881998] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-66] [0m[INFO] [1770939715.291317966] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-18] [0m[INFO] [1770939715.291867754] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-10] [0m[INFO] [1770939715.294277886] [rclcpp]: signal_handler(signum=2)[0m
+[ERROR] [mrc_slave-88]: process has died [pid 3892153, exit code -2, cmd '/home/hector/hector/install/mrc/lib/mrc/mrc_slave --ros-args -r __node:=mrc_slave -r __ns:=/robot_6 --params-file /tmp/launch_params_vc7_1b4y -r /tf:=tf -r /tf_static:=tf_static'].
+[INFO] [mrc_slave-86]: process has finished cleanly [pid 3892141]
+[INFO] [mrc_slave-89]: process has finished cleanly [pid 3892158]
+[INFO] [mrc_slave-90]: process has finished cleanly [pid 3892159]
+[INFO] [mrc_slave-91]: process has finished cleanly [pid 3892160]
+[INFO] [mrc_slave-87]: process has finished cleanly [pid 3892152]
+[INFO] [robot_state_publisher-66]: process has finished cleanly [pid 3890626]
+[INFO] [mrc_slave-84]: process has finished cleanly [pid 3892138]
+[INFO] [mrc_slave-83]: process has finished cleanly [pid 3892137]
+[INFO] [robot_state_publisher-74]: process has finished cleanly [pid 3891058]
+[INFO] [robot_state_publisher-26]: process has finished cleanly [pid 3888871]
+[INFO] [robot_state_publisher-18]: process has finished cleanly [pid 3888609]
+[INFO] [robot_state_publisher-34]: process has finished cleanly [pid 3889162]
+[INFO] [robot_state_publisher-50]: process has finished cleanly [pid 3889825]
+[INFO] [robot_state_publisher-42]: process has finished cleanly [pid 3889473]
+[INFO] [robot_state_publisher-58]: process has finished cleanly [pid 3890252]
+[INFO] [robot_state_publisher-10]: process has finished cleanly [pid 3888371]
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 3888189]
+[ERROR] [mrc_evaluator-93]: process[mrc_evaluator-93] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [mrc_master-92]: process[mrc_master-92] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [mrc_evaluator-93]: sending signal 'SIGTERM' to process[mrc_evaluator-93]
+[INFO] [mrc_master-92]: sending signal 'SIGTERM' to process[mrc_master-92]
+[mrc_evaluator-93] [0m[INFO] [1770939716.855438259] [rclcpp]: signal_handler(signum=15)[0m
+[mrc_master-92] [0m[INFO] [1770939716.872790078] [rclcpp]: signal_handler(signum=15)[0m
+[ERROR] [mrc_evaluator-93]: process[mrc_evaluator-93] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [mrc_master-92]: process[mrc_master-92] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [mrc_evaluator-93]: sending signal 'SIGKILL' to process[mrc_evaluator-93]
+[INFO] [mrc_master-92]: sending signal 'SIGKILL' to process[mrc_master-92]
+[ERROR] [mrc_evaluator-93]: process has died [pid 3893130, exit code -9, cmd '/home/hector/hector/install/mrc_test/lib/mrc_test/mrc_evaluator --ros-args -r __node:=mrc_evaluator -r __ns:=/robot_0 --params-file /tmp/launch_params_3r485bl3 -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [mrc_master-92]: process has died [pid 3892724, exit code -9, cmd '/home/hector/hector/install/mrc/lib/mrc/mrc_master --ros-args -r __node:=mrc_master -r __ns:=/robot_0 --params-file /tmp/launch_params_4serp17t -r /tf:=tf -r /tf_static:=tf_static'].

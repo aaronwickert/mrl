@@ -1,0 +1,443 @@
+[INFO] [launch]: All log files can be found below /home/hector/.ros/log/2026-02-17-07-54-53-421214-home-150698
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gz-1]: process started with pid [150703]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="wall_north"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L90]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="wall_south"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L108]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="wall_east"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L126]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="wall_west"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L144]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="partition_a"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L163]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="partition_b"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L181]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="pillar_1"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L200]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="pillar_2"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L218]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="pillar_3"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L236]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="pillar_4"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L254]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="large_table"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L273]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="bookshelf_1"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L291]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="bookshelf_2"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L309]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="barrel_1"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L328]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="barrel_2"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L346]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="crate_1"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L365]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="crate_2"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L383]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="crate_stack"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L401]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [Tue Feb 17 07:54:53 2026]: Logging configured: level=info, file=(disabled), stdout=true
+[gz-1] [07:54:53][    10 us][info]: RGL Version 0.20.0 branch=develop commitSHA1=d1ff3b6cf618518d60a4cc6acb9231e3aa9e9e28
+[gz-1] [07:54:53][ 29264 us][info]: Running on GPU: NVIDIA GeForce RTX 3070
+[gz-1] [07:54:53][     9 us][info]: Built against OptiX SDK version: 7.2.0
+[gz-1] [07:54:53][     0 us][info]: Built against OptiX ABI version: 41
+[gz-1] [07:54:53][     0 us][info]: Built against CUDA Toolkit version: 11.7
+[gz-1] [07:54:53][     1 us][info]: Installed CUDA runtime version: 11.7
+[gz-1] [07:54:53][     0 us][info]: Installed CUDA driver version: 12.2
+[gz-1] [07:54:53][  4031 us][info]: Installed NVidia kernel driver version: 535.230.02
+[INFO] [robot_state_publisher-2]: process started with pid [150716]
+[INFO] [create-3]: process started with pid [150717]
+[INFO] [static_transform_publisher-4]: process started with pid [150718]
+[INFO] [static_transform_publisher-5]: process started with pid [150719]
+[INFO] [static_transform_publisher-6]: process started with pid [150720]
+[INFO] [prefix_tf_republisher-7]: process started with pid [150721]
+[INFO] [prefix_tf_republisher-8]: process started with pid [150722]
+[INFO] [parameter_bridge-9]: process started with pid [150723]
+[robot_state_publisher-2] [0m[INFO] [1771314897.821137870] [robot_0.robot_state_publisher]: Robot initialized[0m
+[static_transform_publisher-5] [0m[INFO] [1771314897.821832553] [robot_0.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-5] from 'world' to 'map'[0m
+[static_transform_publisher-4] [0m[INFO] [1771314897.845003903] [robot_0.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('-1.000000', '-2.000000', '0.150000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '0.247404', '0.968912')
+[static_transform_publisher-4] from 'odom' to 'base_link'[0m
+[prefix_tf_republisher-8] [0m[INFO] [1771314897.855750479] [robot_0.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_0'[0m
+[static_transform_publisher-6] [0m[INFO] [1771314897.860657703] [robot_0.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-6] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-6] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-6] from 'map' to 'odom'[0m
+[prefix_tf_republisher-7] [0m[INFO] [1771314897.877163129] [robot_0.tf_republisher]: Republishing tf frame ids with prefix 'robot_0'[0m
+[create-3] [0m[INFO] [1771314897.927791371] [robot_0.spawn_robot]: Requesting list of world names.[0m
+[create-3] [0m[INFO] [1771314898.133803771] [robot_0.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-3] [0m[INFO] [1771314898.137763069] [robot_0.spawn_robot]: Entity creation successful.[0m
+[INFO] [create-3]: process has finished cleanly [pid 150717]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-9] [0m[INFO] [1771314898.917022233] [robot_0.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_0/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-9] [0m[INFO] [1771314898.921938578] [robot_0.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_0/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-10]: process started with pid [150951]
+[INFO] [create-11]: process started with pid [150952]
+[INFO] [static_transform_publisher-12]: process started with pid [150953]
+[INFO] [static_transform_publisher-13]: process started with pid [150954]
+[INFO] [static_transform_publisher-14]: process started with pid [150955]
+[INFO] [prefix_tf_republisher-15]: process started with pid [150956]
+[INFO] [prefix_tf_republisher-16]: process started with pid [150957]
+[INFO] [parameter_bridge-17]: process started with pid [150958]
+[robot_state_publisher-10] [0m[INFO] [1771314899.347524596] [robot_1.robot_state_publisher]: Robot initialized[0m
+[prefix_tf_republisher-16] [0m[INFO] [1771314899.377183720] [robot_1.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_1'[0m
+[create-11] [0m[INFO] [1771314899.411235262] [robot_1.spawn_robot]: Requesting list of world names.[0m
+[static_transform_publisher-13] [0m[INFO] [1771314899.419755510] [robot_1.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-13] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-13] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-13] from 'world' to 'map'[0m
+[prefix_tf_republisher-15] [0m[INFO] [1771314899.431997209] [robot_1.tf_republisher]: Republishing tf frame ids with prefix 'robot_1'[0m
+[static_transform_publisher-14] [0m[INFO] [1771314899.477681626] [robot_1.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-14] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-14] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-14] from 'map' to 'odom'[0m
+[static_transform_publisher-12] [0m[INFO] [1771314899.545716343] [robot_1.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-12] translation: ('2.500000', '1.000000', '0.150000')
+[static_transform_publisher-12] rotation: ('0.000000', '0.000000', '-0.564642', '0.825336')
+[static_transform_publisher-12] from 'odom' to 'base_link'[0m
+[create-11] [0m[INFO] [1771314899.617489075] [robot_1.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-11] [0m[INFO] [1771314899.623415644] [robot_1.spawn_robot]: Entity creation successful.[0m
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[INFO] [create-11]: process has finished cleanly [pid 150952]
+[parameter_bridge-17] [0m[INFO] [1771314900.461561620] [robot_1.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_1/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-17] [0m[INFO] [1771314900.467501927] [robot_1.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_1/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-18]: process started with pid [151195]
+[INFO] [create-19]: process started with pid [151196]
+[INFO] [static_transform_publisher-20]: process started with pid [151197]
+[INFO] [static_transform_publisher-21]: process started with pid [151198]
+[INFO] [static_transform_publisher-22]: process started with pid [151199]
+[INFO] [prefix_tf_republisher-23]: process started with pid [151200]
+[INFO] [prefix_tf_republisher-24]: process started with pid [151201]
+[INFO] [parameter_bridge-25]: process started with pid [151202]
+[robot_state_publisher-18] [0m[INFO] [1771314900.892106086] [robot_2.robot_state_publisher]: Robot initialized[0m
+[create-19] [2m2026-02-17T07:55:01.208032Z[0m [33m WARN[0m ThreadId(23) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[parameter_bridge-25] [2m2026-02-17T07:55:01.231818Z[0m [33m WARN[0m ThreadId(13) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[prefix_tf_republisher-24] [0m[INFO] [1771314901.364924735] [robot_2.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_2'[0m
+[create-19] [0m[INFO] [1771314901.379372464] [robot_2.spawn_robot]: Requesting list of world names.[0m
+[static_transform_publisher-22] [0m[INFO] [1771314901.415038133] [robot_2.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-22] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-22] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-22] from 'map' to 'odom'[0m
+[static_transform_publisher-20] [0m[INFO] [1771314901.432053144] [robot_2.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-20] translation: ('-0.500000', '3.500000', '0.150000')
+[static_transform_publisher-20] rotation: ('0.000000', '0.000000', '0.985450', '0.169967')
+[static_transform_publisher-20] from 'odom' to 'base_link'[0m
+[prefix_tf_republisher-23] [0m[INFO] [1771314901.457738715] [robot_2.tf_republisher]: Republishing tf frame ids with prefix 'robot_2'[0m
+[static_transform_publisher-21] [0m[INFO] [1771314901.509330951] [robot_2.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-21] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-21] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-21] from 'world' to 'map'[0m
+[create-19] [0m[INFO] [1771314901.583565584] [robot_2.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-19] [0m[INFO] [1771314901.585863543] [robot_2.spawn_robot]: Entity creation successful.[0m
+[INFO] [create-19]: process has finished cleanly [pid 151196]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-25] [0m[INFO] [1771314902.391915154] [robot_2.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_2/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-25] [0m[INFO] [1771314902.397931445] [robot_2.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_2/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [mrc_slave-26]: process started with pid [151885]
+[INFO] [mrc_slave-27]: process started with pid [151886]
+[INFO] [mrc_slave-28]: process started with pid [151887]
+[mrc_slave-27] [0m[INFO] [1771314909.028348572] [robot_1.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_1/front_lidar/points_raw[0m
+[mrc_slave-27] [0m[INFO] [1771314909.028780452] [robot_1.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_1/back_lidar/points_raw[0m
+[mrc_slave-27] [0m[INFO] [1771314909.028797694] [robot_1.mrc_slave]: MRC Slave initialized: robot_id='robot_1', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_slave-26] [0m[INFO] [1771314909.050195628] [robot_0.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_0/front_lidar/points_raw[0m
+[mrc_slave-26] [0m[INFO] [1771314909.050706379] [robot_0.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_0/back_lidar/points_raw[0m
+[mrc_slave-26] [0m[INFO] [1771314909.050721948] [robot_0.mrc_slave]: MRC Slave initialized: robot_id='robot_0', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_slave-27] [0m[INFO] [1771314909.053248543] [robot_1.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[mrc_slave-26] [0m[INFO] [1771314909.064101125] [robot_0.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[mrc_slave-28] [0m[INFO] [1771314909.066382135] [robot_2.mrc_slave]: Subscribed to pointcloud topic [0]: /robot_2/front_lidar/points_raw[0m
+[mrc_slave-28] [0m[INFO] [1771314909.066889435] [robot_2.mrc_slave]: Subscribed to pointcloud topic [1]: /robot_2/back_lidar/points_raw[0m
+[mrc_slave-28] [0m[INFO] [1771314909.066908894] [robot_2.mrc_slave]: MRC Slave initialized: robot_id='robot_2', 2 topic(s), merge_frame='base_link', accumulation_type='none'[0m
+[mrc_slave-28] [0m[INFO] [1771314909.093144803] [robot_2.mrc_slave]: First point cloud received on topic [1], slave is now READY[0m
+[INFO] [mrc_master-29]: process started with pid [152242]
+[robot_state_publisher-18] [2m2026-02-17T07:55:13.611125Z[0m [31mERROR[0m rx-7 ThreadId(14) [2mzenoh::net::routing::dispatcher::queries[0m[2m:[0m Face{2, 24807c5862a5bb9c04e65ea98c5b65e5} Undeclare unknown queryable 248 (@/25a09c6da7f48cd0dac69f59d9a7e527/peer/**)
+[mrc_master-29] [0m[INFO] [1771314913.742725367] [robot_0.mrc_master]: Registration backend set to 'kiss_matcher'[0m
+[mrc_master-29] [0m[INFO] [1771314913.743561124] [robot_0.mrc_master]: Static robot: id='robot_1', ns='/robot_1'[0m
+[mrc_master-29] [0m[INFO] [1771314913.743575773] [robot_0.mrc_master]: Static robot: id='robot_2', ns='/robot_2'[0m
+[mrc_master-29] [0m[INFO] [1771314913.749035376] [robot_0.mrc_master]: MRC Master initialized (action server enabled)[0m
+[INFO] [mrc_evaluator-30]: process started with pid [152459]
+[mrc_evaluator-30] [0m[INFO] [1771314916.736280052] [robot_0.mrc_evaluator]: Robot robot_0: frame=base_link, GT=(0.000, 0.000, 0.000, 0.000)[0m
+[mrc_evaluator-30] [0m[INFO] [1771314916.737089837] [robot_0.mrc_evaluator]: Robot robot_1: frame=robot_1/base_link, GT=(4.510, 0.955, 0.000, -1.700)[0m
+[mrc_evaluator-30] [0m[INFO] [1771314916.737214582] [robot_0.mrc_evaluator]: Robot robot_2: frame=robot_2/base_link, GT=(3.076, 4.587, 0.000, 2.300)[0m
+[mrc_evaluator-30] [0m[INFO] [1771314916.750160749] [robot_0.mrc_evaluator]: MRC Evaluator initialized with 3 robots[0m
+[INFO] [ros2-31]: process started with pid [153710]
+[ros2-31] requester: making request: std_srvs.srv.Trigger_Request()
+[ros2-31] 
+[mrc_evaluator-30] [0m[INFO] [1771314936.966937592] [robot_0.mrc_evaluator]: === Starting COMPREHENSIVE MRC Comparison ===[0m
+[mrc_evaluator-30] [0m[INFO] [1771314936.966983984] [robot_0.mrc_evaluator]: Testing 2 algorithms x 3 PG modes x 2 ICP modes = 12 configurations[0m
+[mrc_evaluator-30] [0m[INFO] [1771314936.966988461] [robot_0.mrc_evaluator]: Running 3 trials per configuration...
+[mrc_evaluator-30] [0m
+[mrc_evaluator-30] [0m[INFO] [1771314936.968627665] [robot_0.mrc_evaluator]: Cached 18430 points for master 'robot_0'[0m
+[mrc_evaluator-30] [0m[INFO] [1771314936.971090253] [robot_0.mrc_evaluator]: Cached 18209 points for 'robot_1'[0m
+[mrc_evaluator-30] [0m[INFO] [1771314936.974259948] [robot_0.mrc_evaluator]: Cached 25372 points for 'robot_2'[0m
+[mrc_evaluator-30] [0m[INFO] [1771314936.975620363] [robot_0.mrc_evaluator]: Overlap robot_0 <-> robot_1: 55.3%[0m
+[mrc_evaluator-30] [0m[INFO] [1771314936.976705768] [robot_0.mrc_evaluator]: Overlap robot_0 <-> robot_2: 48.2%[0m
+[mrc_evaluator-30] [0m[INFO] [1771314936.976715628] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-30] --- Configuration 1/12: kiss_matcher_no_pg ---[0m
+[mrc_evaluator-30] [0m[INFO] [1771314936.976719960] [robot_0.mrc_evaluator]:   Trial 1/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771314936.978037136] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=false[0m
+[mrc_master-29] [KISS] OK | corr=151 inliers=21 ratio=13.9% | rmse_t=0.7580m rmse_r=10.94deg | t=(1.183,1.840,-0.046)
+[mrc_master-29] [KISS] OK | corr=200 inliers=15 ratio=7.5% | rmse_t=0.8211m rmse_r=14.25deg | t=(-1.420,-1.274,-0.232)
+[mrc_evaluator-30] [0m[INFO] [1771314938.080147077] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 [robot_2 inliers=21/151 (14%)] [robot_1 inliers=15/200 (8%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771314944.080412591] [robot_0.mrc_evaluator]:   Trial 1: trans min=3.3361 avg=4.8373 max=6.3386m, rot min=40.81 avg=62.14 max=83.46deg, time=0.10s[0m
+[mrc_evaluator-30] [0m[INFO] [1771314946.080683427] [robot_0.mrc_evaluator]:   Trial 2/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771314946.083486970] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=false[0m
+[mrc_master-29] [KISS] OK | corr=105 inliers=48 ratio=45.7% | rmse_t=0.7568m rmse_r=6.14deg | t=(2.817,4.555,-0.242)
+[mrc_master-29] [KISS] OK | corr=243 inliers=14 ratio=5.8% | rmse_t=0.8340m rmse_r=15.39deg | t=(0.306,-1.999,-0.184)
+[mrc_evaluator-30] [0m[INFO] [1771314947.157459262] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 [robot_2 inliers=48/105 (46%)] [robot_1 inliers=14/243 (6%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771314953.157724051] [robot_0.mrc_evaluator]:   Trial 2: trans min=0.3553 avg=2.7484 max=5.1414m, rot min=6.27 avg=36.23 max=66.20deg, time=0.07s[0m
+[mrc_evaluator-30] [0m[INFO] [1771314955.157980167] [robot_0.mrc_evaluator]:   Trial 3/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771314955.160341488] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=false[0m
+[mrc_master-29] [KISS] OK | corr=155 inliers=8 ratio=5.2% | rmse_t=0.7559m rmse_r=21.90deg | t=(0.825,-0.470,-0.221)
+[mrc_master-29] [KISS] OK | corr=56 inliers=54 ratio=96.4% | rmse_t=0.6580m rmse_r=9.36deg | t=(-0.452,-0.316,-0.073)
+[mrc_evaluator-30] [0m[INFO] [1771314956.258300395] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 [robot_2 inliers=8/155 (5%)] [robot_1 inliers=54/56 (96%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771314962.258555772] [robot_0.mrc_evaluator]:   Trial 3: trans min=5.1224 avg=5.3308 max=5.5392m, rot min=0.25 avg=45.43 max=90.60deg, time=0.10s[0m
+[mrc_evaluator-30] [0m[INFO] [1771314964.258809784] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-30] [0m[INFO] [1771314967.259029071] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-30] --- Configuration 2/12: kiss_matcher_star ---[0m
+[mrc_evaluator-30] [0m[INFO] [1771314967.259125361] [robot_0.mrc_evaluator]:   Trial 1/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771314967.261612554] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=false[0m
+[mrc_master-29] [KISS] OK | corr=72 inliers=62 ratio=86.1% | rmse_t=0.4737m rmse_r=6.50deg | t=(3.029,4.330,-0.055)
+[mrc_master-29] [KISS] OK | corr=106 inliers=64 ratio=60.4% | rmse_t=0.6019m rmse_r=11.99deg | t=(-0.586,-1.310,0.010)
+[mrc_evaluator-30] [0m[INFO] [1771314968.355236082] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 (pose_graph=star) [robot_2 inliers=62/72 (86%)] [robot_1 inliers=64/106 (60%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771314974.355436172] [robot_0.mrc_evaluator]:   Trial 1: trans min=0.2667 avg=2.9215 max=5.5764m, rot min=2.49 avg=40.05 max=77.60deg, time=0.09s[0m
+[mrc_evaluator-30] [0m[INFO] [1771314976.355613482] [robot_0.mrc_evaluator]:   Trial 2/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771314976.358187661] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=false[0m
+[mrc_master-29] [KISS] OK | corr=183 inliers=19 ratio=10.4% | rmse_t=0.7129m rmse_r=9.80deg | t=(-1.551,0.728,-0.258)
+[mrc_master-29] [KISS] OK | corr=205 inliers=22 ratio=10.7% | rmse_t=0.8058m rmse_r=13.00deg | t=(-0.805,-1.149,-0.360)
+[mrc_evaluator-30] [0m[INFO] [1771314977.447124907] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 (pose_graph=star) [robot_2 inliers=19/183 (10%)] [robot_1 inliers=22/205 (11%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771314983.447375926] [robot_0.mrc_evaluator]:   Trial 2: trans min=5.7275 avg=5.8791 max=6.0306m, rot min=2.65 avg=30.13 max=57.62deg, time=0.09s[0m
+[mrc_evaluator-30] [0m[INFO] [1771314985.447616034] [robot_0.mrc_evaluator]:   Trial 3/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771314985.450144314] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=false[0m
+[mrc_master-29] [KISS] OK | corr=177 inliers=18 ratio=10.2% | rmse_t=0.9629m rmse_r=11.60deg | t=(0.674,0.344,-0.126)
+[mrc_master-29] [KISS] OK | corr=122 inliers=54 ratio=44.3% | rmse_t=0.6724m rmse_r=8.09deg | t=(4.283,0.817,-0.135)
+[mrc_evaluator-30] [0m[INFO] [1771314986.547952547] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 (pose_graph=star) [robot_2 inliers=18/177 (10%)] [robot_1 inliers=54/122 (44%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771314992.548160473] [robot_0.mrc_evaluator]:   Trial 3: trans min=0.2978 avg=2.5875 max=4.8771m, rot min=1.24 avg=4.81 max=8.39deg, time=0.10s[0m
+[mrc_evaluator-30] [0m[INFO] [1771314994.548334041] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-30] [0m[INFO] [1771314997.548513860] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-30] --- Configuration 3/12: kiss_matcher_mesh ---[0m
+[mrc_evaluator-30] [0m[INFO] [1771314997.548613918] [robot_0.mrc_evaluator]:   Trial 1/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771314997.551615170] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_master-29] [KISS] OK | corr=63 inliers=58 ratio=92.1% | rmse_t=0.5374m rmse_r=5.77deg | t=(3.271,4.671,0.075)
+[mrc_master-29] [KISS] OK | corr=98 inliers=37 ratio=37.8% | rmse_t=0.9222m rmse_r=10.81deg | t=(1.620,-1.440,-0.503)
+[mrc_master-29] [KISS] OK | corr=63 inliers=60 ratio=95.2% | rmse_t=0.5706m rmse_r=5.62deg | t=(-3.662,1.411,-0.025)
+[mrc_evaluator-30] [0m[INFO] [1771314998.636704469] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 (pose_graph=mesh) [robot_2 inliers=58/63 (92%)] [robot_1 inliers=37/98 (38%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771315004.636961232] [robot_0.mrc_evaluator]:   Trial 1: trans min=0.2754 avg=0.2970 max=0.3186m, rot min=0.01 avg=0.02 max=0.03deg, time=0.08s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315006.637141563] [robot_0.mrc_evaluator]:   Trial 2/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315006.639256557] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_master-29] [KISS] OK | corr=65 inliers=62 ratio=95.4% | rmse_t=0.4665m rmse_r=6.23deg | t=(3.222,4.428,0.048)
+[mrc_master-29] [KISS] OK | corr=238 inliers=25 ratio=10.5% | rmse_t=0.7201m rmse_r=8.09deg | t=(1.312,-1.345,-0.350)
+[mrc_master-29] [KISS] OK | corr=50 inliers=49 ratio=98.0% | rmse_t=0.4323m rmse_r=2.92deg | t=(-3.680,1.348,-0.081)
+[mrc_evaluator-30] [0m[INFO] [1771315007.741659566] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 (pose_graph=mesh) [robot_2 inliers=62/65 (95%)] [robot_1 inliers=25/238 (11%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771315013.742001757] [robot_0.mrc_evaluator]:   Trial 2: trans min=0.2895 avg=0.3815 max=0.4734m, rot min=4.09 avg=4.15 max=4.22deg, time=0.10s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315015.742239786] [robot_0.mrc_evaluator]:   Trial 3/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315015.744701180] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_master-29] [KISS] OK | corr=160 inliers=48 ratio=30.0% | rmse_t=0.8274m rmse_r=7.27deg | t=(3.582,4.241,0.223)
+[mrc_master-29] [KISS] OK | corr=189 inliers=46 ratio=24.3% | rmse_t=0.6714m rmse_r=7.53deg | t=(-4.149,-1.726,-0.082)
+[mrc_master-29] [KISS] OK | corr=73 inliers=69 ratio=94.5% | rmse_t=0.6427m rmse_r=5.19deg | t=(-3.799,1.286,-0.086)
+[mrc_evaluator-30] [0m[INFO] [1771315016.853919061] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 (pose_graph=mesh) [robot_2 inliers=48/160 (30%)] [robot_1 inliers=46/189 (24%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771315022.854254680] [robot_0.mrc_evaluator]:   Trial 3: trans min=4.9404 avg=6.7284 max=8.5164m, rot min=56.02 avg=57.37 max=58.72deg, time=0.11s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315024.854521055] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315027.854770695] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-30] --- Configuration 4/12: kiss_matcher_no_pg_icp ---[0m
+[mrc_evaluator-30] [0m[INFO] [1771315027.854890296] [robot_0.mrc_evaluator]:   Trial 1/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315027.857030690] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=true[0m
+[mrc_master-29] [KISS] OK | corr=180 inliers=46 ratio=25.6% | rmse_t=0.7032m rmse_r=7.28deg | t=(3.577,4.661,0.209)
+[mrc_master-29] [0m[INFO] [1771315029.551013442] [robot_0.mrc_master]: ICP: coarse_rmse=0.7032, icp_rmse=0.0764 -> accepted[0m
+[mrc_master-29] [KISS] OK | corr=95 inliers=27 ratio=28.4% | rmse_t=0.7538m rmse_r=9.00deg | t=(1.655,-1.070,-0.163)
+[mrc_master-29] [0m[INFO] [1771315030.270724723] [robot_0.mrc_master]: ICP: coarse_rmse=0.7538, icp_rmse=0.8351 -> rejected (worse)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315030.271303998] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 [robot_2 inliers=46/180 (26%)] [robot_1 inliers=27/95 (28%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771315036.271501592] [robot_0.mrc_evaluator]:   Trial 1: trans min=0.0436 avg=1.7735 max=3.5034m, rot min=0.11 avg=39.62 max=79.13deg, time=1.41s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315038.271761661] [robot_0.mrc_evaluator]:   Trial 2/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315038.274110992] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=true[0m
+[mrc_master-29] [KISS] OK | corr=107 inliers=50 ratio=46.7% | rmse_t=0.7663m rmse_r=6.58deg | t=(2.887,4.425,-0.032)
+[mrc_master-29] [0m[INFO] [1771315039.989310953] [robot_0.mrc_master]: ICP: coarse_rmse=0.7663, icp_rmse=0.0780 -> accepted[0m
+[mrc_master-29] [KISS] OK | corr=98 inliers=60 ratio=61.2% | rmse_t=0.6097m rmse_r=9.61deg | t=(0.848,-1.087,-0.001)
+[mrc_master-29] [0m[INFO] [1771315040.790155476] [robot_0.mrc_master]: ICP: coarse_rmse=0.6097, icp_rmse=0.3149 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315040.790574684] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 [robot_2 inliers=50/107 (47%)] [robot_1 inliers=60/98 (61%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771315046.790852831] [robot_0.mrc_evaluator]:   Trial 2: trans min=0.0415 avg=1.9894 max=3.9374m, rot min=0.04 avg=44.96 max=89.88deg, time=1.52s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315048.791035573] [robot_0.mrc_evaluator]:   Trial 3/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315048.793511714] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=false, topology=star, icp=true[0m
+[mrc_master-29] [KISS] OK | corr=69 inliers=67 ratio=97.1% | rmse_t=0.6852m rmse_r=6.64deg | t=(2.983,4.390,-0.022)
+[mrc_master-29] [0m[INFO] [1771315050.482521044] [robot_0.mrc_master]: ICP: coarse_rmse=0.6852, icp_rmse=0.0786 -> accepted[0m
+[mrc_master-29] [KISS] OK | corr=61 inliers=56 ratio=91.8% | rmse_t=0.5774m rmse_r=5.12deg | t=(4.434,0.785,-0.044)
+[mrc_master-29] [0m[INFO] [1771315050.972938989] [robot_0.mrc_master]: ICP: coarse_rmse=0.5774, icp_rmse=0.1456 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315050.973361821] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 [robot_2 inliers=67/69 (97%)] [robot_1 inliers=56/61 (92%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771315056.973543617] [robot_0.mrc_evaluator]:   Trial 3: trans min=0.0053 avg=0.0157 max=0.0261m, rot min=0.08 avg=0.35 max=0.62deg, time=1.18s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315058.973779005] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315061.973961239] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-30] --- Configuration 5/12: kiss_matcher_star_icp ---[0m
+[mrc_evaluator-30] [0m[INFO] [1771315061.974070548] [robot_0.mrc_evaluator]:   Trial 1/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315061.976527425] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=true[0m
+[mrc_master-29] [KISS] OK | corr=148 inliers=23 ratio=15.5% | rmse_t=0.7523m rmse_r=28.21deg | t=(0.687,0.184,-0.031)
+[mrc_master-29] [0m[INFO] [1771315063.943102502] [robot_0.mrc_master]: ICP: coarse_rmse=0.7523, icp_rmse=0.4740 -> accepted[0m
+[mrc_master-29] [KISS] OK | corr=72 inliers=46 ratio=63.9% | rmse_t=0.7078m rmse_r=12.34deg | t=(2.184,-1.411,-0.787)
+[mrc_master-29] [0m[INFO] [1771315064.767675957] [robot_0.mrc_master]: ICP: coarse_rmse=0.7078, icp_rmse=0.3337 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315064.768442855] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 (pose_graph=star) [robot_2 inliers=23/148 (16%)] [robot_1 inliers=46/72 (64%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771315070.768699903] [robot_0.mrc_evaluator]:   Trial 1: trans min=3.4428 avg=4.2608 max=5.0789m, rot min=89.92 avg=99.82 max=109.71deg, time=1.79s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315072.768889208] [robot_0.mrc_evaluator]:   Trial 2/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315072.771043481] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=true[0m
+[mrc_master-29] [KISS] OK | corr=101 inliers=19 ratio=18.8% | rmse_t=0.8171m rmse_r=13.05deg | t=(0.146,1.623,-0.101)
+[mrc_master-29] [0m[INFO] [1771315074.578724074] [robot_0.mrc_master]: ICP: coarse_rmse=0.8171, icp_rmse=0.5198 -> accepted[0m
+[mrc_master-29] [KISS] OK | corr=124 inliers=17 ratio=13.7% | rmse_t=0.8623m rmse_r=7.06deg | t=(1.234,-1.223,1.373)
+[mrc_master-29] [0m[INFO] [1771315075.665302662] [robot_0.mrc_master]: ICP: coarse_rmse=0.8623, icp_rmse=1.7209 -> rejected (worse)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315075.666094043] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 (pose_graph=star) [robot_2 inliers=19/101 (19%)] [robot_1 inliers=17/124 (14%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771315081.666379589] [robot_0.mrc_evaluator]:   Trial 2: trans min=4.1663 avg=4.5619 max=4.9574m, rot min=3.50 avg=36.06 max=68.62deg, time=1.89s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315083.666641394] [robot_0.mrc_evaluator]:   Trial 3/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315083.669499095] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=star, icp=true[0m
+[mrc_master-29] [KISS] OK | corr=71 inliers=53 ratio=74.6% | rmse_t=0.6820m rmse_r=7.95deg | t=(3.049,4.299,-0.585)
+[mrc_master-29] [0m[INFO] [1771315085.364621713] [robot_0.mrc_master]: ICP: coarse_rmse=0.6820, icp_rmse=0.0784 -> accepted[0m
+[mrc_master-29] [KISS] OK | corr=158 inliers=55 ratio=34.8% | rmse_t=0.5941m rmse_r=7.75deg | t=(4.174,0.896,0.077)
+[mrc_master-29] [0m[INFO] [1771315085.931482255] [robot_0.mrc_master]: ICP: coarse_rmse=0.5941, icp_rmse=0.1781 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315085.932285304] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 (pose_graph=star) [robot_2 inliers=53/71 (75%)] [robot_1 inliers=55/158 (35%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771315091.932619682] [robot_0.mrc_evaluator]:   Trial 3: trans min=0.0283 avg=0.0338 max=0.0392m, rot min=0.10 avg=0.39 max=0.67deg, time=1.26s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315093.932943457] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315096.933250307] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-30] --- Configuration 6/12: kiss_matcher_mesh_icp ---[0m
+[mrc_evaluator-30] [0m[INFO] [1771315096.933368227] [robot_0.mrc_evaluator]:   Trial 1/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315096.935580509] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=true[0m
+[mrc_master-29] [KISS] OK | corr=78 inliers=69 ratio=88.5% | rmse_t=0.6947m rmse_r=6.56deg | t=(2.969,4.414,0.029)
+[mrc_master-29] [0m[INFO] [1771315098.616895799] [robot_0.mrc_master]: ICP: coarse_rmse=0.6947, icp_rmse=0.0786 -> accepted[0m
+[mrc_master-29] [KISS] OK | corr=62 inliers=57 ratio=91.9% | rmse_t=0.5724m rmse_r=5.09deg | t=(4.435,0.791,-0.065)
+[mrc_master-29] [0m[INFO] [1771315099.091859912] [robot_0.mrc_master]: ICP: coarse_rmse=0.5724, icp_rmse=0.1456 -> accepted[0m
+[mrc_master-29] [KISS] OK | corr=59 inliers=16 ratio=27.1% | rmse_t=0.7325m rmse_r=14.63deg | t=(-2.825,1.204,0.096)
+[mrc_master-29] [0m[INFO] [1771315099.962515846] [robot_0.mrc_master]: ICP: coarse_rmse=0.7325, icp_rmse=0.6936 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315099.963468474] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 (pose_graph=mesh) [robot_2 inliers=69/78 (88%)] [robot_1 inliers=57/62 (92%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771315105.963740121] [robot_0.mrc_evaluator]:   Trial 1: trans min=0.0054 avg=0.0155 max=0.0256m, rot min=0.17 avg=0.38 max=0.60deg, time=2.03s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315107.964002198] [robot_0.mrc_evaluator]:   Trial 2/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315107.966520656] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=true[0m
+[mrc_master-29] [KISS] OK | corr=137 inliers=54 ratio=39.4% | rmse_t=0.6236m rmse_r=5.47deg | t=(3.131,4.336,-0.068)
+[mrc_master-29] [0m[INFO] [1771315109.665807485] [robot_0.mrc_master]: ICP: coarse_rmse=0.6236, icp_rmse=0.0840 -> accepted[0m
+[mrc_master-29] [KISS] OK | corr=358 inliers=49 ratio=13.7% | rmse_t=0.6873m rmse_r=7.93deg | t=(4.218,1.206,0.065)
+[mrc_master-29] [0m[INFO] [1771315110.248634081] [robot_0.mrc_master]: ICP: coarse_rmse=0.6873, icp_rmse=0.1578 -> accepted[0m
+[mrc_master-29] [KISS] OK | corr=354 inliers=23 ratio=6.5% | rmse_t=0.6147m rmse_r=10.53deg | t=(-5.407,3.579,0.015)
+[mrc_master-29] [0m[INFO] [1771315110.930459233] [robot_0.mrc_master]: ICP: coarse_rmse=0.6147, icp_rmse=0.5591 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315110.931834107] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 (pose_graph=mesh) [robot_2 inliers=54/137 (39%)] [robot_1 inliers=49/358 (14%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771315116.932038665] [robot_0.mrc_evaluator]:   Trial 2: trans min=0.0211 avg=0.0486 max=0.0761m, rot min=0.54 avg=3.31 max=6.09deg, time=1.96s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315118.932276575] [robot_0.mrc_evaluator]:   Trial 3/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315118.934718736] [robot_0.mrc_evaluator]: Config: algorithm=kiss_matcher, pose_graph=true, topology=mesh, icp=true[0m
+[mrc_master-29] [KISS] OK | corr=152 inliers=32 ratio=21.1% | rmse_t=0.6415m rmse_r=6.19deg | t=(2.882,4.550,-0.276)
+[mrc_master-29] [0m[INFO] [1771315120.628498786] [robot_0.mrc_master]: ICP: coarse_rmse=0.6415, icp_rmse=0.0765 -> accepted[0m
+[mrc_master-29] [KISS] OK | corr=96 inliers=91 ratio=94.8% | rmse_t=0.5182m rmse_r=8.26deg | t=(0.489,-0.836,0.027)
+[mrc_master-29] [0m[INFO] [1771315121.313960853] [robot_0.mrc_master]: ICP: coarse_rmse=0.5182, icp_rmse=0.1885 -> accepted[0m
+[mrc_master-29] [KISS] OK | corr=69 inliers=61 ratio=88.4% | rmse_t=0.5904m rmse_r=5.22deg | t=(-3.901,0.805,-0.162)
+[mrc_master-29] [0m[INFO] [1771315122.033387147] [robot_0.mrc_master]: ICP: coarse_rmse=0.5904, icp_rmse=0.1755 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315122.034562864] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=kiss_matcher). ok=2 fail=0 (pose_graph=mesh) [robot_2 inliers=32/152 (21%)] [robot_1 inliers=91/96 (95%)][0m
+[mrc_evaluator-30] [0m[INFO] [1771315128.034749249] [robot_0.mrc_evaluator]:   Trial 3: trans min=0.3857 avg=2.2157 max=4.0456m, rot min=46.31 avg=59.28 max=72.24deg, time=2.10s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315130.034973845] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315133.035157499] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-30] --- Configuration 7/12: fricp_no_pg ---[0m
+[mrc_evaluator-30] [0m[INFO] [1771315133.035246605] [robot_0.mrc_evaluator]:   Trial 1/3...[0m
+[mrc_master-29] [0m[INFO] [1771315133.035776537] [robot_0.mrc_master]: Registration backend set to 'fricp'[0m
+[mrc_evaluator-30] [0m[INFO] [1771315133.037457192] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-30] [0m[INFO] [1771315136.387811981] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0[0m
+[mrc_evaluator-30] [0m[INFO] [1771315142.388073723] [robot_0.mrc_evaluator]:   Trial 1: trans min=4.6778 avg=5.4422 max=6.2066m, rot min=108.29 avg=132.50 max=156.70deg, time=2.35s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315144.388322402] [robot_0.mrc_evaluator]:   Trial 2/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315144.390963088] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-30] [0m[INFO] [1771315148.205533728] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0[0m
+[mrc_evaluator-30] [0m[INFO] [1771315154.206868386] [robot_0.mrc_evaluator]:   Trial 2: trans min=4.6126 avg=5.6983 max=6.7840m, rot min=83.81 avg=89.87 max=95.94deg, time=2.82s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315156.207193754] [robot_0.mrc_evaluator]:   Trial 3/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315156.209633322] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=false, topology=star, icp=false[0m
+[mrc_evaluator-30] [0m[INFO] [1771315159.657677362] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0[0m
+[mrc_evaluator-30] [0m[INFO] [1771315165.657980919] [robot_0.mrc_evaluator]:   Trial 3: trans min=4.7330 avg=5.7219 max=6.7109m, rot min=103.19 avg=140.12 max=177.04deg, time=2.45s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315167.658201368] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315170.658418391] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-30] --- Configuration 8/12: fricp_star ---[0m
+[mrc_evaluator-30] [0m[INFO] [1771315170.658520736] [robot_0.mrc_evaluator]:   Trial 1/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315170.660983798] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-30] [0m[INFO] [1771315174.179570750] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0 (pose_graph=star)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315180.179837737] [robot_0.mrc_evaluator]:   Trial 1: trans min=5.5642 avg=5.8807 max=6.1971m, rot min=90.19 avg=131.29 max=172.39deg, time=2.52s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315182.180095167] [robot_0.mrc_evaluator]:   Trial 2/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315182.182851441] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-30] [0m[INFO] [1771315185.924679693] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0 (pose_graph=star)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315191.924908916] [robot_0.mrc_evaluator]:   Trial 2: trans min=5.2749 avg=6.1433 max=7.0117m, rot min=89.99 avg=96.08 max=102.17deg, time=2.74s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315193.925126183] [robot_0.mrc_evaluator]:   Trial 3/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315193.927975274] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=star, icp=false[0m
+[mrc_evaluator-30] [0m[INFO] [1771315197.496169740] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0 (pose_graph=star)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315203.496365316] [robot_0.mrc_evaluator]:   Trial 3: trans min=5.6751 avg=5.9286 max=6.1821m, rot min=90.14 avg=131.49 max=172.83deg, time=2.57s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315205.496561550] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315208.496808477] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-30] --- Configuration 9/12: fricp_mesh ---[0m
+[mrc_evaluator-30] [0m[INFO] [1771315208.496929147] [robot_0.mrc_evaluator]:   Trial 1/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315208.499652479] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_evaluator-30] [0m[INFO] [1771315213.626514777] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0 (pose_graph=mesh)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315219.626697260] [robot_0.mrc_evaluator]:   Trial 1: trans min=4.3557 avg=5.9285 max=7.5014m, rot min=104.94 avg=133.89 max=162.84deg, time=4.13s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315221.626967199] [robot_0.mrc_evaluator]:   Trial 2/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315221.629705996] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_evaluator-30] [0m[INFO] [1771315226.581173542] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0 (pose_graph=mesh)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315232.581358966] [robot_0.mrc_evaluator]:   Trial 2: trans min=4.2654 avg=5.6389 max=7.0124m, rot min=102.32 avg=124.32 max=146.32deg, time=3.95s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315234.581560766] [robot_0.mrc_evaluator]:   Trial 3/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315234.583947101] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=mesh, icp=false[0m
+[mrc_evaluator-30] [0m[INFO] [1771315239.505428504] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0 (pose_graph=mesh)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315245.505687262] [robot_0.mrc_evaluator]:   Trial 3: trans min=4.3504 avg=5.9980 max=7.6456m, rot min=94.70 avg=124.28 max=153.86deg, time=3.92s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315247.505951277] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315250.506197831] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-30] --- Configuration 10/12: fricp_no_pg_icp ---[0m
+[mrc_evaluator-30] [0m[INFO] [1771315250.506317846] [robot_0.mrc_evaluator]:   Trial 1/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315250.508968992] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=false, topology=star, icp=true[0m
+[mrc_master-29] [0m[INFO] [1771315253.633181243] [robot_0.mrc_master]: ICP: coarse_rmse=1.3292, icp_rmse=0.2303 -> accepted[0m
+[mrc_master-29] [0m[INFO] [1771315255.806537784] [robot_0.mrc_master]: ICP: coarse_rmse=1.0336, icp_rmse=0.2302 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315255.806987975] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0[0m
+[mrc_evaluator-30] [0m[INFO] [1771315261.807177942] [robot_0.mrc_evaluator]:   Trial 1: trans min=5.7874 avg=6.0640 max=6.3405m, rot min=86.42 avg=128.60 max=170.78deg, time=4.30s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315263.807367502] [robot_0.mrc_evaluator]:   Trial 2/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315263.809892595] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=false, topology=star, icp=true[0m
+[mrc_master-29] [0m[INFO] [1771315267.324910437] [robot_0.mrc_master]: ICP: coarse_rmse=0.5940, icp_rmse=0.3622 -> accepted[0m
+[mrc_master-29] [0m[INFO] [1771315269.539456892] [robot_0.mrc_master]: ICP: coarse_rmse=0.8423, icp_rmse=0.3535 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315269.539877726] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0[0m
+[mrc_evaluator-30] [0m[INFO] [1771315275.540133993] [robot_0.mrc_evaluator]:   Trial 2: trans min=4.4507 avg=4.9458 max=5.4409m, rot min=84.22 avg=96.31 max=108.39deg, time=4.73s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315277.540375387] [robot_0.mrc_evaluator]:   Trial 3/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315277.543109536] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=false, topology=star, icp=true[0m
+[mrc_master-29] [0m[INFO] [1771315280.434240854] [robot_0.mrc_master]: ICP: coarse_rmse=0.4942, icp_rmse=0.5137 -> rejected (worse)[0m
+[mrc_master-29] [0m[INFO] [1771315282.209054468] [robot_0.mrc_master]: ICP: coarse_rmse=0.8229, icp_rmse=0.3697 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315282.209532319] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0[0m
+[mrc_evaluator-30] [0m[INFO] [1771315288.209787760] [robot_0.mrc_evaluator]:   Trial 3: trans min=4.4036 avg=5.5595 max=6.7153m, rot min=107.50 avg=143.37 max=179.24deg, time=3.67s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315290.209987039] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315293.210170957] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-30] --- Configuration 11/12: fricp_star_icp ---[0m
+[mrc_evaluator-30] [0m[INFO] [1771315293.210264992] [robot_0.mrc_evaluator]:   Trial 1/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315293.212827435] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=star, icp=true[0m
+[mrc_master-29] [0m[INFO] [1771315296.326014665] [robot_0.mrc_master]: ICP: coarse_rmse=1.2197, icp_rmse=0.5090 -> accepted[0m
+[mrc_master-29] [0m[INFO] [1771315298.248827941] [robot_0.mrc_master]: ICP: coarse_rmse=1.0366, icp_rmse=0.2293 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315298.249606285] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0 (pose_graph=star)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315304.249862754] [robot_0.mrc_evaluator]:   Trial 1: trans min=5.7672 avg=6.3632 max=6.9593m, rot min=86.59 avg=133.18 max=179.76deg, time=4.04s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315306.250147477] [robot_0.mrc_evaluator]:   Trial 2/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315306.252907930] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=star, icp=true[0m
+[mrc_master-29] [0m[INFO] [1771315309.804747886] [robot_0.mrc_master]: ICP: coarse_rmse=0.7110, icp_rmse=0.4030 -> accepted[0m
+[mrc_master-29] [0m[INFO] [1771315311.604211329] [robot_0.mrc_master]: ICP: coarse_rmse=0.8002, icp_rmse=0.1546 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315311.604813489] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0 (pose_graph=star)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315317.605066404] [robot_0.mrc_evaluator]:   Trial 2: trans min=4.3284 avg=4.8699 max=5.4114m, rot min=91.43 avg=118.91 max=146.39deg, time=4.35s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315319.605252843] [robot_0.mrc_evaluator]:   Trial 3/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315319.608117418] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=star, icp=true[0m
+[mrc_master-29] [0m[INFO] [1771315322.754351403] [robot_0.mrc_master]: ICP: coarse_rmse=1.3622, icp_rmse=0.2106 -> accepted[0m
+[mrc_master-29] [0m[INFO] [1771315324.915239520] [robot_0.mrc_master]: ICP: coarse_rmse=0.8977, icp_rmse=0.1585 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315324.915894549] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0 (pose_graph=star)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315330.916162161] [robot_0.mrc_evaluator]:   Trial 3: trans min=4.2808 avg=5.2882 max=6.2957m, rot min=90.16 avg=130.11 max=170.05deg, time=4.31s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315332.916356345] [robot_0.mrc_evaluator]:   Waiting before next configuration...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315335.916611427] [robot_0.mrc_evaluator]: 
+[mrc_evaluator-30] --- Configuration 12/12: fricp_mesh_icp ---[0m
+[mrc_evaluator-30] [0m[INFO] [1771315335.916706209] [robot_0.mrc_evaluator]:   Trial 1/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315335.919031716] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=mesh, icp=true[0m
+[mrc_master-29] [0m[INFO] [1771315339.490464625] [robot_0.mrc_master]: ICP: coarse_rmse=0.5940, icp_rmse=0.3622 -> accepted[0m
+[mrc_master-29] [0m[INFO] [1771315341.645514142] [robot_0.mrc_master]: ICP: coarse_rmse=0.8423, icp_rmse=0.3535 -> accepted[0m
+[mrc_master-29] [0m[INFO] [1771315344.114058787] [robot_0.mrc_master]: ICP: coarse_rmse=0.9966, icp_rmse=0.3700 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315344.115270003] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0 (pose_graph=mesh)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315350.115461698] [robot_0.mrc_evaluator]:   Trial 1: trans min=4.3911 avg=5.5212 max=6.6513m, rot min=101.19 avg=105.81 max=110.43deg, time=7.20s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315352.115711105] [robot_0.mrc_evaluator]:   Trial 2/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315352.118318840] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=mesh, icp=true[0m
+[mrc_master-29] [0m[INFO] [1771315355.421704373] [robot_0.mrc_master]: ICP: coarse_rmse=1.1547, icp_rmse=0.4722 -> accepted[0m
+[mrc_master-29] [0m[INFO] [1771315357.233186126] [robot_0.mrc_master]: ICP: coarse_rmse=0.8228, icp_rmse=0.3539 -> accepted[0m
+[mrc_master-29] [0m[INFO] [1771315359.439185999] [robot_0.mrc_master]: ICP: coarse_rmse=1.0409, icp_rmse=0.4782 -> accepted[0m
+[mrc_evaluator-30] [0m[INFO] [1771315359.441297373] [robot_0.mrc_evaluator]: Calibration result: Calibration complete (algorithm=fricp). ok=2 fail=0 (pose_graph=mesh)[0m
+[mrc_evaluator-30] [0m[INFO] [1771315365.441619959] [robot_0.mrc_evaluator]:   Trial 2: trans min=4.3267 avg=6.1477 max=7.9686m, rot min=103.50 avg=125.22 max=146.94deg, time=6.32s[0m
+[mrc_evaluator-30] [0m[INFO] [1771315367.441956849] [robot_0.mrc_evaluator]:   Trial 3/3...[0m
+[mrc_evaluator-30] [0m[INFO] [1771315367.444531946] [robot_0.mrc_evaluator]: Config: algorithm=fricp, pose_graph=true, topology=mesh, icp=true[0m

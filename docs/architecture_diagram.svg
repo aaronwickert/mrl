@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1000 720" xmlns="http://www.w3.org/2000/svg" font-family="monospace, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d97706"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000022"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="720" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="500" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e293b">Multi-Robot Localization (MRL) — System Architecture</text>
+
+  <!-- ===== MASTER ROBOT BOX ===== -->
+  <rect x="30" y="55" width="580" height="340" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+  <text x="320" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d4ed8">MASTER ROBOT</text>
+
+  <!-- LiDAR sensor (master) -->
+  <rect x="50" y="90" width="130" height="50" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="115" y="110" text-anchor="middle" font-size="11" fill="#1e40af">LiDAR Sensor(s)</text>
+  <text x="115" y="127" text-anchor="middle" font-size="10" fill="#3b82f6">PointCloud2 topics</text>
+
+  <!-- mrc_slave (master-local) -->
+  <rect x="50" y="165" width="240" height="200" rx="10" fill="#dbeafe" stroke="#60a5fa" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="170" y="185" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d4ed8">mrc_slave (local)</text>
+
+  <rect x="65" y="195" width="210" height="30" rx="5" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1"/>
+  <text x="170" y="215" text-anchor="middle" font-size="10" fill="#1e40af">Cloud Accumulator</text>
+
+  <rect x="65" y="232" width="210" height="30" rx="5" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1"/>
+  <text x="170" y="252" text-anchor="middle" font-size="10" fill="#1e40af">TF2 Transform + Cloud Merge</text>
+
+  <rect x="65" y="269" width="210" height="30" rx="5" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1"/>
+  <text x="170" y="289" text-anchor="middle" font-size="10" fill="#1e40af">KISS FasterPFH Features</text>
+
+  <rect x="65" y="306" width="210" height="46" rx="5" fill="#93c5fd" stroke="#60a5fa" stroke-width="1"/>
+  <text x="170" y="324" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e3a8a">Service:</text>
+  <text x="170" y="342" text-anchor="middle" font-size="10" fill="#1e3a8a">~/get_registration_data</text>
+
+  <!-- mrc_master -->
+  <rect x="310" y="90" width="285" height="288" rx="10" fill="#dcfce7" stroke="#4ade80" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="452" y="110" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803d">mrc_master</text>
+
+  <!-- Interfaces block inside master -->
+  <rect x="325" y="120" width="255" height="75" rx="6" fill="#bbf7d0" stroke="#86efac" stroke-width="1"/>
+  <text x="452" y="138" text-anchor="middle" font-size="10" font-weight="bold" fill="#14532d">Interfaces</text>
+  <text x="452" y="155" text-anchor="middle" font-size="9.5" fill="#166534">Srv: ~/calibrate  (Trigger)</text>
+  <text x="452" y="170" text-anchor="middle" font-size="9.5" fill="#166534">Action: ~/calibrate_action</text>
+  <text x="452" y="185" text-anchor="middle" font-size="9.5" fill="#166534">Sub: /robot_announcement</text>
+
+  <!-- Registration Backend block -->
+  <rect x="325" y="204" width="120" height="88" rx="6" fill="#bbf7d0" stroke="#86efac" stroke-width="1"/>
+  <text x="385" y="222" text-anchor="middle" font-size="10" font-weight="bold" fill="#14532d">Reg. Backend</text>
+  <rect x="335" y="229" width="100" height="20" rx="4" fill="#4ade80" stroke="#22c55e"/>
+  <text x="385" y="243" text-anchor="middle" font-size="9" fill="#14532d">KISS-Matcher</text>
+  <rect x="335" y="254" width="100" height="20" rx="4" fill="#4ade80" stroke="#22c55e"/>
+  <text x="385" y="268" text-anchor="middle" font-size="9" fill="#14532d">FRICP (ICP)</text>
+  <text x="385" y="284" text-anchor="middle" font-size="9" fill="#14532d">[pluggable]</text>
+
+  <!-- Pose Graph block -->
+  <rect x="455" y="204" width="130" height="88" rx="6" fill="#bbf7d0" stroke="#86efac" stroke-width="1"/>
+  <text x="520" y="222" text-anchor="middle" font-size="10" font-weight="bold" fill="#14532d">Pose Graph (GTSAM)</text>
+  <text x="520" y="240" text-anchor="middle" font-size="9" fill="#166534">topology: star</text>
+  <text x="520" y="256" text-anchor="middle" font-size="9" fill="#166534">topology: mesh</text>
+  <text x="520" y="272" text-anchor="middle" font-size="9" fill="#166534">Huber robust edges</text>
+  <text x="520" y="288" text-anchor="middle" font-size="9" fill="#166534">Levenberg-Marquardt</text>
+
+  <!-- ICP Refiner block -->
+  <rect x="325" y="302" width="120" height="65" rx="6" fill="#bbf7d0" stroke="#86efac" stroke-width="1"/>
+  <text x="385" y="320" text-anchor="middle" font-size="10" font-weight="bold" fill="#14532d">ICP Refiner</text>
+  <text x="385" y="338" text-anchor="middle" font-size="9" fill="#166534">(optional post-</text>
+  <text x="385" y="354" text-anchor="middle" font-size="9" fill="#166534">registration step)</text>
+
+  <!-- TF Publisher block -->
+  <rect x="455" y="302" width="130" height="65" rx="6" fill="#bbf7d0" stroke="#86efac" stroke-width="1"/>
+  <text x="520" y="320" text-anchor="middle" font-size="10" font-weight="bold" fill="#14532d">Static TF Publisher</text>
+  <text x="520" y="338" text-anchor="middle" font-size="9" fill="#166534">tf2_ros::Static</text>
+  <text x="520" y="354" text-anchor="middle" font-size="9" fill="#166534">TransformBroadcaster</text>
+
+  <!-- ===== SLAVE ROBOT 1 ===== -->
+  <rect x="30" y="425" width="240" height="245" rx="12" fill="#fef9c3" stroke="#facc15" stroke-width="2" filter="url(#shadow)"/>
+  <text x="150" y="447" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">SLAVE ROBOT 1</text>
+
+  <rect x="50" y="458" width="200" height="40" rx="8" fill="#fef08a" stroke="#fde047" stroke-width="1.5"/>
+  <text x="150" y="474" text-anchor="middle" font-size="11" fill="#713f12">LiDAR Sensor(s)</text>
+  <text x="150" y="490" text-anchor="middle" font-size="10" fill="#a16207">PointCloud2 topics</text>
+
+  <rect x="50" y="507" width="200" height="148" rx="8" fill="#fef08a" stroke="#fde047" stroke-width="1.5"/>
+  <text x="150" y="525" text-anchor="middle" font-size="11" font-weight="bold" fill="#713f12">mrc_slave</text>
+  <rect x="60" y="533" width="180" height="22" rx="4" fill="#fde047" stroke="#facc15"/>
+  <text x="150" y="548" text-anchor="middle" font-size="9.5" fill="#713f12">Cloud Accumulator</text>
+  <rect x="60" y="560" width="180" height="22" rx="4" fill="#fde047" stroke="#facc15"/>
+  <text x="150" y="575" text-anchor="middle" font-size="9.5" fill="#713f12">TF2 + Cloud Merge</text>
+  <rect x="60" y="587" width="180" height="22" rx="4" fill="#fde047" stroke="#facc15"/>
+  <text x="150" y="602" text-anchor="middle" font-size="9.5" fill="#713f12">KISS FasterPFH Features</text>
+  <rect x="60" y="615" width="180" height="33" rx="4" fill="#f59e0b" stroke="#d97706"/>
+  <text x="150" y="631" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#431407">Service:</text>
+  <text x="150" y="645" text-anchor="middle" font-size="9.5" fill="#431407">~/get_registration_data</text>
+
+  <!-- ===== SLAVE ROBOT N ===== -->
+  <rect x="310" y="425" width="240" height="245" rx="12" fill="#fef9c3" stroke="#facc15" stroke-width="2" filter="url(#shadow)"/>
+  <text x="430" y="447" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">SLAVE ROBOT N</text>
+
+  <rect x="330" y="458" width="200" height="40" rx="8" fill="#fef08a" stroke="#fde047" stroke-width="1.5"/>
+  <text x="430" y="474" text-anchor="middle" font-size="11" fill="#713f12">LiDAR Sensor(s)</text>
+  <text x="430" y="490" text-anchor="middle" font-size="10" fill="#a16207">PointCloud2 topics</text>
+
+  <rect x="330" y="507" width="200" height="148" rx="8" fill="#fef08a" stroke="#fde047" stroke-width="1.5"/>
+  <text x="430" y="525" text-anchor="middle" font-size="11" font-weight="bold" fill="#713f12">mrc_slave</text>
+  <rect x="340" y="533" width="180" height="22" rx="4" fill="#fde047" stroke="#facc15"/>
+  <text x="430" y="548" text-anchor="middle" font-size="9.5" fill="#713f12">Cloud Accumulator</text>
+  <rect x="340" y="560" width="180" height="22" rx="4" fill="#fde047" stroke="#facc15"/>
+  <text x="430" y="575" text-anchor="middle" font-size="9.5" fill="#713f12">TF2 + Cloud Merge</text>
+  <rect x="340" y="587" width="180" height="22" rx="4" fill="#fde047" stroke="#facc15"/>
+  <text x="430" y="602" text-anchor="middle" font-size="9.5" fill="#713f12">KISS FasterPFH Features</text>
+  <rect x="340" y="615" width="180" height="33" rx="4" fill="#f59e0b" stroke="#d97706"/>
+  <text x="430" y="631" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#431407">Service:</text>
+  <text x="430" y="645" text-anchor="middle" font-size="9.5" fill="#431407">~/get_registration_data</text>
+
+  <!-- Ellipsis between slaves -->
+  <text x="278" y="560" text-anchor="middle" font-size="24" fill="#92400e">···</text>
+
+  <!-- ===== LEGEND PANEL ===== -->
+  <rect x="620" y="55" width="360" height="300" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="800" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">Legend</text>
+
+  <!-- Legend items -->
+  <line x1="645" y1="100" x2="705" y2="100" stroke="#16a34a" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow-green)"/>
+  <text x="720" y="104" font-size="11" fill="#334155">ROS2 Topic (LiDAR)</text>
+
+  <line x1="645" y1="125" x2="705" y2="125" stroke="#2563eb" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrow-blue)"/>
+  <text x="720" y="129" font-size="11" fill="#334155">ROS Service call</text>
+
+  <line x1="645" y1="150" x2="705" y2="150" stroke="#16a34a" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow-green)"/>
+  <text x="720" y="154" font-size="11" fill="#334155">ROS Topic (publish)</text>
+
+  <line x1="645" y1="175" x2="705" y2="175" stroke="#d97706" stroke-width="2" stroke-dasharray="8,3" marker-end="url(#arrow-orange)"/>
+  <text x="720" y="179" font-size="11" fill="#334155">TF broadcast</text>
+
+  <rect x="635" y="197" width="16" height="16" rx="3" fill="#dbeafe" stroke="#60a5fa"/>
+  <text x="720" y="210" font-size="11" fill="#334155">Master robot node</text>
+
+  <rect x="635" y="222" width="16" height="16" rx="3" fill="#fef08a" stroke="#facc15"/>
+  <text x="720" y="235" font-size="11" fill="#334155">Slave robot node</text>
+
+  <rect x="635" y="247" width="16" height="16" rx="3" fill="#dcfce7" stroke="#4ade80"/>
+  <text x="720" y="260" font-size="11" fill="#334155">mrc_master internals</text>
+
+  <!-- Modes note -->
+  <rect x="630" y="275" width="335" height="68" rx="8" fill="#e2e8f0" stroke="#94a3b8"/>
+  <text x="797" y="293" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">Registration Algorithms</text>
+  <text x="640" y="312" font-size="10" fill="#475569">kiss_matcher: FasterPFH feature matching (global)</text>
+  <text x="640" y="328" font-size="10" fill="#475569">fricp: Fast Robust ICP (local, dense cloud)</text>
+  <text x="640" y="334" font-size="10" fill="#475569"/>
+
+  <!-- ===== DATA FLOW NOTES ===== -->
+  <rect x="620" y="370" width="360" height="300" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="800" y="393" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">Key Data Exchanges</text>
+
+  <text x="635" y="416" font-size="10.5" font-weight="bold" fill="#1d4ed8">1. Robot Discovery</text>
+  <text x="635" y="432" font-size="10" fill="#334155">  Slaves publish to /robot_announcement (latched)</text>
+  <text x="635" y="448" font-size="10" fill="#334155">  Master discovers robots dynamically or via config</text>
+
+  <text x="635" y="470" font-size="10.5" font-weight="bold" fill="#15803d">2. Data Collection</text>
+  <text x="635" y="486" font-size="10" fill="#334155">  Master calls get_registration_data on each slave</text>
+  <text x="635" y="502" font-size="10" fill="#334155">  Response: cloud (FRICP) or KISS features + cloud</text>
+
+  <text x="635" y="524" font-size="10.5" font-weight="bold" fill="#7c3aed">3. Registration</text>
+  <text x="635" y="540" font-size="10" fill="#334155">  Master computes T_master_from_slave per robot</text>
+  <text x="635" y="556" font-size="10" fill="#334155">  Optional ICP refinement of initial estimate</text>
+
+  <text x="635" y="578" font-size="10.5" font-weight="bold" fill="#b45309">4. Pose Graph (optional)</text>
+  <text x="635" y="594" font-size="10" fill="#334155">  GTSAM: star or mesh topology</text>
+  <text x="635" y="610" font-size="10" fill="#334155">  Huber-robust edges, weighted by reg. RMSE</text>
+
+  <text x="635" y="632" font-size="10.5" font-weight="bold" fill="#0f766e">5. TF Output</text>
+  <text x="635" y="648" font-size="10" fill="#334155">  Publishes static transforms: map_slave → map_master</text>
+  <text x="635" y="664" font-size="10" fill="#334155">  Visualisation MarkerArrays for debug</text>
+
+  <!-- ===== ARROWS / CONNECTIONS ===== -->
+
+  <!-- LiDAR → slave (master): ROS2 topic -->
+  <line x1="115" y1="140" x2="115" y2="165" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow-green)"/>
+
+  <!-- LiDAR → slave (slave 1): ROS2 topic -->
+  <line x1="150" y1="498" x2="150" y2="507" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow-green)"/>
+
+  <!-- LiDAR → slave (slave N): ROS2 topic -->
+  <line x1="430" y1="498" x2="430" y2="507" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow-green)"/>
+</svg>

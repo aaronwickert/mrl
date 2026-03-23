@@ -1,0 +1,17 @@
+mrc:
+  master:
+    master_map_frame: "map"
+  slave_defaults:
+    base_frame: "base_link"
+    pointcloud_topic: "/points"
+  robots:
+    ec_swift:
+      pointcloud_topic: "/ec_swift/front_lidar/points_raw"
+      base_frame: "base_link"
+      accumulation_time_sec: 2.0
+    telemax:
+      pointcloud_topic: "/points"
+      base_frame: "base_link"
+    athena:
+      pointcloud_topic: "/athena/front_lidar/points_raw"
+      base_frame: "base_link"

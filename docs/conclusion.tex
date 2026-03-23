@@ -1,0 +1,124 @@
+\chapter{Conclusion and Outlook}
+\label{ch:conclusion_outlook}
+
+\section{Conclusion}
+
+This work presented the Multi-Robot Calibration (MRC) framework, a
+sensor-based system for determining the relative poses between robots
+in a fleet using only onboard LiDAR sensors, without requiring
+external infrastructure or manual measurement.
+The system was implemented as a distributed ROS\,2 architecture
+comprising approximately 3\,100 lines of C++, with a master--slave
+communication pattern, two interchangeable registration backends
+(KISS-Matcher and FRICP), optional ICP refinement, and GTSAM-based
+pose graph optimization with star and mesh topologies.
+
+The experimental evaluation, comprising over 700 individual calibration
+runs across fleet sizes of 2, 3, 5, and 10 robots in 15 spatial
+configurations, yielded the following key findings:
+
+\begin{enumerate}
+    \item \textbf{The optimal registration backend depends on the
+          deployment scenario.}
+          KISS-Matcher, a feature-based global registration method,
+          consistently outperformed FRICP in the multi-robot distributed
+          scenario ($N \geq 3$), where large inter-robot distances and
+          diverse orientations cause FRICP to converge to local minima
+          (rotation errors $> 120\degree$).
+          In the two-robot proximity scenario, the result reversed:
+          FRICP achieved sub-centimeter accuracy
+          ($\bar{e}_t = \SI{5.4}{\milli\metre}$, $\bar{e}_r =
+          0.03\degree$) by exploiting the favorable initial alignment
+          and high point cloud overlap ($67\%$), while KISS-Matcher was
+          limited to $\sim$\,\SI{12}{\centi\metre} by its feature
+          quantization.
+
+    \item \textbf{ICP refinement and pose graph optimization are not
+          universally beneficial.}
+          Averaged across all multi-robot experiments, both ICP
+          refinement and pose graph optimization degraded accuracy.
+          ICP shifted globally correct feature-based alignments toward
+          locally dense regions ($+18\%$ RMS for KISS-Matcher), and
+          pose graph optimization propagated errors from unreliable
+          edges ($+16\%$ RMS for mesh topology).
+          However, in favorable setups with high overlap and correct
+          coarse alignment, ICP improved accuracy by up to $65\%$ and
+          mesh PG by up to $80\%$.
+          In the proximity scenario, ICP dramatically improved
+          KISS-Matcher ($-86\%$) but degraded the already near-optimal
+          FRICP result.
+
+    \item \textbf{Sub-centimeter accuracy is achievable for the primary
+          use case.}
+          The two-robot proximity scenario---the most common real-world
+          deployment for extrinsic calibration---achieved consistent
+          sub-centimeter accuracy across all tested spatial arrangements
+          (\SIrange{0.8}{2.0}{\metre} separation).
+
+    \item \textbf{The modular software architecture enables systematic
+          evaluation.}
+          The factory pattern for registration backends, the runtime
+          parameter reconfiguration via ROS\,2 services, and the
+          automated evaluator node allowed all $2 \times 3 \times 2 = 12$
+          parameter combinations to be tested within a single simulation
+          session, enabling the comprehensive comparison presented in
+          this work.
+\end{enumerate}
+
+\section{Outlook}
+
+\subsection{Middleware Scalability}
+
+The 10-robot experiments were limited by Zenoh middleware transport
+saturation, which prevented systematic evaluation at larger fleet sizes.
+Tuning Zenoh buffer sizes, using alternative DDS implementations, or
+implementing a hierarchical communication architecture could enable
+reliable operation with 10+ robots.
+The partial 10-robot results showed that individual robots with
+sufficient overlap to the master achieved sub-centimeter calibration,
+indicating that the MRC algorithm itself scales but the communication
+infrastructure requires adaptation.
+
+\subsection{Pose Graph Improvements}
+
+\paragraph{Efficient edge selection.}
+The efficiency and accuracy of the pose graph can be improved by
+selectively computing only pairwise registrations that are likely to
+succeed.
+Integration with UWB localization could provide rough positional
+estimates for spatial filtering, reducing the computational burden of
+a full-mesh calculation ($\binom{N}{2}$ edges) and avoiding the poor
+results caused by low sensor overlap in high-offset scenarios.
+
+\paragraph{Temporal constraints.}
+Incorporating the time dimension by tracking robot trajectories would
+increase edge density within the pose graph, providing more redundant
+constraints and improving the reliability of the optimized result.
+
+\paragraph{Multi-modal fusion.}
+Additional sensing modalities such as UWB range measurements can
+introduce further edges to the pose graph beyond LiDAR-based
+registration, increasing connectivity and robustness.
+
+\subsection{Registration Improvements}
+
+UWB localization can also serve as a provider for initial
+transformation estimates.
+The evaluation showed that FRICP achieves superior accuracy when
+the initial alignment is close to the true solution (proximity
+scenario), but fails when starting from the identity transform
+(distributed scenario).
+Providing UWB-based initial guesses could extend FRICP's applicability
+to the distributed scenario, potentially combining the sub-centimeter
+precision of dense ICP with the robustness of having a good starting
+point.
+
+\subsection{Adaptive Configuration Selection}
+
+The evaluation demonstrated that the optimal parameter combination
+(backend, pose graph topology, ICP refinement) varies with fleet
+size, spatial geometry, and point cloud overlap.
+An adaptive strategy that automatically selects the registration
+backend based on estimated inter-robot distance and overlap could
+improve accuracy without manual tuning---for example, using FRICP
+for nearby robot pairs and KISS-Matcher for distant ones.

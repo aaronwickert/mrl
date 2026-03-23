@@ -1,0 +1,111 @@
+[mrc_evaluator-30]           COMPREHENSIVE MRC COMPARISON (all parameter combos)
+[mrc_evaluator-30] ========================================================================
+[mrc_evaluator-30] 
+[mrc_evaluator-30] PARAMETERS:
+[mrc_evaluator-30]   Algorithms:    kiss_matcher, fricp
+[mrc_evaluator-30]   Pose Graph:    none, star, mesh
+[mrc_evaluator-30]   ICP Refine:    off, on
+[mrc_evaluator-30]   Trials/config: 3
+[mrc_evaluator-30]   Configurations: 12 total
+[mrc_evaluator-30] 
+[mrc_evaluator-30] ------------------------------------------------------------------------
+[mrc_evaluator-30]                            RESULTS SUMMARY
+[mrc_evaluator-30] ------------------------------------------------------------------------
+[mrc_evaluator-30] 
+[mrc_evaluator-30] Configuration               T Avg(m)  T RMS(m)  T Max(m) R Avg(d)  Ovlp(%) Time(s)  Robots  Trials
+[mrc_evaluator-30] --------------------------------------------------------------------------------------------------
+[mrc_evaluator-30] kiss_matcher_no_pg            2.1201    2.9111    4.2336    90.19     0.0     0.1    2/9    3/3
+[mrc_evaluator-30] kiss_matcher_star             2.5204    3.4065    5.9635    65.93     0.0     0.1    2/9    3/3
+[mrc_evaluator-30] kiss_matcher_mesh             2.0062    2.5650    5.9635    54.41     0.0     0.1    2/9    3/3
+[mrc_evaluator-30] kiss_matcher_no_pg_icp        1.7817    2.4193    5.9635    60.04     0.0     1.5    2/9    3/3
+[mrc_evaluator-30] kiss_matcher_star_icp         2.6051    3.6137    5.9635   110.21     0.0     1.5    2/9    3/3
+[mrc_evaluator-30] kiss_matcher_mesh_icp         2.8923    4.0278    5.9635   142.11     0.0     2.1    2/9    3/3
+[mrc_evaluator-30] fricp_no_pg                   3.9646    4.5078    5.9635   137.35     0.0     1.5    2/9    3/3
+[mrc_evaluator-30] fricp_star                    4.3176    4.6630    5.9635   135.83     0.0     1.5    2/9    3/3
+[mrc_evaluator-30] fricp_mesh                    4.4407    4.7183    5.9635   135.19     0.0     2.2    2/9    3/3
+[mrc_evaluator-30] fricp_no_pg_icp               3.7894    4.4510    5.9635   136.05     0.0     3.1    2/9    3/3
+[mrc_evaluator-30] fricp_star_icp                3.6983    4.3942    5.9635   136.57     0.0     3.0    2/9    3/3
+[mrc_evaluator-30] fricp_mesh_icp                3.9770    4.4824    5.9635   135.94     0.0     4.3    2/9    3/3
+[mrc_evaluator-30] 
+[mrc_evaluator-30] ------------------------------------------------------------------------
+[mrc_evaluator-30]                      PER-ALGORITHM BREAKDOWN
+[mrc_evaluator-30] ------------------------------------------------------------------------
+[mrc_evaluator-30] 
+[mrc_evaluator-30] kiss_matcher:
+[mrc_evaluator-30]   no_pg             trans: avg=2.1201m  rms=2.9111m  max=4.2336m  rot: 90.19deg  t=0.10s  ovlp=0.0%
+[mrc_evaluator-30]   pg_star           trans: avg=2.5204m  rms=3.4065m  max=5.9635m  rot: 65.93deg  t=0.10s  ovlp=0.0%
+[mrc_evaluator-30]   pg_mesh           trans: avg=2.0062m  rms=2.5650m  max=5.9635m  rot: 54.41deg  t=0.10s  ovlp=0.0%
+[mrc_evaluator-30]   no_pg       +icp  trans: avg=1.7817m  rms=2.4193m  max=5.9635m  rot: 60.04deg  t=1.46s  ovlp=0.0%
+[mrc_evaluator-30]   pg_star     +icp  trans: avg=2.6051m  rms=3.6137m  max=5.9635m  rot: 110.21deg  t=1.49s  ovlp=0.0%
+[mrc_evaluator-30]   pg_mesh     +icp  trans: avg=2.8923m  rms=4.0278m  max=5.9635m  rot: 142.11deg  t=2.09s  ovlp=0.0%
+[mrc_evaluator-30] 
+[mrc_evaluator-30] fricp:
+[mrc_evaluator-30]   no_pg             trans: avg=3.9646m  rms=4.5078m  max=5.9635m  rot: 137.35deg  t=1.46s  ovlp=0.0%
+[mrc_evaluator-30]   pg_star           trans: avg=4.3176m  rms=4.6630m  max=5.9635m  rot: 135.83deg  t=1.50s  ovlp=0.0%
+[mrc_evaluator-30]   pg_mesh           trans: avg=4.4407m  rms=4.7183m  max=5.9635m  rot: 135.19deg  t=2.23s  ovlp=0.0%
+[mrc_evaluator-30]   no_pg       +icp  trans: avg=3.7894m  rms=4.4510m  max=5.9635m  rot: 136.05deg  t=3.06s  ovlp=0.0%
+[mrc_evaluator-30]   pg_star     +icp  trans: avg=3.6983m  rms=4.3942m  max=5.9635m  rot: 136.57deg  t=3.03s  ovlp=0.0%
+[mrc_evaluator-30]   pg_mesh     +icp  trans: avg=3.9770m  rms=4.4824m  max=5.9635m  rot: 135.94deg  t=4.31s  ovlp=0.0%
+[mrc_evaluator-30] 
+[mrc_evaluator-30] ------------------------------------------------------------------------
+[mrc_evaluator-30]                        ICP REFINEMENT IMPACT
+[mrc_evaluator-30] ------------------------------------------------------------------------
+[mrc_evaluator-30] 
+[mrc_evaluator-30] kiss_matcher:
+[mrc_evaluator-30]   no_pg   : coarse=2.9111m -> icp=2.4193m  trans +16.9%  rot +33.1%
+[mrc_evaluator-30]   star    : coarse=3.4065m -> icp=3.6137m  trans -6.1%  rot -71.1%
+[mrc_evaluator-30]   mesh    : coarse=2.5650m -> icp=4.0278m  trans -57.0%  rot -139.8%
+[mrc_evaluator-30] 
+[mrc_evaluator-30] fricp:
+[mrc_evaluator-30]   no_pg   : coarse=4.5078m -> icp=4.4510m  trans +1.3%  rot -2.0%
+[mrc_evaluator-30]   star    : coarse=4.6630m -> icp=4.3942m  trans +5.8%  rot -0.6%
+[mrc_evaluator-30]   mesh    : coarse=4.7183m -> icp=4.4824m  trans +5.0%  rot -0.3%
+[mrc_evaluator-30] 
+[mrc_evaluator-30] ------------------------------------------------------------------------
+[mrc_evaluator-30]                       POSE GRAPH TOPOLOGY IMPACT
+[mrc_evaluator-30] ------------------------------------------------------------------------
+[mrc_evaluator-30] 
+[mrc_evaluator-30] kiss_matcher:
+[mrc_evaluator-30]   Star vs None:  -17.0%
+[mrc_evaluator-30]   Mesh vs Star:  +24.7%
+[mrc_evaluator-30]   Mesh vs None:  +11.9%
+[mrc_evaluator-30] 
+[mrc_evaluator-30] kiss_matcher +icp:
+[mrc_evaluator-30]   Star vs None:  -49.4%
+[mrc_evaluator-30]   Mesh vs Star:  -11.5%
+[mrc_evaluator-30]   Mesh vs None:  -66.5%
+[mrc_evaluator-30] 
+[mrc_evaluator-30] fricp:
+[mrc_evaluator-30]   Star vs None:  -3.4%
+[mrc_evaluator-30]   Mesh vs Star:  -1.2%
+[mrc_evaluator-30]   Mesh vs None:  -4.7%
+[mrc_evaluator-30] 
+[mrc_evaluator-30] fricp +icp:
+[mrc_evaluator-30]   Star vs None:  +1.3%
+[mrc_evaluator-30]   Mesh vs Star:  -2.0%
+[mrc_evaluator-30]   Mesh vs None:  -0.7%
+[mrc_evaluator-30] 
+[mrc_evaluator-30] ------------------------------------------------------------------------
+[mrc_evaluator-30]                   KISS-MATCHER vs FRICP (head-to-head)
+[mrc_evaluator-30] ------------------------------------------------------------------------
+[mrc_evaluator-30] 
+[mrc_evaluator-30] no_pg         : kiss=2.9111m  fricp=4.5078m  -> kiss wins
+[mrc_evaluator-30] no_pg+icp     : kiss=2.4193m  fricp=4.4510m  -> kiss wins
+[mrc_evaluator-30] star          : kiss=3.4065m  fricp=4.6630m  -> kiss wins
+[mrc_evaluator-30] star+icp      : kiss=3.6137m  fricp=4.3942m  -> kiss wins
+[mrc_evaluator-30] mesh          : kiss=2.5650m  fricp=4.7183m  -> kiss wins
+[mrc_evaluator-30] mesh+icp      : kiss=4.0278m  fricp=4.4824m  -> kiss wins
+[mrc_evaluator-30] 
+[mrc_evaluator-30] ========================================================================
+[mrc_evaluator-30] BEST CONFIGURATION: kiss_matcher_no_pg_icp
+[ros2-31] std_srvs.srv.Trigger_Response(success=True, message='\n========================================================================\n          COMPREHENSIVE MRC COMPARISON (all parameter combos)\n========================================================================\n\nPARAMETERS:\n  Algorithms:    kiss_matcher, fricp\n  Pose Graph:    none, star, mesh\n  ICP Refine:    off, on\n  Trials/config: 3\n  Configurations: 12 total\n\n------------------------------------------------------------------------\n                           RESULTS SUMMARY\n------------------------------------------------------------------------\n\nConfiguration               T Avg(m)  T RMS(m)  T Max(m) R Avg(d)  Ovlp(%) Time(s)  Robots  Trials\n--------------------------------------------------------------------------------------------------\nkiss_matcher_no_pg            2.1201    2.9111    4.2336    90.19     0.0     0.1    2/9    3/3\nkiss_matcher_star             2.5204    3.4065    5.9635    65.93     0.0     0.1    2/9    3/3\nkiss_matcher_mesh             2.0062    2.5650    5.9635    54.41     0.0     0.1    2/9    3/3\nkiss_matcher_no_pg_icp        1.7817    2.4193    5.9635    60.04     0.0     1.5    2/9    3/3\nkiss_matcher_star_icp         2.6051    3.6137    5.9635   110.21     0.0     1.5    2/9    3/3\nkiss_matcher_mesh_icp         2.8923    4.0278    5.9635   142.11     0.0     2.1    2/9    3/3\nfricp_no_pg                   3.9646    4.5078    5.9635   137.35     0.0     1.5    2/9    3/3\nfricp_star                    4.3176    4.6630    5.9635   135.83     0.0     1.5    2/9    3/3\nfricp_mesh                    4.4407    4.7183    5.9635   135.19     0.0     2.2    2/9    3/3\nfricp_no_pg_icp               3.7894    4.4510    5.9635   136.05     0.0     3.1    2/9    3/3\nfricp_star_icp                3.6983    4.3942    5.9635   136.57     0.0     3.0    2/9    3/3\nfricp_mesh_icp                3.9770    4.4824    5.9635   135.94     0.0     4.3    2/9    3/3\n\n------------------------------------------------------------------------\n                     PER-ALGORITHM BREAKDOWN\n------------------------------------------------------------------------\n\nkiss_matcher:\n  no_pg             trans: avg=2.1201m  rms=2.9111m  max=4.2336m  rot: 90.19deg  t=0.10s  ovlp=0.0%\n  pg_star           trans: avg=2.5204m  rms=3.4065m  max=5.9635m  rot: 65.93deg  t=0.10s  ovlp=0.0%\n  pg_mesh           trans: avg=2.0062m  rms=2.5650m  max=5.9635m  rot: 54.41deg  t=0.10s  ovlp=0.0%\n  no_pg       +icp  trans: avg=1.7817m  rms=2.4193m  max=5.9635m  rot: 60.04deg  t=1.46s  ovlp=0.0%\n  pg_star     +icp  trans: avg=2.6051m  rms=3.6137m  max=5.9635m  rot: 110.21deg  t=1.49s  ovlp=0.0%\n  pg_mesh     +icp  trans: avg=2.8923m  rms=4.0278m  max=5.9635m  rot: 142.11deg  t=2.09s  ovlp=0.0%\n\nfricp:\n  no_pg             trans: avg=3.9646m  rms=4.5078m  max=5.9635m  rot: 137.35deg  t=1.46s  ovlp=0.0%\n  pg_star           trans: avg=4.3176m  rms=4.6630m  max=5.9635m  rot: 135.83deg  t=1.50s  ovlp=0.0%\n  pg_mesh           trans: avg=4.4407m  rms=4.7183m  max=5.9635m  rot: 135.19deg  t=2.23s  ovlp=0.0%\n  no_pg       +icp  trans: avg=3.7894m  rms=4.4510m  max=5.9635m  rot: 136.05deg  t=3.06s  ovlp=0.0%\n  pg_star     +icp  trans: avg=3.6983m  rms=4.3942m  max=5.9635m  rot: 136.57deg  t=3.03s  ovlp=0.0%\n  pg_mesh     +icp  trans: avg=3.9770m  rms=4.4824m  max=5.9635m  rot: 135.94deg  t=4.31s  ovlp=0.0%\n\n------------------------------------------------------------------------\n                       ICP REFINEMENT IMPACT\n------------------------------------------------------------------------\n\nkiss_matcher:\n  no_pg   : coarse=2.9111m -> icp=2.4193m  trans +16.9%  rot +33.1%\n  star    : coarse=3.4065m -> icp=3.6137m  trans -6.1%  rot -71.1%\n  mesh    : coarse=2.5650m -> icp=4.0278m  trans -57.0%  rot -139.8%\n\nfricp:\n  no_pg   : coarse=4.5078m -> icp=4.4510m  trans +1.3%  rot -2.0%\n  star    : coarse=4.6630m -> icp=4.3942m  trans +5.8%  rot -0.6%\n  mesh    : coarse=4.7183m -> icp=4.4824m  trans +5.0%  rot -0.3%\n\n------------------------------------------------------------------------\n                      POSE GRAPH TOPOLOGY IMPACT\n------------------------------------------------------------------------\n\nkiss_matcher:\n  Star vs None:  -17.0%\n  Mesh vs Star:  +24.7%\n  Mesh vs None:  +11.9%\n\nkiss_matcher +icp:\n  Star vs None:  -49.4%\n  Mesh vs Star:  -11.5%\n  Mesh vs None:  -66.5%\n\nfricp:\n  Star vs None:  -3.4%\n  Mesh vs Star:  -1.2%\n  Mesh vs None:  -4.7%\n\nfricp +icp:\n  Star vs None:  +1.3%\n  Mesh vs Star:  -2.0%\n  Mesh vs None:  -0.7%\n\n------------------------------------------------------------------------\n                  KISS-MATCHER vs FRICP (head-to-head)\n------------------------------------------------------------------------\n\nno_pg         : kiss=2.9111m  fricp=4.5078m  -> kiss wins\nno_pg+icp     : kiss=2.4193m  fricp=4.4510m  -> kiss wins\nstar          : kiss=3.4065m  fricp=4.6630m  -> kiss wins\nstar+icp      : kiss=3.6137m  fricp=4.3942m  -> kiss wins\nmesh          : kiss=2.5650m  fricp=4.7183m  -> kiss wins\nmesh+icp      : kiss=4.0278m  fricp=4.4824m  -> kiss wins\n\n========================================================================\nBEST CONFIGURATION: kiss_matcher_no_pg_icp\n  Translation Avg: 1.7817 m\n========================================================================\n')
+[ros2-31] 
+[INFO] [ros2-31]: process has finished cleanly [pid 94137]
+[mrc_evaluator-30] [0m[INFO] [1771314407.433684457] [robot_0.mrc_evaluator]: RMS Errors: translation=2.9933m, rotation=127.1734deg (2 robots)[0m
+[mrc_evaluator-30] BEST CONFIGURATION: kiss_matcher_no_pg_icp
+[mrc_evaluator-30]   Translation Avg: 1.7817 m
+[mrc_evaluator-30] ========================================================================
+--
+[ros2-31] std_srvs.srv.Trigger_Response(success=True, message='\n========================================================================\n          COMPREHENSIVE MRC COMPARISON (all parameter combos)\n========================================================================\n\nPARAMETERS:\n  Algorithms:    kiss_matcher, fricp\n  Pose Graph:    none, star, mesh\n  ICP Refine:    off, on\n  Trials/config: 3\n  Configurations: 12 total\n\n------------------------------------------------------------------------\n                           RESULTS SUMMARY\n------------------------------------------------------------------------\n\nConfiguration               T Avg(m)  T RMS(m)  T Max(m) R Avg(d)  Ovlp(%) Time(s)  Robots  Trials\n--------------------------------------------------------------------------------------------------\nkiss_matcher_no_pg            2.1201    2.9111    4.2336    90.19     0.0     0.1    2/9    3/3\nkiss_matcher_star             2.5204    3.4065    5.9635    65.93     0.0     0.1    2/9    3/3\nkiss_matcher_mesh             2.0062    2.5650    5.9635    54.41     0.0     0.1    2/9    3/3\nkiss_matcher_no_pg_icp        1.7817    2.4193    5.9635    60.04     0.0     1.5    2/9    3/3\nkiss_matcher_star_icp         2.6051    3.6137    5.9635   110.21     0.0     1.5    2/9    3/3\nkiss_matcher_mesh_icp         2.8923    4.0278    5.9635   142.11     0.0     2.1    2/9    3/3\nfricp_no_pg                   3.9646    4.5078    5.9635   137.35     0.0     1.5    2/9    3/3\nfricp_star                    4.3176    4.6630    5.9635   135.83     0.0     1.5    2/9    3/3\nfricp_mesh                    4.4407    4.7183    5.9635   135.19     0.0     2.2    2/9    3/3\nfricp_no_pg_icp               3.7894    4.4510    5.9635   136.05     0.0     3.1    2/9    3/3\nfricp_star_icp                3.6983    4.3942    5.9635   136.57     0.0     3.0    2/9    3/3\nfricp_mesh_icp                3.9770    4.4824    5.9635   135.94     0.0     4.3    2/9    3/3\n\n------------------------------------------------------------------------\n                     PER-ALGORITHM BREAKDOWN\n------------------------------------------------------------------------\n\nkiss_matcher:\n  no_pg             trans: avg=2.1201m  rms=2.9111m  max=4.2336m  rot: 90.19deg  t=0.10s  ovlp=0.0%\n  pg_star           trans: avg=2.5204m  rms=3.4065m  max=5.9635m  rot: 65.93deg  t=0.10s  ovlp=0.0%\n  pg_mesh           trans: avg=2.0062m  rms=2.5650m  max=5.9635m  rot: 54.41deg  t=0.10s  ovlp=0.0%\n  no_pg       +icp  trans: avg=1.7817m  rms=2.4193m  max=5.9635m  rot: 60.04deg  t=1.46s  ovlp=0.0%\n  pg_star     +icp  trans: avg=2.6051m  rms=3.6137m  max=5.9635m  rot: 110.21deg  t=1.49s  ovlp=0.0%\n  pg_mesh     +icp  trans: avg=2.8923m  rms=4.0278m  max=5.9635m  rot: 142.11deg  t=2.09s  ovlp=0.0%\n\nfricp:\n  no_pg             trans: avg=3.9646m  rms=4.5078m  max=5.9635m  rot: 137.35deg  t=1.46s  ovlp=0.0%\n  pg_star           trans: avg=4.3176m  rms=4.6630m  max=5.9635m  rot: 135.83deg  t=1.50s  ovlp=0.0%\n  pg_mesh           trans: avg=4.4407m  rms=4.7183m  max=5.9635m  rot: 135.19deg  t=2.23s  ovlp=0.0%\n  no_pg       +icp  trans: avg=3.7894m  rms=4.4510m  max=5.9635m  rot: 136.05deg  t=3.06s  ovlp=0.0%\n  pg_star     +icp  trans: avg=3.6983m  rms=4.3942m  max=5.9635m  rot: 136.57deg  t=3.03s  ovlp=0.0%\n  pg_mesh     +icp  trans: avg=3.9770m  rms=4.4824m  max=5.9635m  rot: 135.94deg  t=4.31s  ovlp=0.0%\n\n------------------------------------------------------------------------\n                       ICP REFINEMENT IMPACT\n------------------------------------------------------------------------\n\nkiss_matcher:\n  no_pg   : coarse=2.9111m -> icp=2.4193m  trans +16.9%  rot +33.1%\n  star    : coarse=3.4065m -> icp=3.6137m  trans -6.1%  rot -71.1%\n  mesh    : coarse=2.5650m -> icp=4.0278m  trans -57.0%  rot -139.8%\n\nfricp:\n  no_pg   : coarse=4.5078m -> icp=4.4510m  trans +1.3%  rot -2.0%\n  star    : coarse=4.6630m -> icp=4.3942m  trans +5.8%  rot -0.6%\n  mesh    : coarse=4.7183m -> icp=4.4824m  trans +5.0%  rot -0.3%\n\n------------------------------------------------------------------------\n                      POSE GRAPH TOPOLOGY IMPACT\n------------------------------------------------------------------------\n\nkiss_matcher:\n  Star vs None:  -17.0%\n  Mesh vs Star:  +24.7%\n  Mesh vs None:  +11.9%\n\nkiss_matcher +icp:\n  Star vs None:  -49.4%\n  Mesh vs Star:  -11.5%\n  Mesh vs None:  -66.5%\n\nfricp:\n  Star vs None:  -3.4%\n  Mesh vs Star:  -1.2%\n  Mesh vs None:  -4.7%\n\nfricp +icp:\n  Star vs None:  +1.3%\n  Mesh vs Star:  -2.0%\n  Mesh vs None:  -0.7%\n\n------------------------------------------------------------------------\n                  KISS-MATCHER vs FRICP (head-to-head)\n------------------------------------------------------------------------\n\nno_pg         : kiss=2.9111m  fricp=4.5078m  -> kiss wins\nno_pg+icp     : kiss=2.4193m  fricp=4.4510m  -> kiss wins\nstar          : kiss=3.4065m  fricp=4.6630m  -> kiss wins\nstar+icp      : kiss=3.6137m  fricp=4.3942m  -> kiss wins\nmesh          : kiss=2.5650m  fricp=4.7183m  -> kiss wins\nmesh+icp      : kiss=4.0278m  fricp=4.4824m  -> kiss wins\n\n========================================================================\nBEST CONFIGURATION: kiss_matcher_no_pg_icp\n  Translation Avg: 1.7817 m\n========================================================================\n')
+[ros2-31] 
+[INFO] [ros2-31]: process has finished cleanly [pid 94137]

@@ -1,0 +1,499 @@
+\chapter{Implementation}
+\label{ch:implementation}
+
+This chapter presents the software implementation of the Multi-Robot Calibration (MRC) system.
+First, the overall system architecture and its integration into ROS\,2 are described
+(\autoref{sec:system_architecture}).
+Subsequently, the individual software components are presented in detail:
+the data acquisition pipeline (\autoref{sec:data_acquisition}),
+the point cloud registration backends (\autoref{sec:registration_backends}),
+the optional ICP refinement stage (\autoref{sec:icp_refinement}),
+and the pose graph optimization module (\autoref{sec:pose_graph}).
+Finally, \autoref{sec:ros2_interfaces} describes the custom ROS\,2 message, service, and action
+interfaces that define the communication protocol between the distributed nodes.
+
+%% ---------------------------------------------------------------------------
+\section{System Architecture}
+\label{sec:system_architecture}
+
+The MRC system follows a distributed master--slave architecture realized as a set of
+ROS\,2 nodes.
+\autoref{fig:architecture} provides an overview of the data flow between components.
+
+\begin{itemize}
+    \item \textbf{Master node} (\texttt{mrc\_master}):
+          Coordinates the calibration workflow, hosts the registration backends,
+          optionally runs pose graph optimization, and publishes the resulting
+          transforms via the \texttt{tf\_static} broadcaster.
+    \item \textbf{Slave nodes} (\texttt{mrc\_slave}):
+          Each robot in the fleet runs a slave node that subscribes to the local
+          LiDAR sensor topic(s), accumulates and preprocesses point clouds, extracts
+          geometric features, and provides the processed data to the master upon
+          request through a ROS\,2 service.
+\end{itemize}
+
+% TODO: insert architecture diagram
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=\textwidth]{figures/mrc_architecture.pdf}
+%   \caption{System architecture of the MRC framework showing the master--slave
+%            communication pattern and data flow.}
+%   \label{fig:architecture}
+% \end{figure}
+
+The calibration is triggered either through a \texttt{std\_srvs/Trigger} service
+or, preferably, through a ROS\,2 action server that provides asynchronous execution
+with progress feedback.
+Upon receiving a calibration request, the master sequentially queries each discovered
+slave for its registration data, performs pairwise point cloud registration, optionally
+refines and optimizes the results, and finally broadcasts the estimated transforms as
+static TF frames.
+
+A \emph{factory pattern} is employed for the registration backends, allowing the
+algorithm to be selected at runtime via a ROS\,2 parameter without modifying the
+source code.
+Currently, two backends are implemented: a feature-based method using
+KISS-Matcher~\cite{KISSMATCHER} and a dense method using
+Fast Robust ICP (FRICP)~\cite{zhang_fast}.
+
+\subsection{Robot Discovery}
+
+The master node discovers robots in the fleet by subscribing to
+\texttt{hector\_multi\_robot\_msgs/RobotAnnouncement}\footnote{https://github.com/tu-darmstadt-ros-pkg/hector_multi_robot} messages.
+Each slave periodically broadcasts its robot identifier, type, and namespace.
+The master maintains a registry of known robots and constructs the
+corresponding service client endpoints for data retrieval.
+
+%% ---------------------------------------------------------------------------
+\section{Data Acquisition and Preprocessing}
+\label{sec:data_acquisition}
+
+The slave node is responsible for acquiring LiDAR data and preparing it for
+registration.
+It supports two operational modes to accommodate different sensor types:
+
+\begin{description}
+    \item[Latest-scan mode (\texttt{accumulation\_type = "none"})]
+        Uses only the most recent point cloud message.
+        This mode is suitable for repetitive LiDARs.
+    \item[Time-window accumulation (\texttt{accumulation\_type = "time\_window"})]
+        Accumulates point cloud messages over a configurable time window
+        $\Delta t_\mathrm{acc}$ (default: \SI{1.0}{\second}).
+        This mode is designed for non-repetitive scanning LiDARs
+        (e.g., Livox Mid-360) where a single message covers only a partial
+        field of view, and temporal accumulation is required to obtain
+        sufficient spatial coverage.
+\end{description}
+
+When multiple LiDAR topics are configured per robot, the slave merges the
+individual point clouds into a common coordinate frame using TF lookups,
+producing a single unified cloud for registration.
+
+\subsection{Feature Extraction}
+\label{sec:feature_extraction}
+
+When the KISS-Matcher ~\cite{KISSMATCHER} backend is selected, the slave additionally extracts
+geometric features from the accumulated point cloud.
+The extraction pipeline consists of the following steps:
+
+\begin{enumerate}
+    \item \textbf{Voxel grid downsampling} with a configurable leaf size
+          $v_\mathrm{kiss}$ (default: \SI{0.3}{\metre}) to reduce the number
+          of points while preserving the geometric structure.
+    \item \textbf{Normal estimation} using a neighborhood radius of
+          $r_n = \gamma_n \cdot v_\mathrm{kiss}$, where $\gamma_n$ is the
+          normal radius gain (default: $\gamma_n = 3.0$).
+    \item \textbf{FasterPFH descriptor computation}~\cite{KISSMATCHER} with a
+          search radius $r_f = \gamma_f \cdot v_\mathrm{kiss}$
+          ($\gamma_f = 5.0$ by default), yielding a 33-dimensional descriptor
+          vector for each keypoint.
+\end{enumerate}
+
+The computed features (keypoints and descriptors) are serialized into a custom
+\texttt{KissFeatures} message and cached on the slave to avoid redundant
+recomputation across multiple calibration requests.
+
+%% ---------------------------------------------------------------------------
+\section{Registration Backends}
+\label{sec:registration_backends}
+
+Both backends implement a common abstract interface \texttt{MRCRegistration}
+with a single method \texttt{registerSourceToTarget()}, which takes source and
+target data as input and returns a \texttt{RegistrationResult} containing the
+estimated rigid body transformation
+$\mathbf{T} \in \mathrm{SE}(3)$,
+quality metrics (RMSE, inlier count), and a success flag.
+
+\subsection{KISS-Matcher Backend}
+\label{sec:kiss_matcher}
+
+The KISS-Matcher ~\cite{KISSMATCHER} backend performs feature-based global registration without
+requiring an initial pose estimate.
+The algorithm proceeds as follows:
+
+\begin{enumerate}
+    \item \textbf{Correspondence establishment:}
+          The ROBIN matching module\footnote{https://github.com/MIT-SPARK/ROBIN} matches source and target
+          descriptors using a ratio test.
+          A configurable maximum number of correspondences
+          $N_\mathrm{max}$ and a tuple scale parameter $\tau$ control the
+          matching behavior.
+
+    \item \textbf{Robust pose estimation:}
+          The matched correspondences are passed to a GNC-TLS
+          (Graduated Non-Convexity with Truncated Least Squares) solver
+          that jointly estimates the rotation $\mathbf{R} \in \mathrm{SO}(3)$
+          and translation $\mathbf{t} \in \mathbb{R}^3$ while being robust
+          to a high fraction of outlier correspondences.
+
+    \item \textbf{Quality assessment:}
+          The inlier set is determined by the solver.
+          The registration is accepted only if the inlier ratio
+          $r_\mathrm{inlier} = n_\mathrm{inlier} / n_\mathrm{corr}$
+          exceeds a minimum threshold (default: 5\%).
+          The translation RMSE is computed on the inlier correspondences
+          after applying the estimated transform:
+          \begin{equation}
+              \mathrm{RMSE}_t = \sqrt{
+                  \frac{1}{n_\mathrm{inlier}}
+                  \sum_{i \in \mathcal{I}}
+                  \lVert \mathbf{R}\,\mathbf{p}_i^s + \mathbf{t} - \mathbf{p}_i^t \rVert^2
+              }
+          \end{equation}
+          where $\mathcal{I}$ denotes the inlier set and $\mathbf{p}_i^s$,
+          $\mathbf{p}_i^t$ are corresponding source and target keypoints.
+          An approximate rotation RMSE is derived as
+          $\mathrm{RMSE}_r \approx \mathrm{RMSE}_t \,/\, \bar{d}$,
+          where $\bar{d}$ is the mean lever arm (distance of target inlier
+          points from their centroid).
+\end{enumerate}
+
+\subsection{FRICP Backend}
+\label{sec:fricp}
+
+The FRICP backend performs dense point-to-point registration using the
+Fast Robust ICP algorithm~\cite{zhang_fast}.
+Unlike KISS-Matcher ~\cite{KISSMATCHER}, it operates directly on the raw point clouds without
+feature extraction, but requires a reasonable initial alignment or operates
+from the identity transform.
+
+\begin{enumerate}
+    \item \textbf{Preprocessing:}
+          Both source and target point clouds are converted to Eigen matrices.
+          The clouds are demeaned (centered at the origin) as required by the
+          FRICP implementation.
+
+    \item \textbf{Registration:}
+          The FRICP solver is configured with a Welsch cost function
+          (\texttt{ICP::WELSCH}) and Anderson acceleration for faster convergence.
+          This robust cost function down-weights large residuals, providing
+          tolerance against partial overlap and outliers.
+
+    \item \textbf{Quality assessment:}
+          After registration, the nearest-neighbor RMSE is computed on the
+          full-resolution point clouds.
+          A $3\times$-median outlier rejection scheme is applied:
+          for each transformed source point, the nearest-neighbor distance to
+          the target cloud is computed; points with distances exceeding three
+          times the median distance are classified as outliers and excluded
+          from the RMSE computation.
+\end{enumerate}
+
+%% ---------------------------------------------------------------------------
+\section{ICP Refinement}
+\label{sec:icp_refinement}
+
+An optional ICP refinement stage can be applied after the initial registration
+from either backend.
+This stage uses the PCL\footnote{https://pointclouds.org/} implementation of the standard Iterative Closest Point
+algorithm, initialized with the coarse transform as the starting guess.
+
+The refinement proceeds as follows:
+\begin{enumerate}
+    \item Both point clouds are downsampled using a voxel grid filter to
+          reduce computational cost during alignment.
+    \item ICP is executed on the downsampled clouds, starting from the coarse
+          transform.
+    \item The refined transform is evaluated on the \emph{full-resolution}
+          clouds using the same nearest-neighbor RMSE metric with
+          $3\times$-median outlier rejection as the backends.
+    \item The refined result is accepted only if the RMSE improves compared
+          to the coarse registration; otherwise, the original result is retained.
+\end{enumerate}
+
+This conservative acceptance criterion ensures that the refinement stage can
+never degrade the calibration quality.
+
+%% ---------------------------------------------------------------------------
+\section{Pose Graph Optimization}
+\label{sec:pose_graph}
+
+When calibrating more than two robots, the individual pairwise registrations
+can be jointly optimized using pose graph optimization to enforce global
+consistency.
+The MRC system implements this using the GTSAM
+library\footnote{https://github.com/borglab/gtsam}.
+
+\subsection{Graph Construction}
+
+The pose graph models each robot's pose as a variable
+$\mathbf{X}_i \in \mathrm{SE}(3)$ and each pairwise registration as a
+constraint (factor) between two variables.
+Two graph topologies are supported:
+
+\begin{description}
+    \item[Star topology:]
+        The master robot is anchored at the origin with a tight prior
+        ($\sigma_t = 10^{-3}\,\mathrm{m}$, $\sigma_r = 10^{-3}\,\mathrm{rad}$).
+        Edges connect only the master to each slave, resulting in
+        $n - 1$ registration edges for $n$ robots.
+    \item[Mesh topology:]
+        In addition to the master--slave edges, all pairwise slave--slave
+        registrations are computed and added as edges, yielding up to
+        $\binom{n}{2}$ constraints.
+        This provides additional redundancy and can improve robustness.
+\end{description}
+
+\subsection{Noise Model}
+\label{sec:noise_model}
+
+Each edge in the pose graph is assigned a diagonal Gaussian noise model in
+the $\mathrm{SE}(3)$ tangent space with six components
+$(\sigma_{r_x}, \sigma_{r_y}, \sigma_{r_z}, \sigma_{t_x}, \sigma_{t_y},
+\sigma_{t_z})$, following the GTSAM \texttt{Pose3} convention where the
+first three components represent rotational uncertainty and the last three
+represent translational uncertainty.
+The isotropic assumption
+$\sigma_{r_x} = \sigma_{r_y} = \sigma_{r_z} \eqqcolon \sigma_r$ and
+$\sigma_{t_x} = \sigma_{t_y} = \sigma_{t_z} \eqqcolon \sigma_t$ reduces
+the parameterization to two scalar values per edge.
+
+\paragraph{Sigma derivation.}
+The sigmas are computed in a three-stage pipeline implemented in
+\texttt{deriveSigmas()}:
+
+\begin{enumerate}
+    \item \textbf{Initialization.}
+          The translational and rotational sigmas are initialized with
+          configurable default values
+          ($\sigma_t^{(0)} = \SI{0.3}{\metre}$,
+           $\sigma_r^{(0)} = \SI{0.2}{\radian}$).
+    \item \textbf{RMSE override.}
+          If the registration backend provides RMSE estimates---as
+          KISS-Matcher does via its GNC-TLS residuals and FRICP via its
+          Welsch cost---these values replace the defaults:
+          \begin{equation}
+              \sigma_t = \begin{cases}
+                  \mathrm{RMSE}_t & \text{if available} \\
+                  \sigma_t^{(0)}  & \text{otherwise}
+              \end{cases}, \qquad
+              \sigma_r = \begin{cases}
+                  \mathrm{RMSE}_r & \text{if available} \\
+                  \sigma_r^{(0)}  & \text{otherwise}
+              \end{cases}
+          \end{equation}
+          This allows the optimizer to weight edges according to the
+          registration quality: well-aligned point clouds yield low RMSE
+          and therefore small sigmas (high confidence), while poor
+          alignments produce large sigmas (low confidence).
+    \item \textbf{Inlier scaling (optional).}
+          When enabled, both sigmas are scaled by the inverse square root
+          of the inlier count~$n$:
+          \begin{equation}
+              \sigma_t \leftarrow \frac{\sigma_t}{\sqrt{n}}, \qquad
+              \sigma_r \leftarrow \frac{\sigma_r}{\sqrt{n}}
+          \end{equation}
+          The motivation follows the standard error of the mean: given~$n$
+          inlier correspondences, the uncertainty of the aggregate
+          registration should decrease as $1/\sqrt{n}$.
+          However, this scaling is \emph{disabled by default} because the
+          point-level inliers from feature matching are not independent
+          pose measurements---they share spatial correlations due to local
+          surface geometry---and applying the scaling would
+          over-weight high-overlap edges.
+    \item \textbf{Clamping.}
+          The resulting sigmas are clamped to configurable bounds to
+          prevent numerically degenerate noise models:
+          \begin{equation}
+              \sigma_t \leftarrow
+                  \mathrm{clamp}\!\left(\sigma_t,\;
+                  \sigma_t^{\min},\; \sigma_t^{\max}\right), \qquad
+              \sigma_r \leftarrow
+                  \mathrm{clamp}\!\left(\sigma_r,\;
+                  \sigma_r^{\min},\; \sigma_r^{\max}\right)
+          \end{equation}
+          with defaults
+          $\sigma_t^{\min} = \SI{0.10}{\metre}$,
+          $\sigma_t^{\max} = \SI{5.0}{\metre}$,
+          $\sigma_r^{\min} = \SI{0.10}{\radian}$,
+          $\sigma_r^{\max} = \pi\;\mathrm{rad}$.
+          The lower bound ensures that even high-quality registrations do
+          not produce artificially tight constraints, while the upper bound
+          prevents effectively unconstrained edges from distorting the
+          optimization.
+\end{enumerate}
+
+\paragraph{Robust noise model.}
+After computing $\sigma_t$ and $\sigma_r$, a GTSAM diagonal noise model is
+constructed.
+By default, this base model is wrapped in a Huber
+M-estimator~\cite{huber_robust} with threshold $k = 1.345$ to robustify
+the optimization against outlier registrations.
+The Huber loss function transitions from quadratic to linear penalization at
+the threshold:
+\begin{equation}
+    \rho(r) =
+    \begin{cases}
+        \frac{1}{2} r^2                & \text{if } |r| \leq k \\
+        k \left(|r| - \frac{k}{2}\right) & \text{if } |r| > k
+    \end{cases}
+\end{equation}
+The value $k = 1.345$ is a standard choice that retains $95\%$ asymptotic
+efficiency under a Gaussian distribution while bounding the influence of
+outliers.
+In the multi-robot calibration context, this means that a single
+incorrect registration (e.g.\ from FRICP converging to a local minimum)
+cannot dominate the cost function and corrupt the poses of correctly
+calibrated robots.
+
+\subsection{Optimization}
+
+The resulting nonlinear least-squares problem is solved using the
+Levenberg--Marquardt algorithm with a maximum of 100 iterations.
+The optimized poses $\{\mathbf{X}_i^*\}$ are extracted and converted to
+ROS\,2  \
+\texttt{geometry\_msgs/TransformStamped} messages, which are
+broadcast via the static TF broadcaster.
+
+%% ---------------------------------------------------------------------------
+\section{ROS\,2 Interfaces}
+\label{sec:ros2_interfaces}
+
+The MRC package defines three custom interface types to support
+the distributed calibration workflow.
+
+\subsection{KissFeatures Message}
+
+The \texttt{mrc/msg/KissFeatures} message encapsulates the extracted
+geometric features for a single robot:
+
+\begin{itemize}
+    \item \texttt{keypoints} (\texttt{PointCloud2}): 3D coordinates of the
+          extracted keypoints.
+    \item \texttt{descriptors} (\texttt{float32[]}): Flattened row-major array
+          of FasterPFH descriptors with
+          $|\texttt{descriptors}| = \texttt{keypoint\_count} \times \texttt{descriptor\_dim}$.
+    \item \texttt{descriptor\_dim} (\texttt{uint32}): Dimensionality of each
+          descriptor (33 for FasterPFH).
+\end{itemize}
+
+\subsection{GetRegistrationData Service}
+
+The \texttt{mrc/srv/GetRegistrationData} service allows the master to request
+preprocessed data from a slave.
+The request specifies the requester's robot identifier and the selected
+algorithm.
+Depending on the algorithm, the response contains either a raw
+\texttt{PointCloud2} (for FRICP) or a \texttt{KissFeatures} message
+(for KISS-Matcher), along with metadata (robot ID, frame ID, timestamp).
+
+\subsection{Calibrate Action}
+
+The \texttt{mrc/action/Calibrate} action provides the primary interface for
+triggering calibration with progress monitoring:
+
+\begin{description}
+    \item[Goal:] Target robot IDs (empty for all discovered robots),
+                 pose graph usage flag, and topology selection.
+    \item[Feedback:] Current calibration phase
+                     (initializing, fetching data, registering, optimizing, publishing),
+                     progress percentage, and a human-readable status message.
+    \item[Result:] Overall success flag, total execution time, number of
+                   robots calibrated and failed, and per-robot error metrics.
+\end{description}
+
+%% ---------------------------------------------------------------------------
+\section{Summary}
+
+The MRC system comprises approximately 3\,100 lines of C++ code distributed
+across seven core source files plus header files and interface definitions.
+\autoref{tab:source_files} provides an overview of the implementation
+components and their responsibilities.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Overview of MRC source files and their responsibilities.}
+    \label{tab:source_files}
+    \begin{tabular}{l r l}
+        \toprule
+        \textbf{Source File} & \textbf{Lines} & \textbf{Responsibility} \\
+        \midrule
+        \texttt{mrc\_master\_node.cpp}         & 1\,336 & Orchestration, action server, TF publishing \\
+        \texttt{mrc\_slave\_node.cpp}           &    510 & Data acquisition, feature extraction \\
+        \texttt{kiss\_matcher\_backend.cpp}     &    299 & Feature-based registration \\
+        \texttt{fricp\_backend.cpp}             &    214 & Dense ICP-based registration \\
+        \texttt{icp\_refiner.cpp}               &    169 & Optional ICP refinement \\
+        \texttt{registration\_factory.cpp}      &     24 & Backend instantiation (factory pattern) \\
+        \texttt{pose\_graph\_optimizer.cpp}     &    187 & GTSAM-based graph optimization \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+The modular design with interchangeable backends and optional optimization
+stages allows systematic evaluation of different algorithmic configurations,
+which is presented in the following chapter.
+
+%% ---------------------------------------------------------------------------
+%% Bibliography entries referenced in this chapter (add to your main .bib file):
+%%
+%% @article{kiss_matcher,
+%%   title   = {{KISS-Matcher}: Fast and Robust Point Cloud Registration Revisited},
+%%   author  = {Oh, Hyungtae and Lim, Hyoung-Kyu and Lim, Hyun and Myung, Hyun},
+%%   journal = {IEEE Robotics and Automation Letters},
+%%   year    = {2024}
+%% }
+%%
+%% @inproceedings{fricp,
+%%   title     = {Fast and Robust Iterative Closest Point},
+%%   author    = {Zhang, Juyong and Yao, Yuxin and Deng, Bailin},
+%%   booktitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+%%   year      = {2022}
+%% }
+%%
+%% @techreport{gtsam,
+%%   title       = {{GTSAM}: General Smoothing and Mapping Library},
+%%   author      = {Dellaert, Frank and {GTSAM Contributors}},
+%%   institution = {Georgia Institute of Technology},
+%%   year        = {2022},
+%%   note        = {\url{https://gtsam.org}}
+%% }
+%%
+%% @article{robin,
+%%   title   = {{ROBIN}: a Graph-Theoretic Approach to Reject Outliers in Robust Estimation using Invariants},
+%%   author  = {Shi, Jingnan and Yang, Heng and Carlone, Luca},
+%%   journal = {arXiv preprint arXiv:2011.03659},
+%%   year    = {2021}
+%% }
+%%
+%% @book{huber_robust,
+%%   title     = {Robust Statistics},
+%%   author    = {Huber, Peter J. and Ronchetti, Elvezio M.},
+%%   publisher = {John Wiley \& Sons},
+%%   year      = {2009}
+%% }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

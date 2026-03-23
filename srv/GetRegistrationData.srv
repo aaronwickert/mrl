@@ -1,0 +1,16 @@
+string requester_robot_id
+string algorithm
+
+---
+bool ok
+string message
+
+# For FRICP (requires xyz fields)
+sensor_msgs/PointCloud2 cloud
+
+# For KISS-Matcher (requires keypoints+descriptors aligned)
+mrc/KissFeatures features
+
+string robot_id
+string frame_id
+builtin_interfaces/Time stamp

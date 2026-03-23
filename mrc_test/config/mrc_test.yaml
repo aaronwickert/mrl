@@ -1,0 +1,49 @@
+# MRC Test Configuration
+
+# Robot formation: equilateral triangle with 1.5m side length
+formation:
+  type: triangle
+  side_length: 1.5
+
+# Robot configurations
+robots:
+  ec_swift_1:
+    type: ec_swift
+    position:
+      x: -0.75
+      y: -0.433
+      z: 0.15
+    yaw: 0.0
+
+  ec_swift_2:
+    type: ec_swift
+    position:
+      x: 0.75
+      y: -0.433
+      z: 0.15
+    yaw: 2.094  # 120 degrees
+
+  athena:
+    type: athena
+    position:
+      x: 0.0
+      y: 0.866
+      z: 0.15
+    yaw: -1.571  # -90 degrees
+
+# MRC configuration
+mrc:
+  algorithm: kiss_matcher  # or fricp
+  use_pose_graph: true
+  accumulation_time_sec: 2.0
+  kiss_voxel_size: 0.3
+
+# Evaluation configuration
+evaluation:
+  rate_hz: 1.0
+  output_csv: true
+
+# Pose graph comparison test configuration
+# Use ros2 service call .../trigger_pose_graph_comparison std_srvs/srv/Trigger
+comparison:
+  trials: 3  # Number of calibration trials per mode for statistical robustness

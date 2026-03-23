@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 700 1320" xmlns="http://www.w3.org/2000/svg" font-family="monospace, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arr-yes" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+    </marker>
+    <marker id="arr-no" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+    <filter id="sh" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="1320" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="350" y="34" text-anchor="middle" font-size="19" font-weight="bold" fill="#1e293b">MRC Calibration — Process Flowchart</text>
+
+  <!-- ========== COLUMN HEADERS ========== -->
+  <rect x="20" y="48" width="155" height="28" rx="6" fill="#fef3c7" stroke="#fbbf24"/>
+  <text x="97" y="67" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">Slave Node</text>
+
+  <rect x="190" y="48" width="320" height="28" rx="6" fill="#dcfce7" stroke="#4ade80"/>
+  <text x="350" y="67" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">Master Node</text>
+
+  <rect x="525" y="48" width="155" height="28" rx="6" fill="#ede9fe" stroke="#a78bfa"/>
+  <text x="602" y="67" text-anchor="middle" font-size="11" font-weight="bold" fill="#5b21b6">GTSAM</text>
+
+  <!-- Swim-lane backgrounds -->
+  <rect x="20"  y="80" width="155" height="1210" rx="6" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
+  <rect x="190" y="80" width="320" height="1210" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <rect x="525" y="80" width="155" height="1210" rx="6" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1"/>
+
+  <!-- ====== START ====== -->
+  <ellipse cx="350" cy="118" rx="90" ry="24" fill="#1e293b" filter="url(#sh)"/>
+  <text x="350" y="123" text-anchor="middle" font-size="12" fill="white" font-weight="bold">START</text>
+
+  <line x1="350" y1="142" x2="350" y2="162" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ====== Receive calibration goal ====== -->
+  <rect x="200" y="162" width="300" height="44" rx="8" fill="#4ade80" stroke="#16a34a" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="180" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">Receive Calibration Goal</text>
+  <text x="350" y="196" text-anchor="middle" font-size="10" fill="#166534">Action: ~/calibrate_action  |  Srv: ~/calibrate</text>
+
+  <line x1="350" y1="206" x2="350" y2="226" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ====== Already calibrating? ====== -->
+  <polygon points="350,226 465,258 350,290 235,258" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="254" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">Already</text>
+  <text x="350" y="270" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">calibrating?</text>
+
+  <!-- NO → continue -->
+  <line x1="350" y1="290" x2="350" y2="310" stroke="#16a34a" stroke-width="1.8" marker-end="url(#arr-yes)"/>
+  <text x="360" y="306" font-size="10" fill="#16a34a">NO</text>
+
+  <!-- ====== Validate topology ====== -->
+  <polygon points="350,310 465,342 350,374 235,342" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="338" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">topology =</text>
+  <text x="350" y="354" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">star | mesh?</text>
+
+  <!-- VALID → continue -->
+  <line x1="350" y1="374" x2="350" y2="394" stroke="#16a34a" stroke-width="1.8" marker-end="url(#arr-yes)"/>
+  <text x="360" y="390" font-size="10" fill="#16a34a">VALID</text>
+
+  <!-- ====== Build robot list ====== -->
+  <rect x="200" y="394" width="300" height="44" rx="8" fill="#86efac" stroke="#4ade80" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="412" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">Build Robot List</text>
+  <text x="350" y="428" text-anchor="middle" font-size="10" fill="#166534">From announcements + static_robots config</text>
+
+  <line x1="350" y1="438" x2="350" y2="458" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ====== Fetch MASTER (local) data ====== -->
+  <line x1="200" y1="480" x2="175" y2="480" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="185" y="473" text-anchor="middle" font-size="9" fill="#2563eb">call</text>
+
+  <rect x="25" y="458" width="140" height="44" rx="8" fill="#fde68a" stroke="#f59e0b" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="95" y="476" text-anchor="middle" font-size="10" font-weight="bold" fill="#713f12">Return local data</text>
+  <text x="95" y="492" text-anchor="middle" font-size="9" fill="#92400e">cloud / KISS features</text>
+
+  <line x1="175" y1="492" x2="200" y2="492" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+
+  <rect x="200" y="458" width="300" height="44" rx="8" fill="#86efac" stroke="#4ade80" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="476" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">Fetch Master (local) Cloud</text>
+  <text x="350" y="492" text-anchor="middle" font-size="10" fill="#166534">Call local ~/get_registration_data</text>
+
+  <line x1="350" y1="502" x2="350" y2="515" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- ====== Local data available? ====== -->
+  <polygon points="350,515 430,535 350,555 270,535" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="531" text-anchor="middle" font-size="10" font-weight="bold" fill="#451a03">Local data</text>
+  <text x="350" y="547" text-anchor="middle" font-size="10" font-weight="bold" fill="#451a03">available?</text>
+
+  <line x1="350" y1="555" x2="350" y2="575" stroke="#16a34a" stroke-width="1.8" marker-end="url(#arr-yes)"/>
+  <text x="360" y="571" font-size="10" fill="#16a34a">YES</text>
+
+  <!-- ====== LOOP HEADER ====== -->
+  <rect x="200" y="575" width="300" height="38" rx="8" fill="#1d4ed8" filter="url(#sh)"/>
+  <text x="350" y="590" text-anchor="middle" font-size="11" font-weight="bold" fill="white">FOR EACH SLAVE ROBOT</text>
+  <text x="350" y="607" text-anchor="middle" font-size="10" fill="#bfdbfe">i = 0 … N-1</text>
+
+  <line x1="350" y1="613" x2="350" y2="633" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ====== Cancel requested? ====== -->
+  <polygon points="350,633 445,655 350,677 255,655" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="651" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">Cancel</text>
+  <text x="350" y="667" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">requested?</text>
+
+  <line x1="350" y1="677" x2="350" y2="697" stroke="#16a34a" stroke-width="1.8" marker-end="url(#arr-yes)"/>
+  <text x="360" y="693" font-size="10" fill="#16a34a">NO</text>
+
+  <!-- ====== Fetch slave data ====== -->
+  <line x1="200" y1="719" x2="175" y2="719" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <rect x="25" y="697" width="140" height="44" rx="8" fill="#fde68a" stroke="#f59e0b" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="95" y="715" text-anchor="middle" font-size="10" font-weight="bold" fill="#713f12">Slave: return</text>
+  <text x="95" y="731" text-anchor="middle" font-size="9" fill="#92400e">cloud / KISS features</text>
+  <line x1="175" y1="731" x2="200" y2="731" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+
+  <rect x="200" y="697" width="300" height="44" rx="8" fill="#86efac" stroke="#4ade80" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="715" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">Fetch Slave Registration Data</text>
+  <text x="350" y="731" text-anchor="middle" font-size="10" fill="#166534">ROS service call → get_registration_data</text>
+
+  <line x1="350" y1="741" x2="350" y2="754" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- ====== Data OK? ====== -->
+  <polygon points="350,754 425,774 350,794 275,774" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="778" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">Data OK?</text>
+
+  <line x1="350" y1="794" x2="350" y2="814" stroke="#16a34a" stroke-width="1.8" marker-end="url(#arr-yes)"/>
+  <text x="360" y="810" font-size="10" fill="#16a34a">OK</text>
+
+  <!-- ====== Run Registration Backend ====== -->
+  <rect x="200" y="814" width="300" height="55" rx="8" fill="#86efac" stroke="#4ade80" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="833" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">Run Registration Backend</text>
+  <text x="350" y="849" text-anchor="middle" font-size="10" fill="#166534">KISS-Matcher: FasterPFH feature matching</text>
+  <text x="350" y="863" text-anchor="middle" font-size="10" fill="#166534">FRICP: Fast Robust ICP on dense cloud</text>
+
+  <line x1="350" y1="869" x2="350" y2="884" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- ====== ICP refine enabled? ====== -->
+  <polygon points="350,884 435,904 350,924 265,904" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="900" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">ICP refine</text>
+  <text x="350" y="916" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">enabled?</text>
+
+  <!-- YES → ICP Refiner box (right, inside master lane) -->
+  <line x1="435" y1="904" x2="500" y2="904" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arr-yes)"/>
+  <text x="465" y="896" text-anchor="middle" font-size="10" fill="#16a34a">YES</text>
+  <rect x="500" y="884" width="110" height="40" rx="6" fill="#d1fae5" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="555" y="900" text-anchor="middle" font-size="10" fill="#065f46">ICP Refiner</text>
+  <text x="555" y="916" text-anchor="middle" font-size="10" fill="#065f46">(PCL ICP)</text>
+  <!-- ICP Refiner rejoins main flow -->
+  <line x1="555" y1="924" x2="555" y2="934" stroke="#16a34a" stroke-width="1.5"/>
+  <line x1="555" y1="934" x2="350" y2="934" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arr-yes)"/>
+
+  <!-- NO → skip ICP -->
+  <line x1="350" y1="924" x2="350" y2="934" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-no)"/>
+  <text x="360" y="931" font-size="10" fill="#dc2626">NO</text>
+
+  <line x1="350" y1="934" x2="350" y2="944" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ====== Store transform ====== -->
+  <rect x="200" y="944" width="300" height="44" rx="8" fill="#86efac" stroke="#4ade80" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="962" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">Store T_master_from_slave</text>
+  <text x="350" y="978" text-anchor="middle" font-size="10" fill="#166534">+ quality metrics (RMSE, inliers, confidence)</text>
+
+  <line x1="350" y1="988" x2="350" y2="1005" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- ====== More slaves remaining? ====== -->
+  <polygon points="350,1005 435,1025 350,1045 265,1025" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="1021" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">More slaves</text>
+  <text x="350" y="1037" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">remaining?</text>
+
+  <!-- YES → loop back (left side) -->
+  <line x1="265" y1="1025" x2="185" y2="1025" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="223" y="1017" text-anchor="middle" font-size="10" fill="#16a34a">YES</text>
+  <line x1="185" y1="1025" x2="185" y2="633" stroke="#16a34a" stroke-width="1.5"/>
+  <line x1="185" y1="633" x2="255" y2="633" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arr-yes)"/>
+
+  <!-- NO → continue -->
+  <line x1="350" y1="1045" x2="350" y2="1065" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-no)"/>
+  <text x="360" y="1061" font-size="10" fill="#dc2626">NO</text>
+
+  <!-- ====== use_pose_graph? ====== -->
+  <polygon points="350,1065 435,1090 350,1115 265,1090" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="1086" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">use_pose</text>
+  <text x="350" y="1102" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#451a03">_graph?</text>
+
+  <!-- YES → GTSAM lane -->
+  <line x1="435" y1="1090" x2="530" y2="1090" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="480" y="1082" text-anchor="middle" font-size="10" fill="#7c3aed">YES</text>
+
+  <rect x="530" y="1062" width="140" height="56" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="600" y="1082" text-anchor="middle" font-size="10" font-weight="bold" fill="#3b0764">Build Pose Graph</text>
+  <text x="600" y="1097" text-anchor="middle" font-size="9" fill="#4c1d95">Anchor: master = I</text>
+  <text x="600" y="1111" text-anchor="middle" font-size="9" fill="#4c1d95">Edges per reg. result</text>
+
+  <line x1="600" y1="1118" x2="600" y2="1138" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="530" y="1138" width="140" height="44" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="600" y="1156" text-anchor="middle" font-size="10" font-weight="bold" fill="#3b0764">GTSAM Optimize</text>
+  <text x="600" y="1172" text-anchor="middle" font-size="9" fill="#4c1d95">Levenberg-Marquardt</text>
+
+  <!-- GTSAM rejoins main -->
+  <line x1="600" y1="1182" x2="600" y2="1202" stroke="#7c3aed" stroke-width="1.5"/>
+  <line x1="600" y1="1202" x2="350" y2="1202" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- NO → straight down -->
+  <line x1="350" y1="1115" x2="350" y2="1202" stroke="#16a34a" stroke-width="1.8" marker-end="url(#arr-yes)"/>
+  <text x="360" y="1165" font-size="10" fill="#16a34a">NO</text>
+
+  <!-- ====== Publish TF ====== -->
+  <rect x="200" y="1202" width="300" height="44" rx="8" fill="#86efac" stroke="#4ade80" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="1220" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">Publish Static TF Transforms</text>
+  <text x="350" y="1236" text-anchor="middle" font-size="10" fill="#166534">StaticTransformBroadcaster + MarkerArray debug</text>
+
+  <line x1="350" y1="1246" x2="350" y2="1266" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ====== END ====== -->
+  <ellipse cx="350" cy="1288" rx="90" ry="24" fill="#1e293b" filter="url(#sh)"/>
+  <text x="350" y="1293" text-anchor="middle" font-size="12" fill="white" font-weight="bold">DONE / succeed()</text>
+</svg>

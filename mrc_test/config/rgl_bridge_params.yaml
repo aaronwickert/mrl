@@ -1,0 +1,16 @@
+# RGL LiDAR bridge configuration
+# Bridges RGL PointCloudPacked topics to ROS PointCloud2
+
+# Front lidar (for robots with astra_livox_mount)
+- ros_topic_name: "front_lidar/points_raw"
+  gz_topic_name: "front_lidar/points"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "gz.msgs.PointCloudPacked"
+  direction: GZ_TO_ROS
+
+# Back lidar (for robots with astra_livox_mount)
+- ros_topic_name: "back_lidar/points_raw"
+  gz_topic_name: "back_lidar/points"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "gz.msgs.PointCloudPacked"
+  direction: GZ_TO_ROS

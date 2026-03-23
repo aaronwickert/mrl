@@ -1,0 +1,25 @@
+MRC Comprehensive Test Suite — 20260217_072256
+============================================
+Robot counts:    3 5 10
+Position setups: 1 2 3 4 5
+Trials/config:   3
+
+[1/15] robots_3_setup_1: PASS (479s)
+[2/15] robots_3_setup_2: PASS (474s)
+[3/15] robots_3_setup_3: PASS (479s)
+[4/15] robots_3_setup_4: PASS (480s)
+[5/15] robots_3_setup_5: TIMEOUT (481s)
+[6/15] robots_5_setup_1: TIMEOUT (481s)
+[7/15] robots_5_setup_2: TIMEOUT (481s)
+[8/15] robots_5_setup_3: TIMEOUT (482s)
+[9/15] robots_5_setup_4: TIMEOUT (482s)
+[10/15] robots_5_setup_5: TIMEOUT (482s)
+[11/15] robots_10_setup_1: TIMEOUT (483s)
+[12/15] robots_10_setup_2: TIMEOUT (485s)
+[13/15] robots_10_setup_3: TIMEOUT (482s)
+[14/15] robots_10_setup_4: TIMEOUT (481s)
+[15/15] robots_10_setup_5: TIMEOUT (481s)
+
+====================================================================
+FINAL: 4/15 passed, 0 failed, 11 timed out
+====================================================================

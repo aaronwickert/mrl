@@ -1,0 +1,33 @@
+# Calibrate.action
+# Action for multi-robot calibration with progress feedback
+
+# Goal
+string[] robot_ids              # Empty = calibrate all discovered robots
+bool use_pose_graph true        # Enable pose graph optimization
+string pose_graph_topology "star"  # "star" or "mesh"
+
+---
+
+# Result
+bool success
+string message
+float64 total_time_sec
+int32 robots_calibrated
+int32 robots_failed
+
+# Per-robot calibration results
+string[] result_robot_ids
+float64[] result_translation_errors_m   # Translation error vs ground truth (if available)
+float64[] result_rotation_errors_rad    # Rotation error vs ground truth (if available)
+int32[] result_num_inliers              # Number of inliers from registration
+bool[] result_success                   # Per-robot success flag
+
+---
+
+# Feedback
+string phase                    # "initializing", "fetching_data", "registering", "optimizing", "publishing"
+string current_robot            # Robot currently being processed
+int32 robots_completed
+int32 robots_total
+float32 progress_percent
+string status_message           # Human-readable status

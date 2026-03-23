@@ -1,0 +1,72 @@
+\subsection{KissFeatures Message}
+
+The \texttt{mrc/msg/KissFeatures} message encapsulates the extracted
+geometric features for a single robot:
+
+\begin{itemize}
+    \item \texttt{keypoint\_xyz} (\texttt{float32[]}): 3D coordinates of the
+          extracted keypoints stored as a flat, row-major array of the form
+          $[x_0, y_0, z_0,\; x_1, y_1, z_1,\; \ldots]$, so the keypoint count
+          is implicitly $|\texttt{keypoint\_xyz}| / 3$.
+          This replaces the earlier \texttt{sensor\_msgs/PointCloud2} field,
+          eliminating the PointCloud2 header and field-descriptor overhead
+          ($\approx$13\,KB per message).
+
+    \item \texttt{descriptors} (\texttt{uint16[]}): Flattened row-major array
+          of quantised FasterPFH descriptors with
+          $|\texttt{descriptors}| = (|\texttt{keypoint\_xyz}| / 3) \times
+          \texttt{descriptor\_dim}$.
+          Each value is quantised from its original \texttt{float32} range
+          $[0, 100]$ to an unsigned 16-bit integer via
+          \begin{equation}
+              u = \mathrm{round}(v \times 655.35), \qquad
+              v = u \;/\; 655.35,
+          \end{equation}
+          where the scale $655.35 = 65535/100$ maps the full \texttt{uint16}
+          range $[0, 65535]$ onto $[0, 100]$.
+          This reduces the descriptor array from 4\,bytes to 2\,bytes per
+          element with a maximum quantisation error of
+          $\varepsilon_{\max} = 0.5/655.35 \approx 7.6\times10^{-4}$ per bin.
+          The FasterPFH histogram bins are normalised to sum to 100 per
+          sub-histogram, so the value range fits entirely within
+          \texttt{uint16} without clipping.
+
+    \item \texttt{descriptor\_dim} (\texttt{uint32}): Dimensionality of each
+          descriptor (33 for FasterPFH: three sub-histograms of 11 bins each).
+
+    \item \texttt{descriptor\_type} (\texttt{string}): Identifier of the
+          descriptor backend, e.g.\ \texttt{"FasterPFH"}.
+\end{itemize}
+
+\subsubsection*{Message Size}
+
+Table~\ref{tab:kiss_size} reports measured wire sizes for a two-robot
+proximity test (ec\_swift, front\,+\,back RGL lidar, $\approx$18\,700 raw
+points per snapshot).
+
+\begin{table}[h]
+\centering
+\caption{Measured \texttt{KissFeatures} wire size vs.\ raw lidar data
+         ($\approx$3\,390 keypoints, descriptor dim\,=\,33)}
+\label{tab:kiss_size}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Representation} & \textbf{Size} & \textbf{Ratio} \\
+\midrule
+Raw \texttt{PointCloud2} (2 lidars combined) & 292.9\,KB & $1.0\times$ (baseline) \\
+KissFeatures --- original (\texttt{float32} descriptors, \texttt{PointCloud2} keypoints)
+    & 490.0\,KB & $1.7\times$ \emph{larger} \\
+\textbf{KissFeatures --- optimised (\texttt{uint16} descriptors, \texttt{float32[]} keypoints)}
+    & \textbf{$\approx$258\,KB} & $\mathbf{1.1\times}$ \textbf{smaller} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The dominant cost before optimisation was the descriptor array, which
+accounted for 89\,\% of the total message size
+($437$\,KB out of $490$\,KB).
+Switching from \texttt{float32} to \texttt{uint16} encoding reduces the
+descriptor array by 50\,\% ($437$\,KB\,$\to$\,$218$\,KB), yielding an overall
+message reduction of 47\,\% and keeping KissFeatures below the raw
+point-cloud bandwidth while providing a worst-case quantisation error of
+$\varepsilon_{\max} \approx 7.6\times10^{-4}$ per bin.

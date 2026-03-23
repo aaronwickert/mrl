@@ -1,0 +1,43 @@
+# MRC Robot Configuration
+# Per-robot settings for multi-robot calibration
+
+# Common KISS-Matcher parameters
+common:
+  kiss_voxel_size: 0.3
+  kiss_thr_linearity: 1.0
+  kiss_normal_radius_gain: 3.0
+  kiss_fpfh_radius_gain: 5.0
+  accumulation_time_sec: 2.0
+
+# Robot-specific configurations
+robots:
+  ec_swift_1:
+    robot_type: ec_swift
+    base_frame: ec_swift_1/base_link
+    # EC Swift 1 has only front lidar
+    pointcloud_topics:
+      - /ec_swift_1/front_lidar/points_raw
+    sensor_frames:
+      - ec_swift_1/front_lidar_link
+
+  ec_swift_2:
+    robot_type: ec_swift
+    base_frame: ec_swift_2/base_link
+    # EC Swift 2 has front and back lidars - merge them
+    pointcloud_topics:
+      - /ec_swift_2/front_lidar/points_raw
+      - /ec_swift_2/back_lidar/points_raw
+    sensor_frames:
+      - ec_swift_2/front_lidar_link
+      - ec_swift_2/back_lidar_link
+
+  athena:
+    robot_type: athena
+    base_frame: athena/base_link
+    # Athena has front and back lidars - merge them
+    pointcloud_topics:
+      - /athena/front_lidar/points_raw
+      - /athena/back_lidar/points_raw
+    sensor_frames:
+      - athena/front_lidar_link
+      - athena/back_lidar_link

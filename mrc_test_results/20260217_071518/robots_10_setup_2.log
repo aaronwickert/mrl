@@ -1,0 +1,779 @@
+[INFO] [launch]: All log files can be found below /home/hector/.ros/log/2026-02-17-07-20-20-097650-home-21255
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gz-1]: process started with pid [21260]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="wall_north"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L90]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="wall_south"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L108]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="wall_east"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L126]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="wall_west"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L144]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="partition_a"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L163]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="partition_b"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L181]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="pillar_1"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L200]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="pillar_2"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L218]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="pillar_3"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L236]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="pillar_4"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L254]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="large_table"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L273]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="bookshelf_1"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L291]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="bookshelf_2"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L309]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="barrel_1"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L328]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="barrel_2"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L346]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="crate_1"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L365]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="crate_2"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L383]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="pose_graph_scale_world"]/model[@name="crate_stack"]/link[@name="link"]/visual[@name="visual"]/material/laser_retro:/home/hector/hector/install/mrc_test/share/mrc_test/worlds/pose_graph_scale_room_lidar_only.sdf:L401]: XML Element[laser_retro], child of element[material], not defined in SDF. Copying[laser_retro] as children of [material].
+[gz-1] [Tue Feb 17 07:20:20 2026]: Logging configured: level=info, file=(disabled), stdout=true
+[gz-1] [07:20:20][    10 us][info]: RGL Version 0.20.0 branch=develop commitSHA1=d1ff3b6cf618518d60a4cc6acb9231e3aa9e9e28
+[gz-1] [07:20:20][ 27221 us][info]: Running on GPU: NVIDIA GeForce RTX 3070
+[gz-1] [07:20:20][     8 us][info]: Built against OptiX SDK version: 7.2.0
+[gz-1] [07:20:20][     1 us][info]: Built against OptiX ABI version: 41
+[gz-1] [07:20:20][     0 us][info]: Built against CUDA Toolkit version: 11.7
+[gz-1] [07:20:20][     3 us][info]: Installed CUDA runtime version: 11.7
+[gz-1] [07:20:20][     0 us][info]: Installed CUDA driver version: 12.2
+[gz-1] [07:20:20][ 24216 us][info]: Installed NVidia kernel driver version: 535.230.02
+[INFO] [robot_state_publisher-2]: process started with pid [21296]
+[INFO] [create-3]: process started with pid [21297]
+[INFO] [static_transform_publisher-4]: process started with pid [21298]
+[INFO] [static_transform_publisher-5]: process started with pid [21299]
+[INFO] [static_transform_publisher-6]: process started with pid [21300]
+[INFO] [prefix_tf_republisher-7]: process started with pid [21301]
+[INFO] [prefix_tf_republisher-8]: process started with pid [21302]
+[INFO] [parameter_bridge-9]: process started with pid [21303]
+[prefix_tf_republisher-7] [0m[INFO] [1771312824.446147369] [robot_0.tf_republisher]: Republishing tf frame ids with prefix 'robot_0'[0m
+[prefix_tf_republisher-8] [0m[INFO] [1771312824.446991200] [robot_0.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_0'[0m
+[static_transform_publisher-6] [0m[INFO] [1771312824.447426751] [robot_0.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-6] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-6] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-6] from 'map' to 'odom'[0m
+[static_transform_publisher-5] [0m[INFO] [1771312824.450385762] [robot_0.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-5] from 'world' to 'map'[0m
+[robot_state_publisher-2] [0m[INFO] [1771312824.451166114] [robot_0.robot_state_publisher]: Robot initialized[0m
+[static_transform_publisher-4] [0m[INFO] [1771312824.452153020] [robot_0.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('6.000000', '0.000000', '0.150000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '1.000000', '0.000001')
+[static_transform_publisher-4] from 'odom' to 'base_link'[0m
+[create-3] [0m[INFO] [1771312824.453345003] [robot_0.spawn_robot]: Requesting list of world names.[0m
+[create-3] [0m[INFO] [1771312824.657129169] [robot_0.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-3] [0m[INFO] [1771312824.660876949] [robot_0.spawn_robot]: Entity creation successful.[0m
+[INFO] [create-3]: process has finished cleanly [pid 21297]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_0"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-9] [0m[INFO] [1771312825.467811209] [robot_0.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_0/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-9] [0m[INFO] [1771312825.471864613] [robot_0.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_0/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-10]: process started with pid [21477]
+[INFO] [create-11]: process started with pid [21479]
+[INFO] [static_transform_publisher-12]: process started with pid [21480]
+[INFO] [static_transform_publisher-13]: process started with pid [21481]
+[INFO] [static_transform_publisher-14]: process started with pid [21483]
+[INFO] [prefix_tf_republisher-15]: process started with pid [21484]
+[INFO] [prefix_tf_republisher-16]: process started with pid [21485]
+[INFO] [parameter_bridge-17]: process started with pid [21486]
+[static_transform_publisher-12] [0m[INFO] [1771312825.953806409] [robot_1.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-12] translation: ('4.854000', '3.527000', '0.150000')
+[static_transform_publisher-12] rotation: ('0.000000', '0.000000', '-0.951014', '0.309147')
+[static_transform_publisher-12] from 'odom' to 'base_link'[0m
+[prefix_tf_republisher-15] [0m[INFO] [1771312825.954425812] [robot_1.tf_republisher]: Republishing tf frame ids with prefix 'robot_1'[0m
+[robot_state_publisher-10] [0m[INFO] [1771312825.959686462] [robot_1.robot_state_publisher]: Robot initialized[0m
+[static_transform_publisher-13] [0m[INFO] [1771312825.964333531] [robot_1.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-13] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-13] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-13] from 'world' to 'map'[0m
+[create-11] [0m[INFO] [1771312825.969122909] [robot_1.spawn_robot]: Requesting list of world names.[0m
+[static_transform_publisher-14] [0m[INFO] [1771312825.969886421] [robot_1.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-14] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-14] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-14] from 'map' to 'odom'[0m
+[prefix_tf_republisher-16] [0m[INFO] [1771312825.972781553] [robot_1.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_1'[0m
+[create-11] [0m[INFO] [1771312826.173876489] [robot_1.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-11] [0m[INFO] [1771312826.176832206] [robot_1.spawn_robot]: Entity creation successful.[0m
+[INFO] [create-11]: process has finished cleanly [pid 21479]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_1"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-17] [0m[INFO] [1771312826.978424115] [robot_1.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_1/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-17] [0m[INFO] [1771312826.984251246] [robot_1.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_1/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-18]: process started with pid [21728]
+[INFO] [create-19]: process started with pid [21729]
+[INFO] [static_transform_publisher-20]: process started with pid [21730]
+[INFO] [static_transform_publisher-21]: process started with pid [21731]
+[INFO] [static_transform_publisher-22]: process started with pid [21732]
+[INFO] [prefix_tf_republisher-23]: process started with pid [21734]
+[INFO] [prefix_tf_republisher-24]: process started with pid [21735]
+[INFO] [parameter_bridge-25]: process started with pid [21736]
+[robot_state_publisher-18] [0m[INFO] [1771312827.469936501] [robot_2.robot_state_publisher]: Robot initialized[0m
+[prefix_tf_republisher-24] [0m[INFO] [1771312827.481505665] [robot_2.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_2'[0m
+[static_transform_publisher-21] [0m[INFO] [1771312827.484792137] [robot_2.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-21] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-21] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-21] from 'world' to 'map'[0m
+[static_transform_publisher-20] [0m[INFO] [1771312827.491703888] [robot_2.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-20] translation: ('1.854000', '5.706000', '0.150000')
+[static_transform_publisher-20] rotation: ('0.000000', '0.000000', '-0.809030', '0.587767')
+[static_transform_publisher-20] from 'odom' to 'base_link'[0m
+[prefix_tf_republisher-23] [0m[INFO] [1771312827.498534955] [robot_2.tf_republisher]: Republishing tf frame ids with prefix 'robot_2'[0m
+[static_transform_publisher-22] [0m[INFO] [1771312827.501656684] [robot_2.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-22] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-22] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-22] from 'map' to 'odom'[0m
+[create-19] [0m[INFO] [1771312827.511042504] [robot_2.spawn_robot]: Requesting list of world names.[0m
+[create-19] [0m[INFO] [1771312827.715371765] [robot_2.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-19] [0m[INFO] [1771312827.718916481] [robot_2.spawn_robot]: Entity creation successful.[0m
+[INFO] [create-19]: process has finished cleanly [pid 21729]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_2"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-25] [0m[INFO] [1771312828.534433562] [robot_2.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_2/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-25] [0m[INFO] [1771312828.539269213] [robot_2.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_2/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-26]: process started with pid [21980]
+[INFO] [create-27]: process started with pid [21981]
+[INFO] [static_transform_publisher-28]: process started with pid [21982]
+[INFO] [static_transform_publisher-29]: process started with pid [21983]
+[INFO] [static_transform_publisher-30]: process started with pid [21984]
+[INFO] [prefix_tf_republisher-31]: process started with pid [21985]
+[INFO] [prefix_tf_republisher-32]: process started with pid [21986]
+[INFO] [parameter_bridge-33]: process started with pid [21987]
+[static_transform_publisher-28] [0m[INFO] [1771312829.006905660] [robot_3.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-28] translation: ('-1.854000', '5.706000', '0.150000')
+[static_transform_publisher-28] rotation: ('0.000000', '0.000000', '-0.587932', '0.808910')
+[static_transform_publisher-28] from 'odom' to 'base_link'[0m
+[prefix_tf_republisher-32] [0m[INFO] [1771312829.022105580] [robot_3.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_3'[0m
+[robot_state_publisher-26] [0m[INFO] [1771312829.032799813] [robot_3.robot_state_publisher]: Robot initialized[0m
+[prefix_tf_republisher-31] [0m[INFO] [1771312829.041163385] [robot_3.tf_republisher]: Republishing tf frame ids with prefix 'robot_3'[0m
+[static_transform_publisher-29] [0m[INFO] [1771312829.055969227] [robot_3.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-29] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-29] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-29] from 'world' to 'map'[0m
+[create-27] [0m[INFO] [1771312829.084867237] [robot_3.spawn_robot]: Requesting list of world names.[0m
+[static_transform_publisher-30] [0m[INFO] [1771312829.094348055] [robot_3.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-30] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-30] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-30] from 'map' to 'odom'[0m
+[create-27] [0m[INFO] [1771312829.290619588] [robot_3.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-27] [0m[INFO] [1771312829.294408721] [robot_3.spawn_robot]: Entity creation successful.[0m
+[INFO] [create-27]: process has finished cleanly [pid 21981]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_3"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-33] [0m[INFO] [1771312830.081766825] [robot_3.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_3/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-33] [0m[INFO] [1771312830.084755289] [robot_3.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_3/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-34]: process started with pid [22280]
+[INFO] [create-35]: process started with pid [22281]
+[INFO] [static_transform_publisher-36]: process started with pid [22282]
+[INFO] [static_transform_publisher-37]: process started with pid [22283]
+[INFO] [static_transform_publisher-38]: process started with pid [22284]
+[INFO] [prefix_tf_republisher-39]: process started with pid [22285]
+[INFO] [prefix_tf_republisher-40]: process started with pid [22286]
+[INFO] [parameter_bridge-41]: process started with pid [22287]
+[prefix_tf_republisher-39] [0m[INFO] [1771312830.639825465] [robot_4.tf_republisher]: Republishing tf frame ids with prefix 'robot_4'[0m
+[static_transform_publisher-37] [0m[INFO] [1771312830.647525617] [robot_4.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-37] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-37] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-37] from 'world' to 'map'[0m
+[static_transform_publisher-36] [0m[INFO] [1771312830.673032344] [robot_4.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-36] translation: ('-4.854000', '3.527000', '0.150000')
+[static_transform_publisher-36] rotation: ('0.000000', '0.000000', '-0.308866', '0.951106')
+[static_transform_publisher-36] from 'odom' to 'base_link'[0m
+[robot_state_publisher-34] [0m[INFO] [1771312830.676999097] [robot_4.robot_state_publisher]: Robot initialized[0m
+[prefix_tf_republisher-40] [0m[INFO] [1771312830.701432723] [robot_4.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_4'[0m
+[static_transform_publisher-38] [0m[INFO] [1771312830.704840682] [robot_4.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-38] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-38] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-38] from 'map' to 'odom'[0m
+[create-35] [0m[INFO] [1771312830.712660530] [robot_4.spawn_robot]: Requesting list of world names.[0m
+[create-35] [0m[INFO] [1771312830.917901733] [robot_4.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-35] [0m[INFO] [1771312830.921649286] [robot_4.spawn_robot]: Entity creation successful.[0m
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_4"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[INFO] [create-35]: process has finished cleanly [pid 22281]
+[parameter_bridge-41] [0m[INFO] [1771312831.755008178] [robot_4.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_4/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-41] [0m[INFO] [1771312831.760777645] [robot_4.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_4/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[INFO] [robot_state_publisher-42]: process started with pid [22633]
+[INFO] [create-43]: process started with pid [22634]
+[INFO] [static_transform_publisher-44]: process started with pid [22635]
+[INFO] [static_transform_publisher-45]: process started with pid [22636]
+[INFO] [static_transform_publisher-46]: process started with pid [22637]
+[INFO] [prefix_tf_republisher-47]: process started with pid [22638]
+[INFO] [prefix_tf_republisher-48]: process started with pid [22639]
+[INFO] [parameter_bridge-49]: process started with pid [22640]
+[robot_state_publisher-42] [2m2026-02-17T07:20:32.147020Z[0m [31mERROR[0m rx-1 ThreadId(08) [2mzenoh::net::routing::dispatcher::queries[0m[2m:[0m Face{2, 24807c5862a5bb9c04e65ea98c5b65e5} Undeclare unknown queryable 380 (@/97bf62d48e8644706d684e2d45ad4acf/peer/**)
+[prefix_tf_republisher-48] [0m[INFO] [1771312832.154277335] [robot_5.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_5'[0m
+[static_transform_publisher-45] [0m[INFO] [1771312832.186234784] [robot_5.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-45] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-45] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-45] from 'world' to 'map'[0m
+[robot_state_publisher-42] [0m[INFO] [1771312832.208909204] [robot_5.robot_state_publisher]: Robot initialized[0m
+[prefix_tf_republisher-47] [0m[INFO] [1771312832.284001174] [robot_5.tf_republisher]: Republishing tf frame ids with prefix 'robot_5'[0m
+[create-43] [0m[INFO] [1771312832.352903120] [robot_5.spawn_robot]: Requesting list of world names.[0m
+[static_transform_publisher-44] [0m[INFO] [1771312832.415090501] [robot_5.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-44] translation: ('-6.000000', '0.000000', '0.150000')
+[static_transform_publisher-44] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-44] from 'odom' to 'base_link'[0m
+[static_transform_publisher-46] [0m[INFO] [1771312832.490387129] [robot_5.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-46] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-46] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-46] from 'map' to 'odom'[0m
+[create-43] [0m[INFO] [1771312832.555671357] [robot_5.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-43] [0m[INFO] [1771312832.557766352] [robot_5.spawn_robot]: Entity creation successful.[0m
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_5"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[INFO] [create-43]: process has finished cleanly [pid 22634]
+[INFO] [robot_state_publisher-50]: process started with pid [22989]
+[INFO] [create-51]: process started with pid [22990]
+[INFO] [static_transform_publisher-52]: process started with pid [22991]
+[INFO] [static_transform_publisher-53]: process started with pid [22992]
+[INFO] [static_transform_publisher-54]: process started with pid [22993]
+[INFO] [prefix_tf_republisher-55]: process started with pid [22994]
+[INFO] [prefix_tf_republisher-56]: process started with pid [22995]
+[INFO] [parameter_bridge-57]: process started with pid [22996]
+[parameter_bridge-49] [0m[INFO] [1771312833.460835358] [robot_5.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_5/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-49] [0m[INFO] [1771312833.510514813] [robot_5.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_5/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[create-51] [2m2026-02-17T07:20:33.968502Z[0m [33m WARN[0m ThreadId(25) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[parameter_bridge-57] [2m2026-02-17T07:20:34.050565Z[0m [33m WARN[0m ThreadId(58) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[prefix_tf_republisher-55] [0m[INFO] [1771312834.055932742] [robot_6.tf_republisher]: Republishing tf frame ids with prefix 'robot_6'[0m
+[robot_state_publisher-50] [0m[INFO] [1771312834.057993246] [robot_6.robot_state_publisher]: Robot initialized[0m
+[static_transform_publisher-52] [0m[INFO] [1771312834.186789811] [robot_6.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-52] translation: ('-4.854000', '-3.527000', '0.150000')
+[static_transform_publisher-52] rotation: ('0.000000', '0.000000', '0.308866', '0.951106')
+[static_transform_publisher-52] from 'odom' to 'base_link'[0m
+[prefix_tf_republisher-56] [0m[INFO] [1771312834.266153682] [robot_6.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_6'[0m
+[static_transform_publisher-54] [0m[INFO] [1771312834.373016650] [robot_6.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-54] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-54] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-54] from 'map' to 'odom'[0m
+[create-51] [0m[INFO] [1771312834.513482993] [robot_6.spawn_robot]: Requesting list of world names.[0m
+[static_transform_publisher-53] [0m[INFO] [1771312834.557307071] [robot_6.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-53] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-53] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-53] from 'world' to 'map'[0m
+[create-51] [0m[INFO] [1771312834.718489538] [robot_6.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-51] [0m[INFO] [1771312834.722437207] [robot_6.spawn_robot]: Entity creation successful.[0m
+[INFO] [create-51]: process has finished cleanly [pid 22990]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_6"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[INFO] [robot_state_publisher-58]: process started with pid [23369]
+[INFO] [create-59]: process started with pid [23370]
+[INFO] [static_transform_publisher-60]: process started with pid [23371]
+[INFO] [static_transform_publisher-61]: process started with pid [23372]
+[INFO] [static_transform_publisher-62]: process started with pid [23373]
+[INFO] [prefix_tf_republisher-63]: process started with pid [23374]
+[INFO] [prefix_tf_republisher-64]: process started with pid [23375]
+[INFO] [parameter_bridge-65]: process started with pid [23376]
+[parameter_bridge-57] [0m[INFO] [1771312835.316379181] [robot_6.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_6/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-57] [0m[INFO] [1771312835.369930130] [robot_6.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_6/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[robot_state_publisher-58] [2m2026-02-17T07:20:35.806178Z[0m [33m WARN[0m ThreadId(19) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[create-59] [2m2026-02-17T07:20:35.826650Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[parameter_bridge-65] [2m2026-02-17T07:20:36.002919Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[static_transform_publisher-60] [0m[INFO] [1771312836.202471528] [robot_7.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-60] translation: ('-1.854000', '-5.706000', '0.150000')
+[static_transform_publisher-60] rotation: ('0.000000', '0.000000', '0.587932', '0.808910')
+[static_transform_publisher-60] from 'odom' to 'base_link'[0m
+[static_transform_publisher-61] [0m[INFO] [1771312836.532692182] [robot_7.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-61] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-61] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-61] from 'world' to 'map'[0m
+[create-59] [0m[INFO] [1771312836.673758921] [robot_7.spawn_robot]: Requesting list of world names.[0m
+[create-59] [0m[INFO] [1771312836.886489568] [robot_7.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[INFO] [robot_state_publisher-66]: process started with pid [23918]
+[INFO] [create-67]: process started with pid [23919]
+[INFO] [static_transform_publisher-68]: process started with pid [23920]
+[INFO] [static_transform_publisher-69]: process started with pid [23975]
+[INFO] [static_transform_publisher-70]: process started with pid [23976]
+[INFO] [prefix_tf_republisher-71]: process started with pid [23977]
+[INFO] [prefix_tf_republisher-72]: process started with pid [23978]
+[INFO] [parameter_bridge-73]: process started with pid [23981]
+[static_transform_publisher-62] [0m[INFO] [1771312836.764963923] [robot_7.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-62] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-62] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-62] from 'map' to 'odom'[0m
+[prefix_tf_republisher-63] [0m[INFO] [1771312836.828864370] [robot_7.tf_republisher]: Republishing tf frame ids with prefix 'robot_7'[0m
+[prefix_tf_republisher-64] [0m[INFO] [1771312836.851408601] [robot_7.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_7'[0m
+[robot_state_publisher-66] [2m2026-02-17T07:20:37.369515Z[0m [33m WARN[0m ThreadId(13) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[create-67] [2m2026-02-17T07:20:37.372548Z[0m [33m WARN[0m ThreadId(20) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[parameter_bridge-73] [2m2026-02-17T07:20:37.455423Z[0m [33m WARN[0m ThreadId(56) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[robot_state_publisher-58] [0m[INFO] [1771312837.658777614] [robot_7.robot_state_publisher]: Robot initialized[0m
+[create-59] [0m[INFO] [1771312837.665321565] [robot_7.spawn_robot]: Entity creation successful.[0m
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_7"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[INFO] [create-59]: process has finished cleanly [pid 23370]
+[robot_state_publisher-66] [0m[INFO] [1771312838.899420709] [robot_8.robot_state_publisher]: Robot initialized[0m
+[INFO] [robot_state_publisher-74]: process started with pid [24279]
+[INFO] [create-75]: process started with pid [24281]
+[INFO] [static_transform_publisher-76]: process started with pid [24283]
+[INFO] [static_transform_publisher-77]: process started with pid [24284]
+[INFO] [static_transform_publisher-78]: process started with pid [24285]
+[INFO] [prefix_tf_republisher-79]: process started with pid [24330]
+[INFO] [prefix_tf_republisher-80]: process started with pid [24331]
+[INFO] [parameter_bridge-81]: process started with pid [24336]
+[static_transform_publisher-68] [0m[INFO] [1771312839.153024768] [robot_8.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-68] translation: ('1.854000', '-5.706000', '0.150000')
+[static_transform_publisher-68] rotation: ('0.000000', '0.000000', '0.809030', '0.587767')
+[static_transform_publisher-68] from 'odom' to 'base_link'[0m
+[robot_state_publisher-74] [2m2026-02-17T07:20:39.200070Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer a23ef3bb77e3b4432a893a3b8e2f657f: [tcp/127.0.0.1:41041]
+[create-75] [2m2026-02-17T07:20:39.462619Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer a23ef3bb77e3b4432a893a3b8e2f657f: [tcp/127.0.0.1:41041]
+[parameter_bridge-81] [2m2026-02-17T07:20:39.497795Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer a23ef3bb77e3b4432a893a3b8e2f657f: [tcp/127.0.0.1:41041]
+[robot_state_publisher-74] [2m2026-02-17T07:20:39.600477Z[0m [33m WARN[0m ThreadId(36) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[create-75] [2m2026-02-17T07:20:39.672873Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[parameter_bridge-81] [2m2026-02-17T07:20:39.874199Z[0m [33m WARN[0m ThreadId(59) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[create-67] [0m[INFO] [1771312840.054293915] [robot_8.spawn_robot]: Requesting list of world names.[0m
+[create-67] [0m[INFO] [1771312840.334754185] [robot_8.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[create-67] [0m[INFO] [1771312840.346980935] [robot_8.spawn_robot]: Entity creation successful.[0m
+[INFO] [create-67]: process has finished cleanly [pid 23919]
+[parameter_bridge-57] [2m2026-02-17T07:20:40.591622Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer f3959b031124ac75ee2d762fc4027423: [tcp/127.0.0.1:38881]
+[parameter_bridge-17] [2m2026-02-17T07:20:40.593354Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer f3959b031124ac75ee2d762fc4027423: [tcp/127.0.0.1:38881]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_8"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[parameter_bridge-25] [2m2026-02-17T07:20:40.824433Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer f3959b031124ac75ee2d762fc4027423: [tcp/127.0.0.1:38881]
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[prefix_tf_republisher-71] [0m[INFO] [1771312841.467347971] [robot_8.tf_republisher]: Republishing tf frame ids with prefix 'robot_8'[0m
+[parameter_bridge-33] [2m2026-02-17T07:20:41.638172Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer f3959b031124ac75ee2d762fc4027423: [tcp/127.0.0.1:38881]
+[static_transform_publisher-69] [0m[INFO] [1771312842.012126524] [robot_8.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-69] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-69] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-69] from 'world' to 'map'[0m
+[static_transform_publisher-70] [0m[INFO] [1771312842.470839613] [robot_8.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-70] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-70] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-70] from 'map' to 'odom'[0m
+[prefix_tf_republisher-72] [0m[INFO] [1771312842.997608430] [robot_8.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_8'[0m
+[static_transform_publisher-76] [0m[INFO] [1771312844.389884329] [robot_9.odom_base_link_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-76] translation: ('4.854000', '-3.527000', '0.150000')
+[static_transform_publisher-76] rotation: ('0.000000', '0.000000', '0.951014', '0.309147')
+[static_transform_publisher-76] from 'odom' to 'base_link'[0m
+[static_transform_publisher-77] [0m[INFO] [1771312844.497836473] [robot_9.world_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-77] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-77] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-77] from 'world' to 'map'[0m
+[parameter_bridge-73] [0m[INFO] [1771312844.601156334] [robot_8.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_8/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-73] [0m[INFO] [1771312844.605210627] [robot_8.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_8/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[prefix_tf_republisher-79] [0m[INFO] [1771312844.908312438] [robot_9.tf_republisher]: Republishing tf frame ids with prefix 'robot_9'[0m
+[robot_state_publisher-74] [0m[INFO] [1771312844.930741920] [robot_9.robot_state_publisher]: Robot initialized[0m
+[static_transform_publisher-78] [0m[INFO] [1771312845.273018281] [robot_9.map_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-78] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-78] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-78] from 'map' to 'odom'[0m
+[create-75] [0m[INFO] [1771312845.351035343] [robot_9.spawn_robot]: Requesting list of world names.[0m
+[create-75] [0m[INFO] [1771312845.560625998] [robot_9.spawn_robot]: Waiting messages on topic [robot_description].[0m
+[ERROR] [launch]: Caught exception in launch (see debug for traceback): "package 'mrc' not found, searching: ['/home/hector/hector/install/scout_air_mover', '/home/hector/hector/install/mrc_test', '/home/hector/hector/install/hector_sensors_description', '/opt/hector/jazzy', '/opt/ros/jazzy']"
+[INFO] [parameter_bridge-81]: sending signal 'SIGINT' to process[parameter_bridge-81]
+[INFO] [create-75]: process has finished cleanly [pid 24281]
+[INFO] [prefix_tf_republisher-80]: sending signal 'SIGINT' to process[prefix_tf_republisher-80]
+[INFO] [prefix_tf_republisher-79]: sending signal 'SIGINT' to process[prefix_tf_republisher-79]
+[INFO] [prefix_tf_republisher-80]: process has finished cleanly [pid 24331]
+[INFO] [static_transform_publisher-78]: sending signal 'SIGINT' to process[static_transform_publisher-78]
+[INFO] [static_transform_publisher-77]: sending signal 'SIGINT' to process[static_transform_publisher-77]
+[INFO] [static_transform_publisher-76]: sending signal 'SIGINT' to process[static_transform_publisher-76]
+[INFO] [robot_state_publisher-74]: sending signal 'SIGINT' to process[robot_state_publisher-74]
+[INFO] [parameter_bridge-73]: sending signal 'SIGINT' to process[parameter_bridge-73]
+[INFO] [prefix_tf_republisher-72]: sending signal 'SIGINT' to process[prefix_tf_republisher-72]
+[INFO] [parameter_bridge-73]: process has finished cleanly [pid 23981]
+[INFO] [prefix_tf_republisher-71]: sending signal 'SIGINT' to process[prefix_tf_republisher-71]
+[INFO] [prefix_tf_republisher-72]: process has finished cleanly [pid 23978]
+[INFO] [static_transform_publisher-70]: sending signal 'SIGINT' to process[static_transform_publisher-70]
+[INFO] [static_transform_publisher-69]: sending signal 'SIGINT' to process[static_transform_publisher-69]
+[INFO] [static_transform_publisher-68]: sending signal 'SIGINT' to process[static_transform_publisher-68]
+[INFO] [robot_state_publisher-66]: sending signal 'SIGINT' to process[robot_state_publisher-66]
+[INFO] [parameter_bridge-65]: sending signal 'SIGINT' to process[parameter_bridge-65]
+[INFO] [prefix_tf_republisher-64]: sending signal 'SIGINT' to process[prefix_tf_republisher-64]
+[INFO] [prefix_tf_republisher-63]: sending signal 'SIGINT' to process[prefix_tf_republisher-63]
+[INFO] [parameter_bridge-65]: process has finished cleanly [pid 23376]
+[INFO] [static_transform_publisher-62]: sending signal 'SIGINT' to process[static_transform_publisher-62]
+[INFO] [static_transform_publisher-61]: sending signal 'SIGINT' to process[static_transform_publisher-61]
+[INFO] [static_transform_publisher-60]: sending signal 'SIGINT' to process[static_transform_publisher-60]
+[INFO] [robot_state_publisher-58]: sending signal 'SIGINT' to process[robot_state_publisher-58]
+[INFO] [parameter_bridge-57]: sending signal 'SIGINT' to process[parameter_bridge-57]
+[INFO] [prefix_tf_republisher-56]: sending signal 'SIGINT' to process[prefix_tf_republisher-56]
+[INFO] [parameter_bridge-57]: process has finished cleanly [pid 22996]
+[INFO] [prefix_tf_republisher-55]: sending signal 'SIGINT' to process[prefix_tf_republisher-55]
+[INFO] [static_transform_publisher-54]: sending signal 'SIGINT' to process[static_transform_publisher-54]
+[INFO] [static_transform_publisher-53]: sending signal 'SIGINT' to process[static_transform_publisher-53]
+[INFO] [static_transform_publisher-52]: sending signal 'SIGINT' to process[static_transform_publisher-52]
+[INFO] [robot_state_publisher-50]: sending signal 'SIGINT' to process[robot_state_publisher-50]
+[INFO] [parameter_bridge-49]: sending signal 'SIGINT' to process[parameter_bridge-49]
+[INFO] [prefix_tf_republisher-48]: sending signal 'SIGINT' to process[prefix_tf_republisher-48]
+[INFO] [parameter_bridge-49]: process has finished cleanly [pid 22640]
+[INFO] [prefix_tf_republisher-47]: sending signal 'SIGINT' to process[prefix_tf_republisher-47]
+[INFO] [static_transform_publisher-46]: sending signal 'SIGINT' to process[static_transform_publisher-46]
+[INFO] [static_transform_publisher-45]: sending signal 'SIGINT' to process[static_transform_publisher-45]
+[INFO] [static_transform_publisher-44]: sending signal 'SIGINT' to process[static_transform_publisher-44]
+[INFO] [robot_state_publisher-42]: sending signal 'SIGINT' to process[robot_state_publisher-42]
+[INFO] [parameter_bridge-41]: sending signal 'SIGINT' to process[parameter_bridge-41]
+[INFO] [prefix_tf_republisher-40]: sending signal 'SIGINT' to process[prefix_tf_republisher-40]
+[INFO] [prefix_tf_republisher-39]: sending signal 'SIGINT' to process[prefix_tf_republisher-39]
+[INFO] [parameter_bridge-41]: process has finished cleanly [pid 22287]
+[INFO] [static_transform_publisher-38]: sending signal 'SIGINT' to process[static_transform_publisher-38]
+[INFO] [static_transform_publisher-37]: sending signal 'SIGINT' to process[static_transform_publisher-37]
+[INFO] [static_transform_publisher-36]: sending signal 'SIGINT' to process[static_transform_publisher-36]
+[INFO] [robot_state_publisher-34]: sending signal 'SIGINT' to process[robot_state_publisher-34]
+[INFO] [parameter_bridge-33]: sending signal 'SIGINT' to process[parameter_bridge-33]
+[INFO] [prefix_tf_republisher-32]: sending signal 'SIGINT' to process[prefix_tf_republisher-32]
+[INFO] [prefix_tf_republisher-31]: sending signal 'SIGINT' to process[prefix_tf_republisher-31]
+[INFO] [parameter_bridge-33]: process has finished cleanly [pid 21987]
+[INFO] [static_transform_publisher-30]: sending signal 'SIGINT' to process[static_transform_publisher-30]
+[INFO] [static_transform_publisher-29]: sending signal 'SIGINT' to process[static_transform_publisher-29]
+[INFO] [static_transform_publisher-28]: sending signal 'SIGINT' to process[static_transform_publisher-28]
+[INFO] [robot_state_publisher-26]: sending signal 'SIGINT' to process[robot_state_publisher-26]
+[INFO] [parameter_bridge-25]: sending signal 'SIGINT' to process[parameter_bridge-25]
+[INFO] [prefix_tf_republisher-24]: sending signal 'SIGINT' to process[prefix_tf_republisher-24]
+[INFO] [prefix_tf_republisher-23]: sending signal 'SIGINT' to process[prefix_tf_republisher-23]
+[INFO] [parameter_bridge-25]: process has finished cleanly [pid 21736]
+[INFO] [static_transform_publisher-22]: sending signal 'SIGINT' to process[static_transform_publisher-22]
+[INFO] [static_transform_publisher-21]: sending signal 'SIGINT' to process[static_transform_publisher-21]
+[INFO] [parameter_bridge-81]: process has finished cleanly [pid 24336]
+[INFO] [static_transform_publisher-20]: sending signal 'SIGINT' to process[static_transform_publisher-20]
+[INFO] [robot_state_publisher-18]: sending signal 'SIGINT' to process[robot_state_publisher-18]
+[INFO] [static_transform_publisher-78]: process has finished cleanly [pid 24285]
+[INFO] [parameter_bridge-17]: sending signal 'SIGINT' to process[parameter_bridge-17]
+[INFO] [prefix_tf_republisher-16]: sending signal 'SIGINT' to process[prefix_tf_republisher-16]
+[INFO] [prefix_tf_republisher-15]: sending signal 'SIGINT' to process[prefix_tf_republisher-15]
+[INFO] [static_transform_publisher-14]: sending signal 'SIGINT' to process[static_transform_publisher-14]
+[INFO] [static_transform_publisher-13]: sending signal 'SIGINT' to process[static_transform_publisher-13]
+[INFO] [static_transform_publisher-12]: sending signal 'SIGINT' to process[static_transform_publisher-12]
+[INFO] [parameter_bridge-17]: process has finished cleanly [pid 21486]
+[INFO] [robot_state_publisher-10]: sending signal 'SIGINT' to process[robot_state_publisher-10]
+[INFO] [parameter_bridge-9]: sending signal 'SIGINT' to process[parameter_bridge-9]
+[INFO] [prefix_tf_republisher-8]: sending signal 'SIGINT' to process[prefix_tf_republisher-8]
+[INFO] [prefix_tf_republisher-7]: sending signal 'SIGINT' to process[prefix_tf_republisher-7]
+[INFO] [parameter_bridge-9]: process has finished cleanly [pid 21303]
+[INFO] [static_transform_publisher-6]: sending signal 'SIGINT' to process[static_transform_publisher-6]
+[INFO] [static_transform_publisher-5]: sending signal 'SIGINT' to process[static_transform_publisher-5]
+[INFO] [static_transform_publisher-4]: sending signal 'SIGINT' to process[static_transform_publisher-4]
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[INFO] [gz-1]: sending signal 'SIGINT' to process[gz-1]
+[create-75] [0m[INFO] [1771312845.801837319] [robot_9.spawn_robot]: Entity creation successful.[0m
+[INFO] [prefix_tf_republisher-79]: process has finished cleanly [pid 24330]
+[INFO] [static_transform_publisher-68]: process has finished cleanly [pid 23920]
+[prefix_tf_republisher-80] [0m[INFO] [1771312845.806052437] [robot_9.tf_static_republisher]: Republishing tf frame ids with prefix 'robot_9'[0m
+[robot_state_publisher-34] [2m2026-02-17T07:20:46.147110Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer 5c7ca3d6bf4138278a56666403cc2e97: [tcp/127.0.0.1:36091]
+[parameter_bridge-81] [0m[INFO] [1771312846.406322305] [rclcpp]: signal_handler(signum=2)[0m
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="back_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="back_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="front_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="front_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_rgb"]/camera[@name="front_near_rgbd_camera"]/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="robot_9"]/link[@name="base_link"]/sensor[@name="front_near_rgbd_depth"]/camera/vertical_fov:<urdf-string>:L0]: XML Element[vertical_fov], child of element[camera], not defined in SDF. Copying[vertical_fov] as children of [camera].
+[prefix_tf_republisher-80] [0m[INFO] [1771312846.566406396] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-65] [2m2026-02-17T07:20:46.586404Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, 24807c5862a5bb9c04e65ea98c5b65e5}:7 Didn't receive DeclareFinal for interest Face{1, fdcc72b3119d582d992e949dd2f2c0f9}:0: Timeout(10s)!
+[parameter_bridge-65] [2m2026-02-17T07:20:46.586516Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer 4049faaa0ce2db9a8202127f45f0a2b7: [tcp/127.0.0.1:45701]
+[parameter_bridge-73] [2m2026-02-17T07:20:46.649997Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer 8c94bbd4ab03e95e415d485c4a8824a6: [tcp/127.0.0.1:45959]
+[gz-1] [1;31m[Err] [SystemLoader.cc:92] [0m[1;31mFailed to load system plugin [[0m[1;31mgz_ros2_control-system[0m[1;31m] : Could not find shared library.[0m[1;31m[0m
+[parameter_bridge-9] [2m2026-02-17T07:20:46.691798Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer 4049faaa0ce2db9a8202127f45f0a2b7: [tcp/127.0.0.1:45701]
+[prefix_tf_republisher-79] [0m[INFO] [1771312846.881779515] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-78] [0m[INFO] [1771312847.054324823] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-77] [0m[INFO] [1771312847.343692534] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-76] [0m[INFO] [1771312847.449867288] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-74] [0m[INFO] [1771312847.901142105] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-73] [0m[INFO] [1771312848.121367114] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-65] [0m[INFO] [1771312848.230895675] [robot_7.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_7/front_lidar/points (gz.msgs.PointCloudPacked) -> front_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[parameter_bridge-65] [0m[INFO] [1771312848.235626178] [robot_7.rgl_bridge]: Creating GZ->ROS Bridge: [/robot_7/back_lidar/points (gz.msgs.PointCloudPacked) -> back_lidar/points_raw (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[prefix_tf_republisher-72] [0m[INFO] [1771312848.357048764] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-71] [0m[INFO] [1771312848.478708753] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-70] [0m[INFO] [1771312848.677518500] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-66] [2m2026-02-17T07:20:48.807730Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, 24807c5862a5bb9c04e65ea98c5b65e5}:31 Didn't receive DeclareFinal for interest Face{1, bd92a0a5360da237951ebf4e851bc652}:33: Timeout(10s)!
+[robot_state_publisher-66] [2m2026-02-17T07:20:48.809787Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, 24807c5862a5bb9c04e65ea98c5b65e5}:33 Didn't receive DeclareFinal for interest Face{1, bd92a0a5360da237951ebf4e851bc652}:35: Timeout(10s)!
+[robot_state_publisher-66] [2m2026-02-17T07:20:48.810904Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, 24807c5862a5bb9c04e65ea98c5b65e5}:36 Didn't receive DeclareFinal for interest Face{1, bd92a0a5360da237951ebf4e851bc652}:38: Timeout(10s)!
+[robot_state_publisher-66] [2m2026-02-17T07:20:48.846500Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, 24807c5862a5bb9c04e65ea98c5b65e5}:38 Didn't receive DeclareFinal for interest Face{1, bd92a0a5360da237951ebf4e851bc652}:40: Timeout(10s)!
+[robot_state_publisher-66] [2m2026-02-17T07:20:48.885117Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::routing::dispatcher::interests[0m[2m:[0m Face{2, 24807c5862a5bb9c04e65ea98c5b65e5}:43 Didn't receive DeclareFinal for interest Face{1, bd92a0a5360da237951ebf4e851bc652}:43: Timeout(10s)!
+[static_transform_publisher-69] [0m[INFO] [1771312848.988853339] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-68] [0m[INFO] [1771312849.299368252] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-66] [0m[INFO] [1771312849.604003956] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-65] [0m[INFO] [1771312849.759262935] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-64] [0m[INFO] [1771312849.894854549] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-63] [0m[INFO] [1771312850.087078569] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-62] [0m[INFO] [1771312850.238133036] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-61] [0m[INFO] [1771312850.443572280] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-60] [0m[INFO] [1771312850.680267872] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-58] [0m[INFO] [1771312850.913950563] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-57] [0m[INFO] [1771312851.135017285] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-56] [0m[INFO] [1771312851.343372043] [rclcpp]: signal_handler(signum=2)[0m
+[ERROR] [parameter_bridge-81]: process[parameter_bridge-81] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-79]: process[prefix_tf_republisher-79] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-78]: process[static_transform_publisher-78] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-77]: process[static_transform_publisher-77] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-76]: process[static_transform_publisher-76] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [robot_state_publisher-74]: process[robot_state_publisher-74] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-71]: process[prefix_tf_republisher-71] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-70]: process[static_transform_publisher-70] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-69]: process[static_transform_publisher-69] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-68]: process[static_transform_publisher-68] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [robot_state_publisher-66]: process[robot_state_publisher-66] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-64]: process[prefix_tf_republisher-64] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-63]: process[prefix_tf_republisher-63] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-62]: process[static_transform_publisher-62] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-61]: process[static_transform_publisher-61] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-60]: process[static_transform_publisher-60] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [robot_state_publisher-58]: process[robot_state_publisher-58] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-56]: process[prefix_tf_republisher-56] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-55]: process[prefix_tf_republisher-55] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-54]: process[static_transform_publisher-54] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-53]: process[static_transform_publisher-53] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-52]: process[static_transform_publisher-52] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [robot_state_publisher-50]: process[robot_state_publisher-50] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [prefix_tf_republisher-55]: process has finished cleanly [pid 22994]
+[INFO] [prefix_tf_republisher-56]: process has finished cleanly [pid 22995]
+[ERROR] [parameter_bridge-49]: process[parameter_bridge-49] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-48]: process[prefix_tf_republisher-48] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-47]: process[prefix_tf_republisher-47] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-46]: process[static_transform_publisher-46] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-45]: process[static_transform_publisher-45] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-44]: process[static_transform_publisher-44] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [robot_state_publisher-42]: process[robot_state_publisher-42] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [parameter_bridge-41]: process[parameter_bridge-41] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-40]: process[prefix_tf_republisher-40] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-39]: process[prefix_tf_republisher-39] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-38]: process[static_transform_publisher-38] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-37]: process[static_transform_publisher-37] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-36]: process[static_transform_publisher-36] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [robot_state_publisher-34]: process[robot_state_publisher-34] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [parameter_bridge-33]: process[parameter_bridge-33] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-32]: process[prefix_tf_republisher-32] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-31]: process[prefix_tf_republisher-31] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-30]: process[static_transform_publisher-30] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-29]: process[static_transform_publisher-29] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-28]: process[static_transform_publisher-28] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [robot_state_publisher-26]: process[robot_state_publisher-26] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [parameter_bridge-25]: process[parameter_bridge-25] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-24]: process[prefix_tf_republisher-24] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-23]: process[prefix_tf_republisher-23] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-22]: process[static_transform_publisher-22] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-21]: process[static_transform_publisher-21] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-20]: process[static_transform_publisher-20] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [robot_state_publisher-18]: process[robot_state_publisher-18] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [parameter_bridge-17]: process[parameter_bridge-17] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-16]: process[prefix_tf_republisher-16] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [static_transform_publisher-53]: process has finished cleanly [pid 22992]
+[ERROR] [prefix_tf_republisher-15]: process[prefix_tf_republisher-15] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-14]: process[static_transform_publisher-14] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-13]: process[static_transform_publisher-13] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-12]: process[static_transform_publisher-12] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [robot_state_publisher-10]: process[robot_state_publisher-10] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [parameter_bridge-9]: process[parameter_bridge-9] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-8]: process[prefix_tf_republisher-8] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [prefix_tf_republisher-7]: process[prefix_tf_republisher-7] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-6]: process[static_transform_publisher-6] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-5]: process[static_transform_publisher-5] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [static_transform_publisher-4]: process[static_transform_publisher-4] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [robot_state_publisher-2]: process[robot_state_publisher-2] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [gz-1]: process[gz-1] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[prefix_tf_republisher-55] [0m[INFO] [1771312851.573274093] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-54] [0m[INFO] [1771312851.784306723] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-53] [0m[INFO] [1771312851.862264361] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-52] [0m[INFO] [1771312852.117517926] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-50] [0m[INFO] [1771312852.370988353] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-49] [0m[INFO] [1771312852.406316171] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-48] [0m[INFO] [1771312852.588199956] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-47] [0m[INFO] [1771312852.826651055] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-46] [0m[INFO] [1771312852.985358329] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-45] [0m[INFO] [1771312853.110681771] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-44] [0m[INFO] [1771312853.230014635] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-42] [0m[INFO] [1771312853.425229519] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-41] [0m[INFO] [1771312853.537322455] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-40] [0m[INFO] [1771312853.624349839] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-39] [0m[INFO] [1771312853.830882320] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-38] [0m[INFO] [1771312853.964567680] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-37] [0m[INFO] [1771312853.985460861] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-36] [0m[INFO] [1771312854.109728603] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-34] [0m[INFO] [1771312854.170697689] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-33] [0m[INFO] [1771312854.251436402] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-32] [0m[INFO] [1771312854.325304486] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-31] [0m[INFO] [1771312854.519328226] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-30] [0m[INFO] [1771312854.674460653] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-29] [0m[INFO] [1771312854.841381365] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-28] [0m[INFO] [1771312854.901324440] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-26] [0m[INFO] [1771312854.925810498] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-25] [0m[INFO] [1771312854.950246385] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-24] [0m[INFO] [1771312855.073399146] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-23] [0m[INFO] [1771312855.150713309] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-22] [0m[INFO] [1771312855.260619418] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-21] [0m[INFO] [1771312855.404977646] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-20] [0m[INFO] [1771312855.545727832] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-18] [0m[INFO] [1771312855.662044857] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-17] [0m[INFO] [1771312855.753308089] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-16] [0m[INFO] [1771312855.786589083] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-15] [0m[INFO] [1771312855.810665129] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-14] [0m[INFO] [1771312855.916048050] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-13] [0m[INFO] [1771312855.947167438] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-12] [0m[INFO] [1771312855.970580342] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-10] [0m[INFO] [1771312856.026898820] [rclcpp]: signal_handler(signum=2)[0m
+[parameter_bridge-9] [0m[INFO] [1771312856.043896546] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-8] [0m[INFO] [1771312856.089426602] [rclcpp]: signal_handler(signum=2)[0m
+[prefix_tf_republisher-7] [0m[INFO] [1771312856.188754123] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-6] [0m[INFO] [1771312856.212689701] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-5] [0m[INFO] [1771312856.235958024] [rclcpp]: signal_handler(signum=2)[0m
+[static_transform_publisher-4] [0m[INFO] [1771312856.258719058] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_publisher-2] [0m[INFO] [1771312856.347778973] [rclcpp]: signal_handler(signum=2)[0m
+[ERROR] [prefix_tf_republisher-79]: process[prefix_tf_republisher-79] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-77]: process[static_transform_publisher-77] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-76]: process[static_transform_publisher-76] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [robot_state_publisher-74]: process[robot_state_publisher-74] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [prefix_tf_republisher-71]: process has finished cleanly [pid 23977]
+[ERROR] [prefix_tf_republisher-71]: process[prefix_tf_republisher-71] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [static_transform_publisher-77]: process has finished cleanly [pid 24284]
+[ERROR] [static_transform_publisher-70]: process[static_transform_publisher-70] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-69]: process[static_transform_publisher-69] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-68]: process[static_transform_publisher-68] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [robot_state_publisher-66]: process[robot_state_publisher-66] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-64]: process[prefix_tf_republisher-64] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-63]: process[prefix_tf_republisher-63] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-62]: process[static_transform_publisher-62] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-61]: process[static_transform_publisher-61] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-60]: process[static_transform_publisher-60] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [robot_state_publisher-58]: process[robot_state_publisher-58] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-56]: process[prefix_tf_republisher-56] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-55]: process[prefix_tf_republisher-55] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-54]: process[static_transform_publisher-54] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-53]: process[static_transform_publisher-53] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-52]: process[static_transform_publisher-52] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [robot_state_publisher-50]: process[robot_state_publisher-50] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-48]: process[prefix_tf_republisher-48] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-47]: process[prefix_tf_republisher-47] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-46]: process[static_transform_publisher-46] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-45]: process[static_transform_publisher-45] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-44]: process[static_transform_publisher-44] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [static_transform_publisher-52]: process has finished cleanly [pid 22991]
+[ERROR] [robot_state_publisher-42]: process[robot_state_publisher-42] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-40]: process[prefix_tf_republisher-40] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-39]: process[prefix_tf_republisher-39] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [robot_state_publisher-66]: process has finished cleanly [pid 23918]
+[INFO] [static_transform_publisher-69]: process has finished cleanly [pid 23975]
+[INFO] [static_transform_publisher-60]: process has finished cleanly [pid 23371]
+[ERROR] [static_transform_publisher-38]: process[static_transform_publisher-38] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-37]: process[static_transform_publisher-37] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-36]: process[static_transform_publisher-36] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [robot_state_publisher-34]: process[robot_state_publisher-34] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-32]: process[prefix_tf_republisher-32] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-31]: process[prefix_tf_republisher-31] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-30]: process[static_transform_publisher-30] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-29]: process[static_transform_publisher-29] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [robot_state_publisher-58]: process has finished cleanly [pid 23369]
+[ERROR] [static_transform_publisher-28]: process[static_transform_publisher-28] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [robot_state_publisher-26]: process[robot_state_publisher-26] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [static_transform_publisher-46]: process has finished cleanly [pid 22637]
+[ERROR] [prefix_tf_republisher-24]: process[prefix_tf_republisher-24] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-23]: process[prefix_tf_republisher-23] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-22]: process[static_transform_publisher-22] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-21]: process[static_transform_publisher-21] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-20]: process[static_transform_publisher-20] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [robot_state_publisher-18]: process[robot_state_publisher-18] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-16]: process[prefix_tf_republisher-16] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-15]: process[prefix_tf_republisher-15] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-14]: process[static_transform_publisher-14] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-13]: process[static_transform_publisher-13] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-12]: process[static_transform_publisher-12] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [robot_state_publisher-10]: process[robot_state_publisher-10] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-8]: process[prefix_tf_republisher-8] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [prefix_tf_republisher-7]: process[prefix_tf_republisher-7] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-6]: process[static_transform_publisher-6] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-5]: process[static_transform_publisher-5] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [static_transform_publisher-4]: process[static_transform_publisher-4] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [robot_state_publisher-2]: process[robot_state_publisher-2] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [gz-1]: process[gz-1] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [prefix_tf_republisher-40]: process has finished cleanly [pid 22286]
+[INFO] [static_transform_publisher-45]: process has finished cleanly [pid 22636]
+[INFO] [robot_state_publisher-50]: process has finished cleanly [pid 22989]
+[INFO] [prefix_tf_republisher-32]: process has finished cleanly [pid 21986]
+[INFO] [static_transform_publisher-70]: process has finished cleanly [pid 23976]
+[INFO] [prefix_tf_republisher-48]: process has finished cleanly [pid 22639]
+[INFO] [prefix_tf_republisher-39]: process has finished cleanly [pid 22285]
+[INFO] [gz-1]: process has finished cleanly [pid 21260]
+[INFO] [prefix_tf_republisher-31]: process has finished cleanly [pid 21985]
+[INFO] [robot_state_publisher-34]: process has finished cleanly [pid 22280]
+[INFO] [static_transform_publisher-36]: process has finished cleanly [pid 22282]
+[INFO] [prefix_tf_republisher-47]: process has finished cleanly [pid 22638]
+[INFO] [static_transform_publisher-76]: sending signal 'SIGTERM' to process[static_transform_publisher-76]
+[INFO] [static_transform_publisher-38]: process has finished cleanly [pid 22284]
+[INFO] [robot_state_publisher-18]: process has finished cleanly [pid 21728]
+[INFO] [static_transform_publisher-61]: process has finished cleanly [pid 23372]
+[INFO] [robot_state_publisher-26]: process has finished cleanly [pid 21980]
+[INFO] [static_transform_publisher-54]: process has finished cleanly [pid 22993]
+[INFO] [robot_state_publisher-42]: process has finished cleanly [pid 22633]
+[INFO] [robot_state_publisher-74]: sending signal 'SIGTERM' to process[robot_state_publisher-74]
+[ERROR] [static_transform_publisher-76]: process has died [pid 24283, exit code -15, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --x 4.854 --y -3.527 --z 0.15 --yaw 2.513 --pitch 0 --roll 0 --frame-id odom --child-frame-id base_link --ros-args -r __node:=odom_base_link_tf -r __ns:=/robot_9 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[INFO] [static_transform_publisher-44]: process has finished cleanly [pid 22635]
+[INFO] [prefix_tf_republisher-16]: process has finished cleanly [pid 21485]
+[INFO] [prefix_tf_republisher-64]: process has finished cleanly [pid 23375]
+[INFO] [static_transform_publisher-22]: process has finished cleanly [pid 21732]
+[INFO] [prefix_tf_republisher-7]: process has finished cleanly [pid 21301]
+[INFO] [static_transform_publisher-5]: process has finished cleanly [pid 21299]
+[INFO] [static_transform_publisher-37]: process has finished cleanly [pid 22283]
+[INFO] [prefix_tf_republisher-24]: process has finished cleanly [pid 21735]
+[INFO] [static_transform_publisher-21]: process has finished cleanly [pid 21731]
+[INFO] [prefix_tf_republisher-23]: process has finished cleanly [pid 21734]
+[INFO] [static_transform_publisher-12]: process has finished cleanly [pid 21480]
+[INFO] [static_transform_publisher-29]: process has finished cleanly [pid 21983]
+[INFO] [static_transform_publisher-13]: process has finished cleanly [pid 21481]
+[INFO] [prefix_tf_republisher-63]: process has finished cleanly [pid 23374]
+[INFO] [static_transform_publisher-4]: process has finished cleanly [pid 21298]
+[INFO] [static_transform_publisher-20]: process has finished cleanly [pid 21730]
+[INFO] [prefix_tf_republisher-15]: process has finished cleanly [pid 21484]
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 21296]
+[INFO] [static_transform_publisher-62]: sending signal 'SIGTERM' to process[static_transform_publisher-62]
+[INFO] [robot_state_publisher-74]: process has finished cleanly [pid 24279]
+[INFO] [robot_state_publisher-10]: process has finished cleanly [pid 21477]
+[INFO] [static_transform_publisher-14]: process has finished cleanly [pid 21483]
+child process pid 23373 exit status already read:  will report returncode 255
+[ERROR] [static_transform_publisher-62]: process has died [pid 23373, exit code 255, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher --frame-id map --child-frame-id odom --ros-args -r __node:=map_static_tf -r __ns:=/robot_7 -p use_sim_time:=True -r /tf:=tf -r /tf_static:=tf_static'].
+[INFO] [static_transform_publisher-6]: process has finished cleanly [pid 21300]
+[INFO] [static_transform_publisher-30]: process has finished cleanly [pid 21984]
+[INFO] [static_transform_publisher-28]: process has finished cleanly [pid 21982]
+[INFO] [prefix_tf_republisher-8]: process has finished cleanly [pid 21302]
+[robot_state_publisher-74] [0m[INFO] [1771312857.418832155] [rclcpp]: signal_handler(signum=15)[0m
