@@ -1,6 +1,0 @@
-MRC Comprehensive Test Suite — 20260217_093841
-============================================
-Robot counts:    3 5 10
-Position setups: 1 2 3 4 5
-Trials/config:   3
-
